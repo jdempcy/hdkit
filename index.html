@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Astrology</title>
+		<!-- JavaScript libraries: jQuery -->
+		<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script-->
+		<script src="lib/jquery.js"></script>
+
+		<!-- Helpers and utility functions -->
+		<script src="helpers/util.js" type="text/javascript"></script>
+
+		<!-- Constants -->
+		<script src="constants.js" type="text/javascript"></script>
+
+		<!-- Settings -->
+
+		<!-- Core relationship mappings:
+			 Planets, signs, aspects, rulers, qualities, elements and dignities. -->
+		<script src="planets.js" type="text/javascript"></script>
+		<script src="signs.js" type="text/javascript"></script>
+
+		<!-- Controllers -->
+		<script src="controllers/report-controller.js" type="text/javascript"></script>
+		<script src="controllers/chart-controller.js" type="text/javascript"></script>
+
+		<!-- Models -->
+		<script src="models/report.js" type="text/javascript"></script>
+		<script src="models/chart.js" type="text/javascript"></script>
+
+		<!-- Reports -->
+		<script src="models/reports/full-substructure-report.js" type="text/javascript"></script>		
+
+		<!-- Sample data -->
+		<script src="sample-data/charts/jonah-dempcy-chart.js" type="text/javascript"></script>
+
+		<!-- Demo app -->
+		<script src="main.js" type="text/javascript"></script>		
+
+		<style>
+			#frame {
+				font-family: Consolas;	
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="frame"></div>
+	</body>
+</html>
