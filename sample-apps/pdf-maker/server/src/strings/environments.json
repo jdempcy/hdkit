@@ -1,0 +1,32 @@
+{
+  "1": "Caves",
+  "2": "Markets",
+  "3": "Kitchens",
+  "4": "Mountains",
+  "5": "Valleys",
+  "6": "Shores",
+  "leftVariableVariants": {
+    "1": "Selective",
+    "2": "Internal",
+    "3": "Wet",
+    "4": "Active",
+    "5": "Narrow",
+    "6": "Natural"
+  },
+  "rightVariableVariants": {
+    "1": "Blending",
+    "2": "External",
+    "3": "Dry",
+    "4": "Passive",
+    "5": "Wide",
+    "6": "Artificial"
+  },
+  "descriptions": {
+    "1": "Caves are safe spaces where you can keep an eye on the door. To really qualify as a cave, it can only have one entrance and one exit. People with Caves environment get great discomfort sleeping in rooms with more than one doorway. Attached bathrooms or closets can be a problem .",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": ""
+  }
+}

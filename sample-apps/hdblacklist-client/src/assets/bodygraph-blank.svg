@@ -1,0 +1,428 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 851.41 1309.4">
+  <g id="Channels">
+    <path id="Gate34" d="M139.46,819.72l213,148.33-6.21,14-213-148.32,6.21-14.05" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate26" d="M324.86,877.2,536,819.5l7.58,15.66L329.22,893.75" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate48" d="M191.8,694.87,49.37,910.05,34,901.82l142.3-215" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate36" d="M671.37,680.74l139.5,221.93-15,8.82-139-221.12" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate22" d="M642.37,697.5l137.53,224-15.13,8.59-136.88-223" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate21" d="M552.66,630.14,608,751.29l-12.23,16-58.06-130.5" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate30" d="M648.29,1146.45l152.08-113.71,8.58,15.13L658.83,1160.14" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate55" d="M629,1121.64l140.21-107,8.53,15.15L639.63,1135.14" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate49" d="M608.5,1096.14l128.41-99,8.53,15.16L618.84,1110" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate58" d="M194.22,1145.83l160.44,120.41-8.58,15.13L184,1159.72" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate38" d="M212.72,1121.9l142,108.27-8.54,15.16L202.37,1135.64" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate54" d="M232.37,1096.67,355.56,1191l-8.51,15.13-125-95.76" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate27" d="M241.79,989.74l105.77,26.54.16,17.4L239.43,1006.5" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate6" d="M592,990.7l109.78-25.1.16,17.4L594,1007.68" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate40" d="M690.61,891.54,647.73,833l17-3.8L703.37,882" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate_10" data-name="Gate 10" d="M342.37,683.81l.15,15.4L224,700.67l-.14-15.39,118.48-1.47" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate25" d="M523.68,744l-35.94-39.16L501.26,694l35.92,39.12" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate57" d="M147.44,824.86,79.76,929.14l-15.32-8.22L133.78,814Z" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate20" d="M207.63,700.23,347,485.46l15.32,8.23L228,700.69" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <polygon id="GateSpan" points="227.96 700.74 147.44 824.86 133.78 814.07 207.63 700.23 227.96 700.74" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="GateConnect34" d="M138.86,839.14l-5.08-25.09,13.66,10.79Z" fill="#fff" stroke="#000" stroke-linejoin="bevel"/>
+    <path id="GateConnect10" d="M228,700.74l-20.33-.51,31.7-15.68Z" fill="#fff" stroke="#000" stroke-linejoin="bevel"/>
+    <path id="Gate24" d="M429.37,183.54l.38,30.8-17.39.16-.38-31" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate3" d="M412,1113.75l-.37-38.78,17.4-.16.38,39.33" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate23" d="M429.3,373.22l.48,27.3-17.39.16-.49-27.46" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate1" d="M429.37,572.57l.38,31.77-17.4.16L412,572.77" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate14" d="M429.15,838.06l.93,90.47-17.4.16-.93-90.2" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate63" d="M449.49,183.73,449.14,153l17.4-.16.35,31.09" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate9" d="M449.5,1113.75l-.36-39.19,17.4-.16.37,39.72" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate56" d="M467.05,350.14l.56,51.08-17.4.16-.56-50.87" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate13" d="M466.78,586.87l.83,60.56-17.4.16-.84-60.53" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate29" d="M466.89,838.48l1.08,90-17.4.16L449.49,838" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate47" d="M391.91,183.35l.38,31.39-17.4.17-.38-31.56" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate42" d="M374.52,1113.38l-.35-38,17.4-.16.35,38.16" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate62" d="M392.1,350.34l.54,51-17.4.16-.54-51.36" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate7" d="M391.81,586.87l.83,60.56-17.4.16-.87-60.53" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate5" d="M391.93,837.64,393,929.22l-17.4.16-1.07-91.31" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <polyline id="Gate4" points="466.89 183.91 467.26 213.93 449.86 214.09 449.49 183.73" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate61" d="M412,183.54l-.35-30.15,17.4-.16.31,30.31" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate64" d="M374.51,183.35l-.34-29.55,17.4-.16.34,29.71" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <polyline id="Gate_17" data-name="Gate 17" points="374.7 350.15 373.82 266.79 391.22 266.62 392.1 350.34" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate43" d="M411.9,373.22l-.24-32.28,17.4-.16.24,32.44" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <polyline id="Gate11" points="449.65 350.52 448.79 272.34 466.19 272.17 467.05 350.15" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate35" d="M656.89,690.37,480.23,418.14l15-8.82L671.37,680.74" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate12" d="M627.89,707.14,478.12,463.22l15.13-8.59L642.37,697.5" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate45" d="M537.66,636.79,478.37,503.44l14.89-4.37,59.4,131.07" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate33" d="M449.37,587.09l-.59-43,17.4-.17.59,43" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate8" d="M411.94,572.77l-.35-29,17.4-.16.35,29" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <polyline id="Gate31" points="374.41 587.09 373.82 544.05 391.22 543.89 391.81 586.9" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate16" d="M176.37,686.82,345.85,430.73,361.18,439,191.8,694.87" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate44" d="M329.22,893.75l-223.06,61-7.58-15.66,226.28-61.85" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate50" d="M239.43,1006.5,147,983.31l-.16-17.4,94.91,23.83" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate32" d="M222,1110.4,97.24,1014.87l8.54-15.16,126.61,97" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate28" d="M202.37,1135.64,66.92,1032.37l8.53-15.16L212.72,1121.9" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate18" d="M184,1159.72,36.93,1049.36l8.58-15.13,148.71,111.6" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate41" d="M658.83,1160.14l-164,122.58-8.58-15.13,162-121.12" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate39" d="M639.63,1135.14,494.37,1246l-8.53-15.15L629,1121.64" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate19" d="M618.84,1109.91,494,1206.14,485.49,1191l123-94.88" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate59" d="M594,1007.68l-101.47,23.19-.16-17.39L592,990.7" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate37" d="M703.37,882,750,945.61l-17,3.8-42.4-57.87" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate51" d="M537.18,733.07l42.22,46L565.87,790l-42.19-46" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate2" d="M411.75,838.49l-.52-67.76,17.4-.16.52,67.49" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate46" d="M449.49,838.06l-1.06-110.7,17.4-.16,1.06,111.28" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate15" d="M374.53,838.07l-1.07-113.93,17.4-.17,1.07,113.67" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <polyline id="Gate53" points="391.92 1113.38 392.29 1152.9 374.89 1153.06 374.52 1113.38" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate60" d="M429.37,1114.14l.36,38.37-17.4.16-.36-38.9" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    <path id="Gate52" d="M466.91,1114.14l.35,38-17.4.16-.36-38.49" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+  </g>
+  <g id="Centers">
+    <g id="Ajna">
+      <path d="M420.37,355.14a5.44,5.44,0,0,1-4.73-2.69L335.92,218.14a5.49,5.49,0,0,1,1.89-7.53,5.57,5.57,0,0,1,2.84-.78l159.5.82a5.51,5.51,0,0,1,4.7,8.32L425.12,352.49A5.48,5.48,0,0,1,420.37,355.14Z" fill="#fff"/>
+      <path d="M340.64,209.3v1l159.48.82a5,5,0,0,1,5,5,5.06,5.06,0,0,1-.7,2.54l-79.7,133.55a5,5,0,0,1-6.86,1.73h0a4.94,4.94,0,0,1-1.73-1.73L336.37,217.86A5,5,0,0,1,338.1,211a4.94,4.94,0,0,1,2.56-.71v-1m0,0a6,6,0,0,0-5.15,9.07l79.75,134.36a6,6,0,0,0,10.31,0L505.3,219.17a6,6,0,0,0-2.08-8.23h0a6,6,0,0,0-3-.84l-159.48-.82Z"/>
+    </g>
+    <g id="Head">
+      <path d="M340.59,156.62a5.48,5.48,0,0,1-4.68-8.32L414,17.86a5.49,5.49,0,0,1,7.54-1.9,5.64,5.64,0,0,1,1.86,1.84l81.12,131.34a5.5,5.5,0,0,1-4.68,8.39Z" fill="#fff"/>
+      <path d="M418.75,15.69h0A5,5,0,0,1,423,18.06l81.12,131.37a5,5,0,0,1-1.62,6.88,4.91,4.91,0,0,1-2.66.75l-159.24-.92a5,5,0,0,1-5-5,4.94,4.94,0,0,1,.71-2.54L414.46,18.14a5,5,0,0,1,4.29-2.43m0-1a6,6,0,0,0-5.15,2.91L335.48,148a6,6,0,0,0,5.11,9.08l159.24.94h0a6,6,0,0,0,6-6,6.07,6.07,0,0,0-.9-3.16L423.85,17.54a5.91,5.91,0,0,0-5.1-2.85Z"/>
+    </g>
+    <g id="Solar_Plexus" data-name="Solar Plexus">
+      <path d="M831.56,1063.92a5.48,5.48,0,0,1-2.68-.71L685,982.36a5.5,5.5,0,0,1-2.11-7.49h0a5.48,5.48,0,0,1,2-2l145.71-86.2a5.18,5.18,0,0,1,2.79-.78,5.51,5.51,0,0,1,5.51,5.51v.06l-1.78,167A5.53,5.53,0,0,1,831.56,1063.92Z" fill="#fff"/>
+      <path d="M833.37,886.35h0a5.06,5.06,0,0,1,3.58,1.51,5,5,0,0,1,1.43,3.55l-1.78,167a5,5,0,0,1-5,5,5.09,5.09,0,0,1-2.44-.65L685.23,981.91a5,5,0,0,1-1.91-6.81h0a4.87,4.87,0,0,1,1.81-1.85L830.84,887a5,5,0,0,1,2.54-.7m0-1a6,6,0,0,0-3,.84L684.62,972.39a6,6,0,0,0,.12,10.39l143.93,80.85a5.89,5.89,0,0,0,2.93.78,6,6,0,0,0,6-6l1.78-167a6,6,0,0,0-5.93-6.07h0Z"/>
+    </g>
+    <g id="Spleen">
+      <path d="M15.53,1063.92a5.53,5.53,0,0,1-5.5-5.45l-1.78-167a5.31,5.31,0,0,1,1.57-3.91,5.52,5.52,0,0,1,3.94-1.66,5.39,5.39,0,0,1,2.79.78l145.71,86.2a5.49,5.49,0,0,1,1.94,7.52h0a5.48,5.48,0,0,1-2,2l-144,80.85A5.61,5.61,0,0,1,15.53,1063.92Z" fill="#fff"/>
+      <path d="M13.76,886.35a4.89,4.89,0,0,1,2.53.7L162,973.26a5,5,0,0,1,1.75,6.85,5.1,5.1,0,0,1-1.85,1.81L18,1062.77a5,5,0,0,1-7.44-4.35l-1.78-167a4.86,4.86,0,0,1,1.42-3.55,5.06,5.06,0,0,1,3.59-1.51m0-1a6,6,0,0,0-6,6v.07l1.78,167a6,6,0,0,0,6,6,5.89,5.89,0,0,0,2.93-.78l143.9-80.86a6,6,0,0,0,2.29-8.17,6.08,6.08,0,0,0-2.17-2.22L16.78,886.19a5.76,5.76,0,0,0-3-.84Z"/>
+    </g>
+    <g id="Throat">
+      <path d="M349.37,558.45a6,6,0,0,1-6-6l.68-148a6,6,0,0,1,6-6L491.4,399a6,6,0,0,1,6,6l-.67,148a6,6,0,0,1-6,6Z" fill="#fff"/>
+      <path d="M350.11,397.93V399l141.31.56a5.45,5.45,0,0,1,5.44,5.46h0l-.68,148a5.48,5.48,0,0,1-5.48,5.43l-141.33-.59a5.45,5.45,0,0,1-5.43-5.47h0l.67-148a5.47,5.47,0,0,1,5.46-5.44v-1.09m0,0a6.53,6.53,0,0,0-6.55,6.52l-.68,148a6.56,6.56,0,0,0,6.53,6.58l141.31.56h0a6.55,6.55,0,0,0,6.55-6.53l.68-148a6.54,6.54,0,0,0-6.51-6.57h0l-141.31-.56Z"/>
+    </g>
+    <g id="Sacral">
+      <path d="M348.86,1078.19a5.5,5.5,0,0,1-5.48-5.52L344,930.26a5.5,5.5,0,0,1,5.5-5.48l142.43.56a5.5,5.5,0,0,1,5.48,5.52l-.57,142.41a5.54,5.54,0,0,1-5.5,5.48Z" fill="#fff"/>
+      <path d="M349.45,924.28v1l142.41.56a5,5,0,0,1,5,5l-.57,142.41a5,5,0,0,1-5,5l-142.41-.56a5,5,0,0,1-5-5l.57-142.41a5,5,0,0,1,5-5v-1m0,0a6,6,0,0,0-6,6l-.57,142.41a6,6,0,0,0,6,6l142.41.56h0a6,6,0,0,0,6-6l.57-142.41a6,6,0,0,0-6-6Z"/>
+    </g>
+    <g id="Root">
+      <path d="M348.86,1295.7a5.43,5.43,0,0,1-3.88-1.62,5.49,5.49,0,0,1-1.6-3.9l.57-135.56a5.5,5.5,0,0,1,5.5-5.48l142.43.57a5.5,5.5,0,0,1,5.48,5.52l-.57,135.56a5.54,5.54,0,0,1-5.5,5.48Z" fill="#fff"/>
+      <path d="M349.45,1148.64v1l142.41.57a5,5,0,0,1,5,5l-.57,135.56a5,5,0,0,1-5,5l-142.41-.57a5,5,0,0,1-5-5l.57-135.56a5,5,0,0,1,5-5v-1m0,0a6,6,0,0,0-6,6l-.57,135.5a6,6,0,0,0,6,6l142.41.57h0a6,6,0,0,0,6-6l.57-135.56a6,6,0,0,0-6-6l-142.41-.57Z"/>
+    </g>
+    <g id="G">
+      <path d="M420,795.51a6.4,6.4,0,0,1-4.58-1.9l-95.86-96.68a6.48,6.48,0,0,1,0-9.13l96.69-95.92a6.46,6.46,0,0,1,9.12,0l95.9,96.72a6.48,6.48,0,0,1,0,9.12l-96.69,95.93A6.48,6.48,0,0,1,420,795.51Z" fill="#fff"/>
+      <path d="M420,796h0a6.93,6.93,0,0,1-4.9-2l-95.86-96.68a7,7,0,0,1,0-9.83l96.68-95.92a7,7,0,0,1,9.83,0l95.9,96.72a7,7,0,0,1,0,9.82L424.91,794A7,7,0,0,1,420,796Zm0-1h0a6.18,6.18,0,0,0,4.23-1.72l96.68-95.92a6,6,0,0,0,0-8.42L425,592.23a6,6,0,0,0-8.41,0L319.9,688.15a6,6,0,0,0,0,8.41l95.87,96.69A5.9,5.9,0,0,0,420,795Z"/>
+    </g>
+    <g id="Ego">
+      <path d="M527.17,838.36a6.76,6.76,0,0,1-4.73-11.54l78.29-78.14a6.66,6.66,0,0,1,4.76-2,6.75,6.75,0,0,1,5.5,2.83l56.48,79A6.76,6.76,0,0,1,662,839.19Z" fill="#fff"/>
+      <path d="M605.49,747.21h0a6.16,6.16,0,0,1,5.1,2.62l56.48,79a6.26,6.26,0,0,1-5.13,9.89l-134.77-.82a6.25,6.25,0,0,1-4.38-10.68l78.29-78.14a6.13,6.13,0,0,1,4.41-1.83m0-1a7.24,7.24,0,0,0-5.12,2.12l-78.29,78.14a7.26,7.26,0,0,0,5.09,12.39l134.76.82H662a7.26,7.26,0,0,0,5.9-11.48l-56.48-79a7.21,7.21,0,0,0-5.91-3Z"/>
+    </g>
+  </g>
+  <g id="Gates">
+    <g id="GateTextBg10">
+      <path d="M345.46,703.22a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,345.46,703.22Z" fill="#fff"/>
+      <path d="M345.46,679.14a11.8,11.8,0,1,1-11.8,11.8h0a11.82,11.82,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0A12.8,12.8,0,0,0,345.46,678.14Z"/>
+    </g>
+    <g id="GateTextBg25">
+      <path d="M492.62,711.77a12.3,12.3,0,1,1,12.3-12.3h0A12.3,12.3,0,0,1,492.62,711.77Z" fill="#fff"/>
+      <path d="M492.62,687.69a11.8,11.8,0,1,1-11.8,11.8h0a11.82,11.82,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.79,12.81h0a12.8,12.8,0,0,0-12.79-12.81Z"/>
+    </g>
+    <g id="GateTextBg51">
+      <path d="M580.15,806.4a12.3,12.3,0,1,1,12.29-12.31h0A12.3,12.3,0,0,1,580.15,806.4Z" fill="#fff"/>
+      <path d="M580.15,782.31a11.8,11.8,0,1,1-11.78,11.83,11.8,11.8,0,0,1,11.78-11.83h0m0-1a12.8,12.8,0,1,0,12.77,12.83h0a12.79,12.79,0,0,0-12.79-12.79Z"/>
+    </g>
+    <g id="GateTextBg21">
+      <path d="M604.08,782.47a12.3,12.3,0,1,1,12.29-12.33,12.3,12.3,0,0,1-12.29,12.33Z" fill="#fff"/>
+      <path d="M604.08,758.37a11.8,11.8,0,1,1-11.8,11.8h0a11.8,11.8,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0A12.8,12.8,0,0,0,604.08,757.37Z"/>
+    </g>
+    <g id="GateTextBg26">
+      <path d="M554.09,832.46a12.3,12.3,0,1,1,12.28-12.32,12.3,12.3,0,0,1-12.28,12.32Z" fill="#fff"/>
+      <path d="M554.09,808.36a11.8,11.8,0,1,1-11.8,11.8h0a11.8,11.8,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0A12.8,12.8,0,0,0,554.09,807.36Z"/>
+    </g>
+    <g id="GateTextBg40">
+      <path d="M638,832.46a12.3,12.3,0,1,1,12.33-12.32A12.3,12.3,0,0,1,638,832.46Z" fill="#fff"/>
+      <path d="M638,808.36a11.8,11.8,0,1,1-11.8,11.8h0a11.8,11.8,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0A12.8,12.8,0,0,0,638,807.36Z"/>
+    </g>
+    <g id="GateTextBg16">
+      <path d="M362.37,459.24a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,362.37,459.24Z" fill="#fff"/>
+      <path d="M362.37,435.14a11.8,11.8,0,1,1-11.8,11.8h0a11.81,11.81,0,0,1,11.8-11.79m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.8,12.8,0,0,0-12.79-12.81h0Z"/>
+    </g>
+    <g id="GateTextBg20">
+      <path d="M362.37,506.93a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,362.37,506.93Z" fill="#fff"/>
+      <path d="M362.37,482.84a11.8,11.8,0,1,1-11.8,11.8h0a11.81,11.81,0,0,1,11.8-11.79m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.8,12.8,0,0,0-12.79-12.81h0Z"/>
+    </g>
+    <g id="GateTextBg35">
+      <path d="M479.09,454.46a12.3,12.3,0,1,1,12.28-12.32,12.3,12.3,0,0,1-12.28,12.32Z" fill="#fff"/>
+      <path d="M479.09,430.36a11.8,11.8,0,1,1-11.79,11.81h0a11.81,11.81,0,0,1,11.79-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.8,12.8,0,0,0-12.77-12.83h0Z"/>
+    </g>
+    <g id="GateTextBg12">
+      <path d="M479.09,488.5a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,479.09,488.5Z" fill="#fff"/>
+      <path d="M479.09,464.4a11.8,11.8,0,1,1-11.79,11.81h0a11.81,11.81,0,0,1,11.79-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0A12.8,12.8,0,0,0,479.1,463.4h0Z"/>
+    </g>
+    <g id="GateTextBg45">
+      <path d="M479.09,522.14a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,479.09,522.14Z" fill="#fff"/>
+      <path d="M479.09,498a11.8,11.8,0,1,1-11.79,11.81h0A11.82,11.82,0,0,1,479.09,498m0-1a12.8,12.8,0,1,0,12.8,12.8h0A12.8,12.8,0,0,0,479.09,497Z"/>
+    </g>
+    <g id="GateTextBg34">
+      <path d="M363.54,991a12.3,12.3,0,1,1,12.3-12.3h0A12.3,12.3,0,0,1,363.54,991Z" fill="#fff"/>
+      <path d="M363.54,966.92a11.8,11.8,0,1,1-11.8,11.8h0a11.8,11.8,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0A12.8,12.8,0,0,0,363.54,965.92Z"/>
+    </g>
+    <g id="GateTextBg27">
+      <path d="M363.54,1037.14a12.3,12.3,0,1,1,12.3-12.3,12.3,12.3,0,0,1-12.3,12.3Z" fill="#fff"/>
+      <path d="M363.54,1013.14a11.8,11.8,0,1,1-11.8,11.8h0a11.81,11.81,0,0,1,11.8-11.79m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.8,12.8,0,0,0-12.79-12.81h0Z"/>
+    </g>
+    <g id="GateTextBg59">
+      <path d="M476.37,1037.14a12.3,12.3,0,1,1,12.3-12.3,12.3,12.3,0,0,1-12.3,12.3Z" fill="#fff"/>
+      <path d="M476.37,1013.14a11.8,11.8,0,1,1-11.8,11.8h0a11.81,11.81,0,0,1,11.8-11.79m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.8,12.8,0,0,0-12.79-12.81h0Z"/>
+    </g>
+    <g id="GateTextBg38">
+      <path d="M363.37,1250.69a12.3,12.3,0,1,1,12.29-12.31h0A12.31,12.31,0,0,1,363.37,1250.69Z" fill="#fff"/>
+      <path d="M363.37,1226.6a11.8,11.8,0,1,1-11.8,11.8,11.8,11.8,0,0,1,11.8-11.8h0m0-1a12.8,12.8,0,1,0,12.79,12.81h0a12.8,12.8,0,0,0-12.79-12.81Z"/>
+    </g>
+    <g id="GateTextBg39">
+      <path d="M478.07,1250.69a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,478.07,1250.69Z" fill="#fff"/>
+      <path d="M478.07,1226.6a11.8,11.8,0,1,1-11.8,11.8,11.8,11.8,0,0,1,11.8-11.8h0m0-1a12.8,12.8,0,1,0,12.79,12.81h0a12.8,12.8,0,0,0-12.79-12.81Z"/>
+    </g>
+    <g id="GateTextBg54">
+      <path d="M363.37,1214.56a12.3,12.3,0,1,1,12.29-12.31h0A12.32,12.32,0,0,1,363.37,1214.56Z" fill="#fff"/>
+      <path d="M363.37,1190.47a11.8,11.8,0,1,1-11.8,11.8h0a11.79,11.79,0,0,1,11.79-11.79h0m0-1a12.8,12.8,0,1,0,12.79,12.81h0a12.79,12.79,0,0,0-12.76-12.82h0Z"/>
+    </g>
+    <g id="GateTextBg19">
+      <circle cx="478.07" cy="1202.26" r="12.3" fill="#fff"/>
+      <path d="M478.07,1190.47a11.8,11.8,0,1,1-11.8,11.8h0a11.79,11.79,0,0,1,11.79-11.79h0m0-1a12.8,12.8,0,1,0,12.79,12.81h0a12.79,12.79,0,0,0-12.76-12.82h0Z"/>
+    </g>
+    <g id="GateTextBg58">
+      <path d="M363.37,1286.93a12.3,12.3,0,1,1,12.29-12.31h0A12.31,12.31,0,0,1,363.37,1286.93Z" fill="#fff"/>
+      <path d="M363.37,1262.84a11.8,11.8,0,1,1-11.8,11.8,11.8,11.8,0,0,1,11.8-11.8h0m0-1a12.8,12.8,0,1,0,12.79,12.81h0a12.8,12.8,0,0,0-12.79-12.81Z"/>
+    </g>
+    <g id="GateTextBg41">
+      <path d="M478.07,1286.93a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,478.07,1286.93Z" fill="#fff"/>
+      <path d="M478.07,1262.84a11.8,11.8,0,1,1-11.8,11.8,11.8,11.8,0,0,1,11.8-11.8h0m0-1a12.8,12.8,0,1,0,12.79,12.81h0a12.8,12.8,0,0,0-12.79-12.81Z"/>
+    </g>
+    <g id="GateTextBg55">
+      <path d="M781.37,1024.93a12.43,12.43,0,0,1-5.91-1.52,12.29,12.29,0,1,1,5.91,1.52Z" fill="#fff"/>
+      <path d="M781.42,1000.83h0a11.81,11.81,0,1,1-10.35,6.12,11.81,11.81,0,0,1,10.35-6.12m0-1a12.81,12.81,0,1,0,6.15,1.59A12.81,12.81,0,0,0,781.42,999.83Z"/>
+    </g>
+    <g id="GateTextBg30">
+      <path d="M813.62,1043.78a12.29,12.29,0,1,1,10.79-6.37A12.29,12.29,0,0,1,813.62,1043.78Z" fill="#fff"/>
+      <path d="M813.65,1019.68h0a11.81,11.81,0,1,1-10.35,6.12,11.81,11.81,0,0,1,10.35-6.12m0-1a12.81,12.81,0,1,0,6.15,1.59,12.81,12.81,0,0,0-6.15-1.59Z"/>
+    </g>
+    <g id="GateTextBg49">
+      <path d="M748.22,1006.05a12.3,12.3,0,1,1,12.31-12.3,12.5,12.5,0,0,1-1.52,5.92A12.35,12.35,0,0,1,748.22,1006.05Z" fill="#fff"/>
+      <path d="M748.24,982h0a11.8,11.8,0,0,1,0,23.6,12,12,0,0,1-5.67-1.46A11.8,11.8,0,0,1,748.24,982m0-1a12.79,12.79,0,1,0,6.16,1.58A12.79,12.79,0,0,0,748.24,981Z"/>
+    </g>
+    <g id="GateTextBg22">
+      <path d="M781.37,951.31A12.29,12.29,0,1,1,793.68,939a12.42,12.42,0,0,1-1.52,5.9A12.29,12.29,0,0,1,781.37,951.31Z" fill="#fff"/>
+      <path d="M781.42,927.21h0a11.81,11.81,0,1,1-10.35,6.12,11.81,11.81,0,0,1,10.35-6.12m0-1a12.81,12.81,0,1,0,6.15,1.59A12.81,12.81,0,0,0,781.42,926.21Z"/>
+    </g>
+    <g id="GateTextBg36">
+      <path d="M813.62,930.64a12.3,12.3,0,1,1,10.79-6.38A12.3,12.3,0,0,1,813.62,930.64Z" fill="#fff"/>
+      <path d="M813.65,906.54h0a11.81,11.81,0,1,1-10.35,6.12,11.81,11.81,0,0,1,10.35-6.12m0-1a12.79,12.79,0,1,0,11.18,19h0a12.79,12.79,0,0,0-11.2-19Z"/>
+    </g>
+    <g id="GateTextBg37">
+      <path d="M748.22,969.55a12.3,12.3,0,1,1,12.31-12.3,12.5,12.5,0,0,1-1.52,5.92A12.28,12.28,0,0,1,748.22,969.55Z" fill="#fff"/>
+      <path d="M748.24,945.45h0a11.8,11.8,0,1,1-11.79,11.81v0a11.8,11.8,0,0,1,11.79-11.78m0-1a12.8,12.8,0,1,0,11.2,19h0a12.79,12.79,0,0,0-11.21-19Z"/>
+    </g>
+    <g id="GateTextBg6">
+      <path d="M712.57,989a12.29,12.29,0,1,1,12.31-12.27,12.42,12.42,0,0,1-1.52,5.9A12.27,12.27,0,0,1,712.57,989Z" fill="#fff"/>
+      <path d="M712.59,964.94h0a11.79,11.79,0,1,1-10.35,6.11,11.79,11.79,0,0,1,10.35-6.11m0-1a12.79,12.79,0,1,0,6.16,1.58A12.79,12.79,0,0,0,712.59,963.94Z"/>
+    </g>
+    <g id="GateTextBg28">
+      <path d="M62.57,1024.93a12.29,12.29,0,1,1,5.91-1.52A12.43,12.43,0,0,1,62.57,1024.93Z" fill="#fff"/>
+      <path d="M62.55,1000.83h0a11.81,11.81,0,1,1-5.67,1.46,11.81,11.81,0,0,1,5.67-1.46m0-1a12.8,12.8,0,1,0,12.81,12.79h0a13,13,0,0,0-1.58-6.15A12.68,12.68,0,0,0,62.55,999.83Z"/>
+    </g>
+    <g id="GateTextBg18">
+      <path d="M30.37,1043.78a12.28,12.28,0,1,1,5.92-1.52A12.28,12.28,0,0,1,30.37,1043.78Z" fill="#fff"/>
+      <path d="M30.37,1019.68h0a11.82,11.82,0,1,1-5.67,1.46,11.82,11.82,0,0,1,5.67-1.46m0-1a12.8,12.8,0,1,0,12.78,12.82v0A12.82,12.82,0,0,0,30.37,1018.68Z"/>
+    </g>
+    <g id="GateTextBg32">
+      <path d="M95.75,1006.05a12.29,12.29,0,1,1,5.91-1.52A12.43,12.43,0,0,1,95.75,1006.05Z" fill="#fff"/>
+      <path d="M95.72,982h0a11.82,11.82,0,1,1-5.67,1.46A11.82,11.82,0,0,1,95.72,982m0-1a12.8,12.8,0,1,0,12.81,12.79h0a13,13,0,0,0-1.58-6.15A12.78,12.78,0,0,0,95.72,981Z"/>
+    </g>
+    <g id="GateTextBg57">
+      <path d="M62.57,951.31a12.3,12.3,0,1,1,5.91-1.52A12.43,12.43,0,0,1,62.57,951.31Z" fill="#fff"/>
+      <path d="M62.55,927.21h0a11.85,11.85,0,1,1-5.67,1.47,11.71,11.71,0,0,1,5.67-1.47m0-1A12.8,12.8,0,1,0,75.33,939v0A12.81,12.81,0,0,0,62.55,926.21Z"/>
+    </g>
+    <g id="GateTextBg48">
+      <path d="M30.37,930.64a12.29,12.29,0,1,1,5.92-1.52A12.29,12.29,0,0,1,30.37,930.64Z" fill="#fff"/>
+      <path d="M30.37,906.54h0A11.82,11.82,0,1,1,24.7,908a11.82,11.82,0,0,1,5.67-1.46m0-1a12.79,12.79,0,1,0,11.23,6.63A12.79,12.79,0,0,0,30.37,905.54Z"/>
+    </g>
+    <g id="GateTextBg44">
+      <path d="M95.74,969.55a12.32,12.32,0,1,1,5.92-1.53A12.33,12.33,0,0,1,95.74,969.55Z" fill="#fff"/>
+      <path d="M95.72,945.45h0a11.81,11.81,0,1,1-5.67,1.46,11.81,11.81,0,0,1,5.67-1.46m0-1A12.79,12.79,0,1,0,107,951.08,12.79,12.79,0,0,0,95.72,944.45Z"/>
+    </g>
+    <g id="GateTextBg50">
+      <path d="M131.37,989a12.3,12.3,0,1,1,12.28-12.32,12.68,12.68,0,0,1-.49,3.46A12.31,12.31,0,0,1,131.37,989Z" fill="#fff"/>
+      <path d="M131.37,964.94h0a11.8,11.8,0,1,1-11.78,11.82,11.34,11.34,0,0,1,.47-3.32,11.77,11.77,0,0,1,11.31-8.5m0-1a12.79,12.79,0,1,0,11.23,6.63A12.79,12.79,0,0,0,131.37,963.94Z"/>
+    </g>
+    <g id="GateTextBg43">
+      <path d="M420.72,337A12.3,12.3,0,1,1,433,324.68v0h0A12.32,12.32,0,0,1,420.72,337Z" fill="#fff"/>
+      <path d="M420.72,312.91a11.8,11.8,0,1,1-11.79,11.81h0a11.8,11.8,0,0,1,11.79-11.79m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.79,12.79,0,0,0-12.79-12.79h0Z"/>
+    </g>
+    <g id="GateTextBg2">
+      <path d="M420.66,778.56A12.3,12.3,0,1,1,433,766.25h0a12.3,12.3,0,0,1-12.29,12.31Z" fill="#fff"/>
+      <path d="M420.66,754.47a11.8,11.8,0,1,1-11.8,11.8h0a11.8,11.8,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.79,12.81h0A12.81,12.81,0,0,0,420.66,753.47Z"/>
+    </g>
+    <g id="GateTextBg1">
+      <path d="M420.77,628.3a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,420.77,628.3Z" fill="#fff"/>
+      <path d="M420.77,604.2A11.8,11.8,0,1,1,409,616v0h0a11.81,11.81,0,0,1,11.79-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.8,12.8,0,0,0-12.8-12.8h0Z"/>
+    </g>
+    <g id="GateTextBg23">
+      <circle cx="420.72" cy="416.3" r="12.3" fill="#fff"/>
+      <path d="M420.72,404.5a11.8,11.8,0,1,1-11.79,11.81h0a11.81,11.81,0,0,1,11.79-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.8,12.8,0,0,0-12.79-12.81h0Z"/>
+    </g>
+    <g id="GateTextBg8">
+      <path d="M420.66,552.48a12.3,12.3,0,1,1,.08,0h-.08Z" fill="#fff"/>
+      <path d="M420.66,528.38a11.8,11.8,0,1,1-11.8,11.8h0a11.8,11.8,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.79,12.81v-.05a12.8,12.8,0,0,0-12.79-12.8Z"/>
+    </g>
+    <g id="GateTextBg14">
+      <path d="M420.66,955A12.3,12.3,0,1,1,433,942.71h0A12.32,12.32,0,0,1,420.66,955Z" fill="#fff"/>
+      <path d="M420.66,930.92a11.8,11.8,0,1,1-11.8,11.8h0a11.8,11.8,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.79,12.81h0a12.8,12.8,0,0,0-12.79-12.81Z"/>
+    </g>
+    <g id="GateTextBg3">
+      <circle cx="420.66" cy="1060.1" r="12.3" fill="#fff"/>
+      <path d="M420.66,1048.31a11.8,11.8,0,1,1-11.8,11.8h0a11.79,11.79,0,0,1,11.79-11.79h0m0-1a12.8,12.8,0,1,0,12.79,12.83,12.8,12.8,0,0,0-12.79-12.83Z"/>
+    </g>
+    <g id="GateTextBg60">
+      <path d="M420.66,1183.53A12.3,12.3,0,1,1,433,1171.22h0a12.33,12.33,0,0,1-12.33,12.31Z" fill="#fff"/>
+      <path d="M420.66,1159.43a11.8,11.8,0,1,1-11.8,11.8,11.8,11.8,0,0,1,11.8-11.8h0m0-1a12.8,12.8,0,1,0,12.79,12.81h0a12.8,12.8,0,0,0-12.79-12.81Z"/>
+    </g>
+    <g id="GateTextBg11">
+      <path d="M458.2,275.67a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,458.2,275.67Z" fill="#fff"/>
+      <path d="M458.2,251.58a11.8,11.8,0,1,1-11.83,11.79,11.8,11.8,0,0,1,11.83-11.79h0m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.8,12.8,0,0,0-12.8-12.8h0Z"/>
+    </g>
+    <g id="GateTextBg46">
+      <path d="M458.2,747a12.3,12.3,0,1,1,12.3-12.3h0A12.3,12.3,0,0,1,458.2,747Z" fill="#fff"/>
+      <path d="M458.2,722.89a11.8,11.8,0,1,1-11.8,11.8h0a11.81,11.81,0,0,1,11.8-11.79m0-1A12.8,12.8,0,1,0,471,734.7h0a12.79,12.79,0,0,0-12.79-12.79Z"/>
+    </g>
+    <g id="GateTextBg13">
+      <path d="M458.2,663.23a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,458.2,663.23Z" fill="#fff"/>
+      <path d="M458.2,639.14a11.8,11.8,0,1,1-11.83,11.79,11.8,11.8,0,0,1,11.83-11.79h0m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.8,12.8,0,0,0-12.8-12.8h0Z"/>
+    </g>
+    <g id="GateTextBg56">
+      <circle cx="458.2" cy="416.3" r="12.3" fill="#fff"/>
+      <path d="M458.2,404.5a11.8,11.8,0,1,1-11.8,11.8h0a11.82,11.82,0,0,1,11.8-11.8m0-1A12.8,12.8,0,1,0,471,416.3h0A12.8,12.8,0,0,0,458.2,403.5Z"/>
+    </g>
+    <g id="GateTextBg33">
+      <path d="M458.2,552.48a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,458.2,552.48Z" fill="#fff"/>
+      <path d="M458.2,528.38a11.8,11.8,0,1,1-11.83,11.77h0a11.8,11.8,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.8,12.8,0,0,0-12.79-12.81h0Z"/>
+    </g>
+    <g id="GateTextBg29">
+      <path d="M458.2,955a12.3,12.3,0,1,1,12.3-12.3h0A12.3,12.3,0,0,1,458.2,955Z" fill="#fff"/>
+      <path d="M458.2,930.92a11.8,11.8,0,1,1-11.8,11.8h0a11.8,11.8,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0A12.8,12.8,0,0,0,458.2,929.92Z"/>
+    </g>
+    <g id="GateTextBg9">
+      <circle cx="458.2" cy="1060.1" r="12.3" fill="#fff"/>
+      <path d="M458.2,1048.31a11.8,11.8,0,1,1-.06,0h.06m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.79,12.79,0,0,0-12.83-12.76Z"/>
+    </g>
+    <g id="GateTextBg52">
+      <path d="M458.2,1183.53a12.3,12.3,0,1,1,12.3-12.3,12.3,12.3,0,0,1-12.3,12.3Z" fill="#fff"/>
+      <path d="M458.2,1159.43a11.8,11.8,0,1,1-11.8,11.8,11.8,11.8,0,0,1,11.8-11.8h0m0-1a12.8,12.8,0,1,0,12.8,12.8,12.8,12.8,0,0,0-12.8-12.8Z"/>
+    </g>
+    <g id="GateTextBg17">
+      <path d="M383.23,274.26a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,383.23,274.26Z" fill="#fff"/>
+      <path d="M383.23,250.14a11.8,11.8,0,1,1-11.8,11.8h0a11.82,11.82,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0A12.8,12.8,0,0,0,383.23,249.14Z"/>
+    </g>
+    <g id="GateTextBg15">
+      <path d="M383.23,747a12.3,12.3,0,1,1,12.3-12.3h0A12.3,12.3,0,0,1,383.23,747Z" fill="#fff"/>
+      <path d="M383.23,722.89a11.8,11.8,0,1,1-11.8,11.8h0a11.81,11.81,0,0,1,11.8-11.79m0-1A12.8,12.8,0,1,0,396,734.7h0a12.79,12.79,0,0,0-12.79-12.79Z"/>
+    </g>
+    <g id="GateTextBg7">
+      <path d="M383.23,663.23a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,383.23,663.23Z" fill="#fff"/>
+      <path d="M383.23,639.14a11.8,11.8,0,1,1-11.8,11.8h0a11.81,11.81,0,0,1,11.8-11.79m0-1A12.8,12.8,0,1,0,396,651h0a12.8,12.8,0,0,0-12.79-12.81h0Z"/>
+    </g>
+    <g id="GateTextBg62">
+      <path d="M383.23,428.6a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,383.23,428.6Z" fill="#fff"/>
+      <path d="M383.23,404.5a11.8,11.8,0,1,1-11.8,11.8h0a11.82,11.82,0,0,1,11.8-11.8m0-1A12.8,12.8,0,1,0,396,416.33v0h0A12.8,12.8,0,0,0,383.23,403.5Z"/>
+    </g>
+    <g id="GateTextBg31">
+      <path d="M383.23,552.48a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,383.23,552.48Z" fill="#fff"/>
+      <path d="M383.23,528.38a11.8,11.8,0,1,1-11.8,11.8h0a11.82,11.82,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0A12.8,12.8,0,0,0,383.23,527.38Z"/>
+    </g>
+    <g id="GateTextBg5">
+      <path d="M383.23,955a12.3,12.3,0,1,1,12.3-12.3h0A12.3,12.3,0,0,1,383.23,955Z" fill="#fff"/>
+      <path d="M383.23,930.92a11.8,11.8,0,1,1-11.8,11.8h0a11.8,11.8,0,0,1,11.8-11.8m0-1a12.8,12.8,0,1,0,12.8,12.8h0A12.8,12.8,0,0,0,383.23,929.92Z"/>
+    </g>
+    <g id="GateTextBg42">
+      <path d="M383.23,1072.4a12.3,12.3,0,1,1,12.3-12.3,12.3,12.3,0,0,1-12.3,12.3Z" fill="#fff"/>
+      <path d="M383.23,1048.31a11.8,11.8,0,1,1-11.8,11.8h0a11.81,11.81,0,0,1,11.8-11.79m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.8,12.8,0,0,0-12.79-12.81h0Z"/>
+    </g>
+    <g id="GateTextBg53">
+      <path d="M383.23,1183.53a12.3,12.3,0,1,1,12.3-12.3,12.3,12.3,0,0,1-12.3,12.3Z" fill="#fff"/>
+      <path d="M383.23,1159.43a11.8,11.8,0,1,1-11.8,11.8,11.8,11.8,0,0,1,11.8-11.8h0m0-1a12.8,12.8,0,1,0,12.8,12.8,12.8,12.8,0,0,0-12.8-12.8Z"/>
+    </g>
+    <g id="GateTextBg4">
+      <circle cx="458.2" cy="228.55" r="12.3" fill="#fff"/>
+      <path d="M458.2,216.76a11.8,11.8,0,1,1-11.83,11.79,11.8,11.8,0,0,1,11.83-11.79h0m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.8,12.8,0,0,0-12.8-12.8h0Z"/>
+    </g>
+    <g id="GateTextBg24">
+      <circle cx="420.72" cy="228.55" r="12.3" fill="#fff"/>
+      <path d="M420.72,216.76a11.8,11.8,0,1,1-11.79,11.81h0a11.8,11.8,0,0,1,11.79-11.79m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.79,12.79,0,0,0-12.79-12.79h0Z"/>
+    </g>
+    <g id="GateTextBg47">
+      <path d="M383.23,240.85a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,383.23,240.85Z" fill="#fff"/>
+      <path d="M383.23,216.76a11.8,11.8,0,1,1-11.8,11.8h0a11.81,11.81,0,0,1,11.8-11.79m0-1a12.8,12.8,0,1,0,12.8,12.8h0a12.8,12.8,0,0,0-12.79-12.81h0Z"/>
+    </g>
+    <g id="GateTextBg63">
+      <path d="M458.2,128.5a11.8,11.8,0,1,1-11.8,11.8h0a11.8,11.8,0,0,1,11.8-11.8" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    </g>
+    <g id="GateTextBg61">
+      <path d="M420.72,128.5a11.8,11.8,0,1,1-11.79,11.81h0a11.81,11.81,0,0,1,11.79-11.8" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    </g>
+    <g id="GateTextBg64">
+      <path d="M383.23,152.59a12.3,12.3,0,1,1,12.3-12.3h0A12.32,12.32,0,0,1,383.23,152.59Z" fill="#fff" stroke="#000" stroke-miterlimit="10"/>
+    </g>
+    <text id="GateText59" transform="translate(466.8 1031.13)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">59</text>
+    <text id="GateText27" transform="translate(353.77 1031.99)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">27</text>
+    <text id="GateText34" transform="translate(353.77 985.06)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">34</text>
+    <text id="GateText25" transform="translate(482.94 706.45)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">25</text>
+    <text id="GateText51" transform="translate(571.51 800.95)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">51</text>
+    <text id="GateText26" transform="translate(543.84 826.05)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">26</text>
+    <text id="GateText21" transform="translate(594.91 775.84)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">21</text>
+    <text id="GateText40" transform="translate(628.36 826.03)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">40</text>
+    <text id="GateText37" transform="translate(738.87 964.19)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">37</text>
+    <text id="GateText22" transform="translate(771.51 945.77)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">22</text>
+    <text id="GateText36" transform="translate(803.3 924.82)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">36</text>
+    <text id="GateText49" transform="translate(738.85 1000.17)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">49</text>
+    <text id="GateText19" transform="translate(467.58 1208.69)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">19</text>
+    <text id="GateText39" transform="translate(468.43 1244.62)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">39</text>
+    <text id="GateText41" transform="translate(468.43 1280.66)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">41</text>
+    <text id="GateText54" transform="translate(353.72 1208.69)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">54</text>
+    <text id="GateText38" transform="translate(353.72 1244.62)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">38</text>
+    <text id="GateText58" transform="translate(353.72 1280.66)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">58</text>
+    <text id="GateText45" transform="translate(469.31 516.23)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">45</text>
+    <text id="GateText35" transform="translate(469.31 448.4)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">35</text>
+    <text id="GateText55" transform="translate(771.48 1019.45)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">55</text>
+    <text id="GateText30" transform="translate(804.13 1037.88)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">30</text>
+    <text id="GateText6" transform="translate(707.58 982.61)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">6</text>
+    <text id="GateText44" transform="translate(85.83 963.33)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">44</text>
+    <text id="GateText57" transform="translate(52.32 945.77)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">57</text>
+    <text id="GateText48" transform="translate(20.49 924.82)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">48</text>
+    <text id="GateText32" transform="translate(85.81 999.32)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">32</text>
+    <text id="GateText28" transform="translate(52.3 1018.59)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">28</text>
+    <text id="GateText18" transform="translate(19.61 1037.03)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">18</text>
+    <text id="GateText50" transform="translate(121.75 982.61)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">50</text>
+    <text id="GateText10" transform="translate(334.31 697.9)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">10</text>
+    <text id="GateText8" transform="translate(415.9 546.37)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">8</text>
+    <text id="GateText14" transform="translate(410.14 949.08)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">14</text>
+    <text id="GateText3" transform="translate(415.9 1065.47)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">3</text>
+    <text id="GateText60" transform="translate(410.13 1176.86)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">60</text>
+    <text id="GateText1" transform="translate(415.9 622.01)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">1</text>
+    <text id="GateText2" transform="translate(415.9 773.05)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">2</text>
+    <text id="GateText33" transform="translate(448.15 546.37)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">33</text>
+    <text id="GateText29" transform="translate(448.15 949.08)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">29</text>
+    <text id="GateText9" transform="translate(453.92 1066.33)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">9</text>
+    <text id="GateText52" transform="translate(448.15 1177.72)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">52</text>
+    <text id="GateText13" transform="translate(447.29 657.34)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">13</text>
+    <text id="GateText46" transform="translate(448.15 741.07)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">46</text>
+    <text id="GateText31" transform="translate(374.04 547.19)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">31</text>
+    <text id="GateText5" transform="translate(378.55 949.04)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">5</text>
+    <text id="GateText42" transform="translate(373.18 1066.29)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">42</text>
+    <text id="GateText53" transform="translate(373.18 1177.68)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">53</text>
+    <text id="GateText7" transform="translate(378.09 658.16)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">7</text>
+    <text id="GateText15" transform="translate(372.32 741.89)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">15</text>
+    <text id="GateText12" transform="translate(468.45 482.09)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">12</text>
+    <text id="GateText20" transform="translate(353.01 501.14)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">20</text>
+    <text id="GateText16" transform="translate(351.3 453.4)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">16</text>
+    <text id="GateText56" transform="translate(449.01 423.26)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">56</text>
+    <text id="GateText23" transform="translate(410.67 422.4)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">23</text>
+    <text id="GateText62" transform="translate(373.18 422.4)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">62</text>
+    <text id="GateText43" transform="translate(410.67 331.4)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">43</text>
+    <text id="GateText11" transform="translate(448.15 270.01)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">11</text>
+    <text id="GateText17" transform="translate(372.32 268.33)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">17</text>
+    <text id="GateText4" transform="translate(452.7 235.11)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">4</text>
+    <text id="GateText24" transform="translate(410.67 235.13)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">24</text>
+    <text id="GateText47" transform="translate(373.18 235.13)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">47</text>
+    <text id="GateText63" transform="translate(448.15 146.38)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">63</text>
+    <text id="GateText61" transform="translate(411.53 146.38)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">61</text>
+    <text id="GateText64" transform="translate(373.18 146.38)" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="-0.03em" style="isolation: isolate">64</text>
+  </g>
+</svg>

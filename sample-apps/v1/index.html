@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Astrology</title>
+		<!-- JavaScript libraries: jQuery -->
+		<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script-->
+		<script src="lib/jquery.js"></script>
+
+		<!-- Helpers and utility functions -->
+		<script src="helpers/util.js" type="text/javascript"></script>
+
+		<!-- Constants -->
+		<script src="constants.js" type="text/javascript"></script>
+
+		<!-- Settings -->
+
+		<!-- Core -->
+		<script src="planets.js" type="text/javascript"></script>
+		<script src="signs.js" type="text/javascript"></script>
+		<script src="gates.js" type="text/javascript"></script>
+		<script src="substructure.js" type="text/javascript"></script>
+
+		<!-- Controllers -->
+		<script src="controllers/report-controller.js" type="text/javascript"></script>
+		<script src="controllers/chart-controller.js" type="text/javascript"></script>
+
+		<!-- Models -->
+		<script src="models/report.js" type="text/javascript"></script>
+		<script src="models/chart.js" type="text/javascript"></script>
+
+		 Reports 
+		<script src="models/reports/full-substructure-table-report.js" type="text/javascript"></script>		
+
+		<!-- Sample data -->
+		<script src="sample-data/charts/jonah-dempcy-chart.js" type="text/javascript"></script>
+
+		<!-- Demo app -->
+		<script src="main.js" type="text/javascript"></script>		
+
+		<style>
+	/*		#frame {
+				font-family: Consolas;	
+				background-color: darkblue;
+			    color: white;
+			    text-align: center;
+			}
+			table { 
+				margin: auto;
+			    border-collapse: collapse;
+				border: 1px solid rgba(127, 127, 127, .4); 
+			}
+			th, td {
+			    padding: 15px;
+			    text-align: center;
+			}
+			td { color: white; border: 1px solid rgba(127, 127, 127, .2); }*/
+		</style>
+	</head>
+
+	<body>
+		<div id="frame"></div>
+		<div id="output"></div>
+ 
+<script>
+(function() {
+  // var flickerAPI = "http://www.astro-phys.com/api/de406/states?callback=";
+  // $.getJSON( flickerAPI, {
+    // date: new Date().getTime() - 100000,
+    // bodies: 'sun, mercury, venus, earth, moon, earthmoon, geomoon, mars, jupiter, uranus, neptune, pluto',
+    // unit: 'km'
+  // })
+    // .done(function( data ) {
+    	// $('#output').html(JSON.stringify(data));
+
+    });
+})();
+</script>
+	</body>
+</html>

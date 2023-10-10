@@ -1,0 +1,29 @@
+{
+  "1/3": "Investigator Martyr",
+  "1/4": "Investigator Opportunist",
+  "2/4": "Hermit Opportunist",
+  "2/5": "Hermit Heretic",
+  "3/5": "Martyr Heretic",
+  "3/6": "Martyr Role Model",
+  "4/6": "Opportunist Role Model",
+  "4/1": "Opportunist Investigator",
+  "5/1": "Heretic Investigator",
+  "5/2": "Heretic Hermit",
+  "6/2": "Role Model Hermit",
+  "6/3": "Role Model Martyr",
+  "descriptions": {
+      "1/3": "The Investigator Martyr is...",
+      "1/4": "The Investigator Opportunist",
+      "2/4": "The Hermit Opportunist",
+      "2/5": "The Hermit Heretic",
+      "3/5": "The Martyr Heretic",
+      "3/6": "The Martyr Role Model",
+      "4/6": "The Opportunist Role Model",
+      "4/1": "The Opportunist Investigator",
+      "5/1": "The Heretic Investigator",
+      "5/2": "The Heretic Hermit",
+      "6/2": "The Role Model Hermit",
+      "6/3": "The Role Model Martyr",
+
+  }
+}

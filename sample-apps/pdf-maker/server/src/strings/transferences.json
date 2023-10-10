@@ -1,0 +1,17 @@
+{
+  "1": "Need",
+  "2": "Guilt",
+  "3": "Innocence",
+  "4": "Fear",
+  "5": "Hope",
+  "6": "Desire",
+
+  "descriptions": {
+    "1": "The 1st Color, Fear, transfers into Need.",
+    "2": "The 2nd Color, Hope, transfers into Guilt.",
+    "3": "The 3rd Color, Desire, transfers into Innocence.",
+    "4": "The 4th Color, Need, transfers into Fear.",
+    "5": "The 5th Color, Guilt, transfers into Hope.",
+    "6": "The 6th Color, Innocence, transfers Desire."
+  }
+}

@@ -1,0 +1,229 @@
+{
+    "name": "Rave Mandala",
+    "children": [
+
+        {
+            "name": "Quarter of Initiation",
+            "children": [
+
+                {
+                    "name": "13",
+                    "size": 100
+                }, {
+                    "name": "49",
+                    "size": 100
+                }, {
+                    "name": "30",
+                    "size": 100
+                }, {
+                    "name": "55",
+                    "size": 100
+                }, {
+                    "name": "37",
+                    "size": 100
+                }, {
+                    "name": "63",
+                    "size": 100
+                }, {
+                    "name": "22",
+                    "size": 100
+                }, {
+                    "name": "36",
+                    "size": 100
+                }, {
+                    "name": "25",
+                    "size": 100
+                }, {
+                    "name": "17",
+                    "size": 100
+                }, {
+                    "name": "21",
+                    "size": 100
+                }, {
+                    "name": "51",
+                    "size": 100
+                }, {
+                    "name": "42",
+                    "size": 100
+                }, {
+                    "name": "3",
+                    "size": 100
+                }, {
+                    "name": "27",
+                    "size": 100
+                }, {
+                    "name": "24",
+                    "size": 100
+                }
+            ]
+        },
+        {
+            "name": "Quarter of Civilization",
+            "children": [
+
+
+                {
+                    "name": "2",
+                    "size": 100
+                }, {
+                    "name": "23",
+                    "size": 100
+                }, {
+                    "name": "8",
+                    "size": 100
+                }, {
+                    "name": "20",
+                    "size": 100
+                }, {
+                    "name": "16",
+                    "size": 100
+                }, {
+                    "name": "35",
+                    "size": 100
+                }, {
+                    "name": "45",
+                    "size": 100
+                }, {
+                    "name": "12",
+                    "size": 100
+                }, {
+                    "name": "15",
+                    "size": 100
+                }, {
+                    "name": "52",
+                    "size": 100
+                }, {
+                    "name": "39",
+                    "size": 100
+                }, {
+                    "name": "53",
+                    "size": 100
+                }, {
+                    "name": "62",
+                    "size": 100
+                }, {
+                    "name": "56",
+                    "size": 100
+                }, {
+                    "name": "31",
+                    "size": 100
+                }, {
+                    "name": "33",
+                    "size": 100
+                }
+
+            ]
+        },
+        {
+            "name": "Quarter of Duality",
+            "children": [
+
+                {
+                    "name": "7",
+                    "size": 100
+                }, {
+                    "name": "4",
+                    "size": 100
+                }, {
+                    "name": "29",
+                    "size": 100
+                }, {
+                    "name": "59",
+                    "size": 100
+                }, {
+                    "name": "40",
+                    "size": 100
+                }, {
+                    "name": "64",
+                    "size": 100
+                }, {
+                    "name": "47",
+                    "size": 100
+                }, {
+                    "name": "6",
+                    "size": 100
+                }, {
+                    "name": "46",
+                    "size": 100
+                }, {
+                    "name": "18",
+                    "size": 100
+                }, {
+                    "name": "48",
+                    "size": 100
+                }, {
+                    "name": "57",
+                    "size": 100
+                }, {
+                    "name": "32",
+                    "size": 100
+                }, {
+                    "name": "50",
+                    "size": 100
+                }, {
+                    "name": "28",
+                    "size": 100
+                }, {
+                    "name": "44",
+                    "size": 100
+                }
+            ]
+        },
+        {
+            "name": "Quarter of Mutation",
+            "children": [
+
+                {
+                    "name": "1",
+                    "size": 100
+                }, {
+                    "name": "43",
+                    "size": 100
+                }, {
+                    "name": "14",
+                    "size": 100
+                }, {
+                    "name": "34",
+                    "size": 100
+                }, {
+                    "name": "9",
+                    "size": 100
+                }, {
+                    "name": "5",
+                    "size": 100
+                }, {
+                    "name": "26",
+                    "size": 100
+                }, {
+                    "name": "11",
+                    "size": 100
+                }, {
+                    "name": "10",
+                    "size": 100
+                }, {
+                    "name": "58",
+                    "size": 100
+                }, {
+                    "name": "38",
+                    "size": 100
+                }, {
+                    "name": "54",
+                    "size": 100
+                }, {
+                    "name": "61",
+                    "size": 100
+                }, {
+                    "name": "60",
+                    "size": 100
+                }, {
+                    "name": "41",
+                    "size": 100
+                }, {
+                    "name": "19",
+                    "size": 100
+                }
+            ]
+        }
+
+    ]
+}

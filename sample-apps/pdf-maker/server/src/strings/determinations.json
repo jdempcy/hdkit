@@ -1,0 +1,32 @@
+{
+  "1": "Appetite",
+  "2": "Taste",
+  "3": "Thirst",
+  "4": "Touch",
+  "5": "Sound",
+  "6": "Light",
+  "leftVariableVariants": {
+    "1": "Consecutive",
+    "2": "Open",
+    "3": "Hot",
+    "4": "Calm",
+    "5": "High",
+    "6": "Direct"
+  },
+  "rightVariableVariants": {
+    "1": "Alternating",
+    "2": "Closed",
+    "3": "Cold",
+    "4": "Nervous",
+    "5": "Low",
+    "6": "Indirect"    
+  },
+  "descriptions": {
+    "1": "Also called the caveman or cavewoman diet, the 1st Color, as foundational diet, is the earliest human dietary regimen there was. It is well suited to eat single ingredients, either one at a time (finishing the ingredient before moving onto the next) or alternating between two ingredients. It's a digestive system that is not made for mixing things.",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": ""
+  }
+}

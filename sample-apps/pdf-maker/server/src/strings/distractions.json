@@ -1,0 +1,16 @@
+{
+  "1": "Wanting",
+  "2": "Probability",
+  "3": "Personal",
+  "4": "Survival",
+  "5": "Possibility",
+  "6": "Power",
+  "descriptions": {
+    "1": "The 1st Color, Survival, transfers into its distraction, Wanting.",
+    "2": "The 2nd Color, Possibility, transfers into its distraction, Probability.",
+    "3": "The 3rd Color, Power, transfers into its distraction, Personal.",
+    "4": "The 4th Color, Wanting, transfers into its distraction, Survival.",
+    "5": "The 5th Color, Probability, transfers into its distraction, Possibility.",
+    "6": "The 6th Color, Personal, transfers into its distraction, Power."
+  }
+}

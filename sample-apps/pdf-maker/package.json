@@ -1,0 +1,35 @@
+{
+  "name": "human-design-pdf-maker",
+  "version": "1.0.0",
+  "description": "PDF maker for HDKit",
+  "main": "index.ts",
+  "scripts": {
+    "i:all": "cd client && npm i && cd ../server && npm i",
+    "start:client": "cd client && npm run start",
+    "start:server": "cd server && npm run start",
+    "start:dev": "ts-node-dev ./index.ts",
+    "start:production": "tsc && node ./dist/index.js",
+    "start:preview": "cd pdf-preview/pdfmake && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdempcy/hdkit.git"
+  },
+  "author": "Jonah Dempcy",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jdempcy/hdkit/issues"
+  },
+  "homepage": "https://github.com/jdempcy/hdkit#readme",
+  "devDependencies": {
+    "@tsconfig/node16": "^16.1.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "pdfmake": "^0.2.4"
+  }
+}
