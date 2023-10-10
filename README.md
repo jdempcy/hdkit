@@ -18,9 +18,9 @@ There are currently 3 sample apps to check out.
 
 |                |Language/Framework                          |Description                         |
 |----------------|-------------------------------|-----------------------------|
-|hdblacklist-client|JavaScript, React            |Minimal front end for Rails app           |
+|hdblacklist-client|JavaScript, React            |Minimal front end for React-on-Rails app           |
 |pdf-maker          |JavaScript, Node, React            |Server and client for generating PDF reports            |
-|v1          |v1|Utility methods for bodygraph calculation|
+|v1          |JavaScript|Utility methods for bodygraph calculation|
 
 
 ## Future Plans for HDKit
