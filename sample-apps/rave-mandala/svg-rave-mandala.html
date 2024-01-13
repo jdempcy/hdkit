@@ -1,0 +1,84 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Make the circle and lines 4 times bigger -->
+  <circle cx="400" cy="400" r="320" fill="transparent" stroke="#000" stroke-width=".8"></circle>
+  <circle cx="400" cy="400" r="360" fill="transparent" stroke="#000" stroke-width=".8"></circle>
+  <circle cx="400" cy="400" r="400" fill="transparent" stroke="#000" stroke-width=".8"></circle>
+  <!-- 64 equidistant divisions -->
+  <g transform="translate(400, 400) scale(4)">
+    <!-- JavaScript logic to generate 64 gate separators -->
+    <script>
+      const svgRaveMandalaGateOrder = [47, 64, 40, 59, 29, 4, 7, 33, 31, 56, 62, 53, 39, 52, 15, 12, 45, 35, 16, 20, 8, 23, 2, 24, 27, 3, 42, 51, 21, 17, 25, 36, 22, 63, 37, 55, 30, 49, 13, 19, 41, 60, 61, 54, 38, 58, 10, 11, 26, 5, 9, 34, 14, 43, 1, 44, 28, 50, 32, 57, 48, 18, 46, 6];
+
+      // Astrological sign labels
+      const astrologicalSigns = ["Virgo", "Leo", "Cancer", "Gemini", "Taurus", "Aries", "Pisces", "Aquarius", "Capricorn", "Sagittarius", "Scorpio", "Libra"];
+      const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      group.setAttribute("transform", `rotate(-15 0 0)`);
+      document.querySelector('g').appendChild(group);
+
+      // Lines for the 12 signs of the zodiac
+      for (let zodiacIndex = 0; zodiacIndex < 12; zodiacIndex++) {
+
+        // Draw gate separators out from the middle
+        let angle = (360 / 12) * zodiacIndex + (360 / 12);
+        angle -= 1.9
+        const x1 = 80 * Math.cos((angle * Math.PI) / 180);
+        const y1 = 80 * Math.sin((angle * Math.PI) / 180);
+        const x2 = 90 * Math.cos((angle * Math.PI) / 180);
+        const y2 = 90 * Math.sin((angle * Math.PI) / 180);
+
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", x1);
+        line.setAttribute("y1", y1);
+        line.setAttribute("x2", x2);
+        line.setAttribute("y2", y2);
+        line.setAttribute("stroke", "#000");
+        line.setAttribute("stroke-width", ".2");
+        document.querySelector('g').appendChild(line);
+
+        // Add text around the inner circle
+        const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        const fontSize = 3;
+        text.setAttribute("x", 80 * Math.cos((angle * Math.PI) / 180)); // Adjusted radius for the inner circle
+        text.setAttribute("y", 80 * Math.sin((angle * Math.PI) / 180)); // Adjusted radius for the inner circle
+        text.setAttribute("text-anchor", "middle");
+        text.setAttribute("dominant-baseline", "bottom");
+        text.setAttribute("dy", -4);
+        text.setAttribute("font-size", fontSize);
+        text.textContent = astrologicalSigns[zodiacIndex];
+        const rotation = angle + 90;
+        text.setAttribute("transform", `rotate(${rotation} ${x1} ${y1})`);
+        group.appendChild(text);
+      }
+
+      // Add lines from the outer circle to the center
+      for (let index = 0; index < 64; index++) {
+        let angle = (360 / 64) * index + (360 / 64);
+        const x2 = 0; // Center x-coordinate
+        const y2 = 0; // Center y-coordinate
+
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", 80 * Math.cos((angle * Math.PI) / 180));
+        line.setAttribute("y1", 80 * Math.sin((angle * Math.PI) / 180));
+        line.setAttribute("x2", x2);
+        line.setAttribute("y2", y2);
+        line.setAttribute("stroke", "#000");
+        line.setAttribute("stroke-width", ".2");
+        document.querySelector('g').appendChild(line);
+
+        // Add numbers just outside the circle
+        angle = angle + (360 / 128)
+
+        const fontSize = 3;
+        const number = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        number.setAttribute("x", .265 * (360 * Math.cos((angle * Math.PI) / 180)));
+        number.setAttribute("y", .265 * (360 * Math.sin((angle * Math.PI) / 180)));
+        number.setAttribute("text-anchor", "middle");
+        number.setAttribute("dominant-baseline", "middle");
+        number.setAttribute("font-size", fontSize);
+        number.textContent = svgRaveMandalaGateOrder[index];
+        document.querySelector('g').appendChild(number);
+
+      }
+    </script>
+  </g>
+</svg>
