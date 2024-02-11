@@ -20,6 +20,7 @@ There are currently 3 sample apps to check out.
 |----------------|-------------------------------|-----------------------------|
 |hdblacklist-client|JavaScript, React            |Minimal front end for React-on-Rails app           |
 |pdf-maker          |JavaScript, Node, React            |Server and client for generating PDF reports            |
+|rave-mandala          |HTML (SVG), JavaScript|Programatically generating an SVG Rave Mandala|
 |v1          |JavaScript|Utility methods for bodygraph calculation|
 
 
