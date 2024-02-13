@@ -14,7 +14,7 @@ Next, navigate to sample-apps and check out the apps. More to be added soon.
 
 ## Sample Apps
 
-There are currently 3 sample apps to check out.
+There are currently 4 sample apps to check out.
 
 |                |Language/Framework                          |Description                         |
 |----------------|-------------------------------|-----------------------------|
