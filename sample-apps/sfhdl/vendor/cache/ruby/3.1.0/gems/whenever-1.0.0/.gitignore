@@ -1,0 +1,6 @@
+.DS_Store
+pkg
+doc
+.*.sw[a-z]
+Gemfile.lock
+gemfiles/*.lock

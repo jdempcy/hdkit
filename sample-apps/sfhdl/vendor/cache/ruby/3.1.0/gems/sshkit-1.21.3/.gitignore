@@ -1,0 +1,8 @@
+*.gem
+*.swp
+bin/rake
+.bundle
+.yardoc
+.vagrant*
+test/tmp
+Gemfile.lock

@@ -1,0 +1,9 @@
+version: "{build}"
+skip_tags: true
+skip_branch_with_pr: true
+install:
+  - set PATH=C:\Ruby26-x64\bin;%PATH%
+  - bundle install --retry=3
+test_script:
+  - bundle exec rake
+build: off

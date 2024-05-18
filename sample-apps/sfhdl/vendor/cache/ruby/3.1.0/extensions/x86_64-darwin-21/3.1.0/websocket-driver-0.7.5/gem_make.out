@@ -1,0 +1,16 @@
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/Users/jdempcy/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/jdempcy/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20221230-49826-v3cc3v.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= clean
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\=
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20221230-49826-kq80ng

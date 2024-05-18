@@ -1,0 +1,16 @@
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/jdempcy/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/jdempcy/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20221230-49826-83mbcf.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20221230-49826-8eu31a/skiptrace/internal

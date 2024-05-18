@@ -1,0 +1,9 @@
+---
+language: ruby
+cache: bundler
+branches:
+  only:
+    - master
+rvm:
+  - 2.7.1
+script: bundle exec danger

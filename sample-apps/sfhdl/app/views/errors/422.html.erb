@@ -1,0 +1,10 @@
+<div class="container">
+  <section class="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
+    <h1>404</h1>
+    <h2>The change you wanted was rejected.</h2>
+    <a class="btn" href="<%= admin? ? '/admin' : '/' %>">Back to home</a>
+    <%= image_tag "admin/422.png", class: "img-fluid py-5", alt: "Page Not Found" %>
+  </section>
+
+</div>
+

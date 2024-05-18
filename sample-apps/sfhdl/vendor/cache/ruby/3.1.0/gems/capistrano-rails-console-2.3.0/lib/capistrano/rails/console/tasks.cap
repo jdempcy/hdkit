@@ -1,0 +1,45 @@
+namespace :load do
+  task :defaults do
+    # Add rails to RVM, Rbenv and Chruby bins
+    %i{rvm_map_bins rbenv_map_bins chruby_map_bins}.each do |bins_var|
+        bins = fetch(bins_var, [])
+        set bins_var, bins.push('rails') unless bins.include?('rails')
+    end
+
+    # Default values
+    set :console_env,   -> { fetch(:rails_env, fetch(:stage, 'production')) }
+    set :console_user,  -> { fetch(:app_user, nil) }
+    set :console_role,  :app
+    set :console_shell, nil
+  end
+end
+
+namespace :rails do
+  desc 'Interact with a remote rails console'
+  task :console do
+    args  = []
+    args << '--sandbox' if ENV.key?('sandbox') || ENV.key?('s')
+
+    run_interactively primary(fetch(:console_role)), shell: fetch(:console_shell) do
+      within current_path do
+        as user: fetch(:console_user) do
+          execute(:rails, :console, '-e', fetch(:console_env), *args)
+        end
+      end
+    end
+  end
+
+  desc 'Interact with a remote rails dbconsole'
+  task :dbconsole do
+    run_interactively primary(fetch(:console_role)), shell: fetch(:console_shell) do
+      within current_path do
+        as user: fetch(:console_user) do
+          execute(:rails, :dbconsole, '-p', '-e', fetch(:console_env))
+        end
+      end
+    end
+  end
+
+  task c: :console
+  task db: :dbconsole
+end

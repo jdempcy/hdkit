@@ -1,0 +1,40 @@
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/bcrypt_pbkdf-1.1.0/ext/mri
+/Users/jdempcy/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/jdempcy/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20221230-49826-kaiyxa.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/bcrypt_pbkdf-1.1.0/ext/mri
+make DESTDIR\= clean
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/bcrypt_pbkdf-1.1.0/ext/mri
+make DESTDIR\=
+compiling bcrypt_pbkdf.c
+bcrypt_pbkdf.c:81:40: warning: expression does not compute the number of elements in this array; element type is 'uint32_t' (aka 'unsigned int'), not 'uint64_t' (aka 'unsigned long long') [-Wsizeof-array-div]
+                blf_enc(&state, cdata, sizeof(cdata) / sizeof(uint64_t));
+                                              ~~~~~  ^
+bcrypt_pbkdf.c:62:11: note: array 'cdata' declared here
+        uint32_t cdata[BCRYPT_WORDS];
+                 ^
+bcrypt_pbkdf.c:81:40: note: place parentheses around the 'sizeof(uint64_t)' expression to silence this warning
+                blf_enc(&state, cdata, sizeof(cdata) / sizeof(uint64_t));
+                                                     ^
+1 warning generated.
+compiling bcrypt_pbkdf_ext.c
+bcrypt_pbkdf_ext.c:18:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'unsigned int' [-Wshorten-64-to-32]
+    NUM2ULONG(rounds));
+    ^~~~~~~~~~~~~~~~~
+/Users/jdempcy/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/internal/arithmetic/long.h:52:22: note: expanded from macro 'NUM2ULONG'
+#define NUM2ULONG    RB_NUM2ULONG         /**< @old{RB_NUM2ULONG} */
+                     ^
+/Users/jdempcy/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/internal/arithmetic/long.h:58:22: note: expanded from macro 'RB_NUM2ULONG'
+#define RB_NUM2ULONG rb_num2ulong_inline  /**< @alias{rb_num2ulong_inline} */
+                     ^
+1 warning generated.
+compiling blowfish.c
+compiling explicit_bzero.c
+compiling hash_sha512.c
+linking shared-object bcrypt_pbkdf_ext.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/bcrypt_pbkdf-1.1.0/ext/mri
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bcrypt_pbkdf_ext.bundle ./.gem.20221230-49826-97s22p

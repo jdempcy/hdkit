@@ -1,0 +1,42 @@
+<%= content_for :head do %>
+  <% # 如果遇到 data-turbo-track，而且是没有的js，页面就会刷新，所以 js 无法放到这里 %>
+  <%- #tinymce_assets %>
+  <!--<script src="https://cdn.jsdelivr.net/npm/tinymce@5.10.2/tinymce.min.js"></script>-->
+  <%- #javascript_include_tag "tinymce", "data-turbo-track": "reload" %>
+<% end %>
+
+<%= form_with(model: post) do |form| %>
+  <% if post.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+        <% post.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :body, style: "display: block" %>
+    <%= form.text_area :body, class: "tinymce", rows: 15, cols: 120 %>
+    <%- # tinymce %>
+    <!-- <script type="text/javascript"> -->
+    <!--   tinyMCE.init({ -->
+    <!--     selector: 'textarea.tinymce' -->
+    <!--   }); -->
+    <!-- </script> -->
+    <%- # tinymce theme: "simple", language: "de", plugins: ["wordcount", "paste"] %>
+    <%- # form.rich_text_area :body %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

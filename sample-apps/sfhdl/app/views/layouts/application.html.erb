@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= favicon_link_tag "admin/favicon.png" %>
+    <%= display_meta_tags site: ENV["website_title"] %>
+
+    <%= stylesheet_link_tag "frontend", "data-turbo-track": "reload" %>
+    <%- javascript_include_tag "frontend", "data-turbo-track": "reload", defer: true %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

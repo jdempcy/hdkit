@@ -1,0 +1,16 @@
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+/Users/jdempcy/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/jdempcy/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20221230-49826-8d32hj.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20221230-49826-zqutzf/bootsnap

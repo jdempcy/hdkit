@@ -1,0 +1,56 @@
+# 斩时不用 gem
+# toolbar:
+#   - styleselect | bold italic | undo redo | uploadimage | link | table | code | insertdatetime | forecolor backcolor | fontselect fontsizeselect
+# plugins:
+#   - uploadimage
+#   - link
+#   - table
+#   - paste
+#   - code
+#   - insertdatetime
+#   - textcolor
+# language: 'zh_CN'
+#
+# menubar:
+#   - false
+#
+toolbar:
+  - undo redo | bold italic underline strikethrough forecolor backcolor | fontselect fontsizeselect searchreplace fullscreen | formatselect  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent removeformat | image link | table code codesample | emoticons insertdatetime anchor ltr rtl hr media charmap pagebreak
+  # - emoticons | insertdatetime |
+contextmenu:
+  'link image table'
+plugins:
+  # - quickbars
+  - pagebreak
+  - nonbreaking
+  - textpattern
+  - noneditable
+  - anchor
+  - visualchars
+  - image
+  - hr
+  - link
+  - table
+  - lists
+  - searchreplace
+  - visualblocks
+  - code
+  - fullscreen
+  - insertdatetime
+  - media
+  - paste
+  - help
+  - charmap
+  - codesample
+  - wordcount
+  - imagetools
+  - emoticons
+  - textcolor
+  - print
+  - preview
+  - importcss
+  - autolink
+  - autosave
+  - save
+  - directionality
+language: 'zh_CN'

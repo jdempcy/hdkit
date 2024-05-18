@@ -1,0 +1,32 @@
+<div class="content">
+  <h1>Connections</h1>
+
+  <p><%= pluralize(@total_connections, "connection") %></p>
+
+  <% if @total_connections > 0 %>
+    <h3>By Database</h3>
+
+    <div id="chart-1" class="chart" style="height: 260px; line-height: 260px; margin-bottom: 20px;">Loading...</div>
+    <script>
+      new Chartkick.PieChart("chart-1", <%= json_escape(@connections_by_database.to_json).html_safe %>);
+    </script>
+
+    <h3>By User</h3>
+
+    <div id="chart-2" class="chart" style="height: 260px; line-height: 260px; margin-bottom: 20px;">Loading...</div>
+    <script>
+      new Chartkick.PieChart("chart-2", <%= json_escape(@connections_by_user.to_json).html_safe %>);
+    </script>
+
+    <% if @connections_by_ssl_status %>
+      <h3>By Security</h3>
+
+      <div id="chart-3" class="chart" style="height: 260px; line-height: 260px; margin-bottom: 20px;">Loading...</div>
+      <script>
+        new Chartkick.PieChart("chart-3", <%= json_escape(@connections_by_ssl_status.to_json).html_safe %>);
+      </script>
+    <% end %>
+
+    <%= render partial: "connections_table", locals: {connection_sources: @connection_sources} %>
+  <% end %>
+</div>

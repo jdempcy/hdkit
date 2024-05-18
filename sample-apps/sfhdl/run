@@ -1,0 +1,177 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+DC="${DC:-exec}"
+
+# If we're running in CI we need to disable TTY allocation for docker-compose
+# commands that enable it by default, such as exec and run.
+TTY=""
+if [[ ! -t 1 ]]; then
+  TTY="-T"
+fi
+
+# -----------------------------------------------------------------------------
+# Helper functions start with _ and aren't listed in this script's help menu.
+# -----------------------------------------------------------------------------
+
+function _dc {
+  docker-compose "${DC}" ${TTY} "${@}"
+}
+
+function _build_run_down {
+  docker-compose build
+  docker-compose run ${TTY} "${@}"
+  docker-compose down
+}
+
+# -----------------------------------------------------------------------------
+
+function cmd {
+  # Run any command you want in the web container
+  _dc web "${@}"
+}
+
+function rails {
+  # Run any Rails commands
+  cmd rails "${@}"
+}
+
+function test {
+  # Run your Rails tests, use `test -b` to first rebuild your JS and CSS
+  local run_build="${1}"
+  local test_command="rails test"
+
+  if [ "${run_build}" = "-b" ]; then
+    test_command="yarn build && yarn build:css && ${test_command}"
+  fi
+
+  _dc -e "RAILS_ENV=test" js bash -c "${test_command}"
+}
+
+function bash {
+  ## Start a Bash session in the web container
+  cmd bash "${@}"
+}
+
+function psql {
+  ## Connect to PostgreSQL with psql
+  # shellcheck disable=SC1091
+  . .env
+ _dc postgres psql -U "${POSTGRES_USER}" "${@}"
+}
+
+function redis-cli {
+  ## Connect to Redis with redis-cli
+  _dc redis redis-cli "${@}"
+}
+
+function hadolint {
+  # Lint Dockerfile with hadolint
+  docker container run --rm -i \
+    hadolint/hadolint hadolint --ignore DL3008 "${@}" - < Dockerfile
+}
+
+function bundle:install {
+  ## Install Ruby dependencies and write out a lock file
+  _build_run_down web bundle install
+}
+
+function bundle:outdated {
+  ## List any installed gems that are outdated
+  cmd bundle outdated
+}
+
+function bundle:update {
+  ## Update any installed gems that are outdated
+  cmd bundle update
+  bundle:install
+}
+
+function yarn:install {
+  ## Install Yarn dependencies and write out a lock file
+  _build_run_down js yarn install
+}
+
+function yarn:outdated {
+  ## Install yarn dependencies and write lock file
+  _dc js yarn outdated
+}
+
+function yarn:build {
+  # Build JS assets, this is only meant to be referenced from your package.json
+  local args=()
+
+  if [ "${NODE_ENV}" == "production" ]; then
+    args=(--minify)
+  elif [ "${RAILS_ENV}" == "development" ]; then
+    args=(--sourcemap --watch)
+  fi
+
+  esbuild app/javascript/*.* --outdir=app/assets/builds --bundle "${args[@]}"
+}
+
+function yarn:build:css {
+  # Build CSS assets, this is only meant to be referenced from your package.json
+  local args=()
+
+  if [ "${NODE_ENV}" == "production" ]; then
+    args=(--minify)
+  elif [ "${RAILS_ENV}" == "development" ]; then
+    args=(--watch)
+  fi
+
+  tailwindcss --postcss \
+    -i ./app/assets/stylesheets/application.tailwind.css \
+    -o ./app/assets/builds/application.css "${args[@]}"
+}
+
+function clean {
+  ## Remove cache and other machine generates files
+  rm -rf node_modules/ app/assets/builds/* public/assets tmp/* .byebug_history
+}
+
+function ci:install-deps {
+  # Install Continuous Integration (CI) dependencies
+  sudo apt-get install -y curl shellcheck
+  sudo curl \
+    -L https://raw.githubusercontent.com/nickjj/wait-until/v0.1.2/wait-until \
+    -o /usr/local/bin/wait-until && sudo chmod +x /usr/local/bin/wait-until
+}
+
+function ci:test {
+  # Execute Continuous Integration (CI) pipeline
+  #
+  # It's expected that your CI environment has these tools available:
+  #   - https://github.com/koalaman/shellcheck
+  #   - https://github.com/nickjj/wait-until
+  shellcheck run bin/docker-entrypoint-web
+  hadolint "${@}"
+
+  cp --no-clobber .env.example .env
+  cp --no-clobber docker-compose.override.yml.example docker-compose.override.yml
+
+  docker-compose build
+  docker-compose up -d
+
+  # shellcheck disable=SC1091
+  . .env
+  wait-until "docker-compose exec -T \
+    -e PGPASSWORD=${POSTGRES_PASSWORD} postgres \
+    psql -U ${POSTGRES_USER} ${POSTGRES_USER} -c 'SELECT 1'"
+
+  rails db:setup
+  test -b
+}
+
+function help {
+  printf "%s <task> [args]\n\nTasks:\n" "${0}"
+
+  compgen -A function | grep -v "^_" | cat -n
+
+  printf "\nExtended help:\n  Each task has comments for general usage\n"
+}
+
+# This idea is heavily inspired by: https://github.com/adriancooney/Taskfile
+TIMEFORMAT=$'\nTask completed in %3lR'
+time "${@:-help}"

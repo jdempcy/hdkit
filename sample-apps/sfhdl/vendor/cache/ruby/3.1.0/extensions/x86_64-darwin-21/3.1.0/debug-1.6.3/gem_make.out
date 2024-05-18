@@ -1,0 +1,17 @@
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/debug-1.6.3/ext/debug
+/Users/jdempcy/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/jdempcy/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20221230-49826-xunom2.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/debug-1.6.3/ext/debug
+make DESTDIR\= clean
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/debug-1.6.3/ext/debug
+make DESTDIR\=
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/jdempcy/dev-workspace/sfhdl.org/sfhdl/vendor/cache/ruby/3.1.0/gems/debug-1.6.3/ext/debug
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 debug.bundle ./.gem.20221230-49826-vxthcm/debug

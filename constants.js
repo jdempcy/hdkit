@@ -262,6 +262,7 @@ const nucleicAcidSequences = {
 // Rave Mandala
 
 const yellow = '#FCD34D';
+const lightYellow = 'lightyellow';
 const green = '#48BB78';
 const brown = '#B7791F';
 const red = '#F56565';

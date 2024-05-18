@@ -1,0 +1,20 @@
+<%
+  def flash_class(level)
+    case level.to_sym
+      when :notice then "alert alert-info"
+      when :success then "alert alert-success"
+      when :error then "alert alert-danger"
+      when :alert then "alert alert-warning"
+    end
+  end
+%>
+
+<% if flash.any? %>
+  <% flash.each do |key, value| %>
+    <div class="<%= flash_class(key) %> alert-dismissible fade show" role="alert">
+      <i class="bi bi-exclamation-triangle me-1"></i>
+      <%= value %>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  <% end %>
+<% end %>
