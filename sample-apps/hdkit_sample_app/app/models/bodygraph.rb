@@ -1,0 +1,2 @@
+class Bodygraph < ApplicationRecord
+end

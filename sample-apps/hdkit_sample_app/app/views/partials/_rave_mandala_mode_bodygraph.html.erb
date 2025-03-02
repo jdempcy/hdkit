@@ -1,0 +1,234 @@
+<svg style="margin-top: 50px;" transform="scale(1.4)" width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <circle id="circle-1" cx="400" cy="400" r="240" fill="transparent" stroke="#000" stroke-width=".8"></circle>
+  <circle id="circle-2" cx="400" cy="400" r="270" fill="transparent" stroke="#000" stroke-width=".8"></circle>
+  <circle id="circle-3" class="hidden" cx="400" cy="400" r="300" fill="transparent" stroke="#000" stroke-width=".8"></circle>
+  <circle id="circle-4" class="hidden" cx="400" cy="400" r="330" fill="transparent" stroke="#000" stroke-width=".8"></circle>
+  <circle id="godhead-circle" class="hidden" cx="400" cy="400" r="350" fill="transparent" stroke="#000" stroke-width=".8"></circle>
+  <g transform="translate(400, 400) scale(3)"></g>
+</svg>
+<script>
+  // Function to calculate coordinates of a point at a certain distance along a line
+  document.addEventListener('DOMContentLoaded', function() {
+    // Group to rotate astrological signs
+    const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    group.setAttribute("transform", `rotate(-15 0 0)`);
+    document.querySelector('g').appendChild(group);
+
+    // Group to rotate godhead labels
+    const godheadGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    godheadGroup.setAttribute("transform", `rotate(-258 0 0)`);
+    document.querySelector('g').appendChild(godheadGroup);
+
+    // Create triangle highlights
+    for (let index = 0; index < 64; index++) {
+      let angle = (360 / 64) * index + (360 / 64);
+      const nextAngle = (360 / 64) * (index + 1) + (360 / 64);
+
+      // Calculate coordinates for the triangle vertices
+      const x1 = 80 * Math.cos((angle * Math.PI) / 180);
+      const y1 = 80 * Math.sin((angle * Math.PI) / 180);
+      const x2 = 80 * Math.cos((nextAngle * Math.PI) / 180);
+      const y2 = 80 * Math.sin((nextAngle * Math.PI) / 180);
+
+      // Calculate the distance between (x1, y1) and (x2, y2)
+      const distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+
+      // Create triangle
+      const triangle = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
+      const [offsetX, offsetY] = calculatePointAlongLine(x1, y1, x2, y2, distance * 0.2);
+      triangle.setAttribute("points", `${x1},${y1} ${0},${0} ${x2},${y2}`);
+      if (activatedGates[svgRaveMandalaGateOrder[index]]) {
+        triangle.setAttribute("fill", raveMandalaGateColors[svgRaveMandalaGateOrder[index]]);
+      } else {
+        triangle.setAttribute("fill", "transparent");
+      }
+      document.querySelector('g').appendChild(triangle);
+    }
+
+    // Godheads
+    if (showGodheads) {
+      if (showZodiac) {
+        document.getElementById('godhead-circle').classList.remove('hidden');
+      } else {
+        document.getElementById('circle-4').classList.remove('hidden');
+      }
+
+      const godheadLineModifier = showZodiac ? 116.6 : 110;
+
+      // Add lines for the godhead divisions
+      for (let index = 0; index < 64; index++) {
+        let angle = (360 / 64) * index + (360 / 64);
+        if ((index + 1) % 4 == 0) {
+          const x1 = godheadLineModifier * Math.cos((angle * Math.PI) / 180);
+          const y1 = godheadLineModifier * Math.sin((angle * Math.PI) / 180);
+          const x2 = 90 * Math.cos((angle * Math.PI) / 180); // Center x-coordinate
+          const y2 = 90 * Math.sin((angle * Math.PI) / 180); // Center y-coordinate
+
+          const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+          line.setAttribute("x1", x1);
+          line.setAttribute("y1", y1);
+          line.setAttribute("x2", x2);
+          line.setAttribute("y2", y2);
+          line.setAttribute("stroke", "#000");
+          line.setAttribute("stroke-width", ".2");
+          document.querySelector('g').appendChild(line);
+        }
+      }
+
+      const godheadModifier = showZodiac ? 80 : 73;
+      for (let godheadIndex = 0; godheadIndex < 16; godheadIndex++) {
+        let angle = (360 / 16) * godheadIndex + (360 / 16);
+        angle -= 1.9
+        const x1 = godheadModifier * Math.cos((angle * Math.PI) / 180);
+        const y1 = godheadModifier * Math.sin((angle * Math.PI) / 180);
+        const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        const fontSize = 3;
+        text.setAttribute("x", x1); // Adjusted radius for the inner circle
+        text.setAttribute("y", y1); // Adjusted radius for the inner circle
+        text.setAttribute("text-anchor", "middle");
+        text.setAttribute("dominant-baseline", "bottom");
+        text.setAttribute("dy", -30);
+        text.setAttribute("font-size", fontSize);
+        text.textContent = godheads[godheadIndex];
+        const rotation = angle + 93;
+        text.setAttribute("transform", `rotate(${rotation} ${x1} ${y1})`);
+        godheadGroup.appendChild(text);
+      }
+    } // End showGodheads
+
+    // Lines for the 12 signs of the zodiac
+    if (showZodiac) {
+      document.getElementById('circle-3').classList.remove('hidden');
+
+      for (let zodiacIndex = 0; zodiacIndex < 12; zodiacIndex++) {
+
+        // Draw zodiac sign separators out from the middle
+        let angle = (360 / 12) * zodiacIndex + (360 / 12);
+        angle -= 1.9
+        const x1 = 80 * Math.cos((angle * Math.PI) / 180);
+        const y1 = 80 * Math.sin((angle * Math.PI) / 180);
+        const x2 = 90 * Math.cos((angle * Math.PI) / 180);
+        const y2 = 90 * Math.sin((angle * Math.PI) / 180);
+
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", x1);
+        line.setAttribute("y1", y1);
+        line.setAttribute("x2", x2);
+        line.setAttribute("y2", y2);
+        line.setAttribute("stroke", "#000");
+        line.setAttribute("stroke-width", ".2");
+        document.querySelector('g').appendChild(line);
+
+        // Add text around the inner circle
+        const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        const fontSize = useZodiacSymbols ? 6 : 3;
+        text.setAttribute("x", 80 * Math.cos((angle * Math.PI) / 180)); // Adjusted radius for the inner circle
+        text.setAttribute("y", 80 * Math.sin((angle * Math.PI) / 180)); // Adjusted radius for the inner circle
+        text.setAttribute("text-anchor", "middle");
+        text.setAttribute("dominant-baseline", "bottom");
+        text.setAttribute("dy", useZodiacSymbols ? -2.8 : -4);
+        text.setAttribute("font-size", fontSize);
+        text.setAttribute("font-family", "'Noto Sans', sans-serif;");
+        text.textContent = useZodiacSymbols ? astrologicalSignSymbols[zodiacIndex] : astrologicalSigns[zodiacIndex];
+        const rotation = angle + 90;
+        text.setAttribute("transform", `rotate(${rotation} ${x1} ${y1})`);
+        group.appendChild(text);
+      }
+    } // End lines for 12 signs of zodiac
+
+    // Add lines for the 64 gates
+    for (let index = 0; index < 64; index++) {
+      const currentGate = svgRaveMandalaGateOrder[index];
+
+      let angle = (360 / 64) * index + (360 / 64);
+      const x1 = 80 * Math.cos((angle * Math.PI) / 180);
+      const y1 = 80 * Math.sin((angle * Math.PI) / 180);
+      const x2 = 0; // Center x-coordinate
+      const y2 = 0; // Center y-coordinate
+
+      const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      line.setAttribute("x1", x1);
+      line.setAttribute("y1", y1);
+      line.setAttribute("x2", x2);
+      line.setAttribute("y2", y2);
+      line.setAttribute("stroke", "#000");
+      line.setAttribute("stroke-width", ".2");
+      document.querySelector('g').appendChild(line);
+
+      // Add numbers just outside the circle
+      angle = angle + (360 / 128)
+
+      const numberModifier = showZodiac ? .265 : .237;
+
+      const number = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      number.setAttribute("x", numberModifier * (360 * Math.cos((angle * Math.PI) / 180)));
+      number.setAttribute("y", numberModifier * (360 * Math.sin((angle * Math.PI) / 180)));
+      number.setAttribute("text-anchor", "middle");
+      number.setAttribute("dominant-baseline", "middle");
+      number.setAttribute("font-size", 3);
+      if (activatedGates[currentGate]) {
+        number.style.textDecoration = "underline";
+        number.style.fontWeight = "bold";
+      }
+      number.textContent = currentGate;
+      document.querySelector('g').appendChild(number);
+
+      const glyphModifier = showZodiac ? .288 : .265;
+
+      const glyph = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      glyph.setAttribute("x", glyphModifier * (360 * Math.cos((angle * Math.PI) / 180)));
+      glyph.setAttribute("y", glyphModifier * (360 * Math.sin((angle * Math.PI) / 180)));
+      glyph.setAttribute("text-anchor", "middle");
+      glyph.setAttribute("dominant-baseline", "middle");
+      glyph.setAttribute("font-size", 6);
+      glyph.textContent = iChingHexagramGlyphs[currentGate];
+      document.querySelector('g').appendChild(glyph);
+
+      // Draw the planets
+      let personalityOffsets = {};
+      let planetGlyphOffset = 0.21;
+      if (personalityGates[currentGate]) {
+        personalityPlanetsByGate[currentGate].forEach((planet) => {
+          const planetGlyph = document.createElementNS("http://www.w3.org/2000/svg", "text");
+          planetGlyph.setAttribute("x", planetGlyphOffset * (360 * Math.cos((angle * Math.PI) / 180)));
+          planetGlyph.setAttribute("y", planetGlyphOffset * (360 * Math.sin((angle * Math.PI) / 180)));
+          planetGlyph.setAttribute("text-anchor", "middle");
+          planetGlyph.setAttribute("dominant-baseline", "middle");
+          planetGlyph.setAttribute("font-size", 6);
+          planetGlyph.textContent = planetGlyphs[planet];
+          document.querySelector('g').appendChild(planetGlyph);
+          planetGlyphOffset -= 0.016;
+          personalityOffsets[currentGate] = planetGlyphOffset;
+        });
+      }
+      if (typeof designGates != 'undefined' && designGates[currentGate]) {
+        planetGlyphOffset = personalityOffsets[currentGate] || 0.21;
+        designPlanetsByGate[currentGate].forEach((planet) => {
+          const planetGlyph = document.createElementNS("http://www.w3.org/2000/svg", "text");
+          planetGlyph.setAttribute("x", planetGlyphOffset * (360 * Math.cos((angle * Math.PI) / 180)));
+          planetGlyph.setAttribute("y", planetGlyphOffset * (360 * Math.sin((angle * Math.PI) / 180)));
+          planetGlyph.setAttribute("text-anchor", "middle");
+          planetGlyph.setAttribute("dominant-baseline", "middle");
+          planetGlyph.setAttribute("font-size", 6);
+          planetGlyph.setAttribute("fill", "darkred");
+          planetGlyph.textContent = planetGlyphs[planet];
+          document.querySelector('g').appendChild(planetGlyph);
+          planetGlyphOffset -= 0.016;
+        });
+
+      }
+
+
+    } // End lines for 64 gates
+
+    // Utility methods
+    function calculatePointAlongLine(x1, y1, x2, y2, distance) {
+      const totalDistance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+      const ratio = distance / totalDistance;
+      const newX = x1 + ratio * (x2 - x1);
+      const newY = y1 + ratio * (y2 - y1);
+      return [newX, newY];
+    }
+
+  });
+</script>

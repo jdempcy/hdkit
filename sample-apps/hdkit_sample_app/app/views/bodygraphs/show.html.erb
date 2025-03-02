@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @bodygraph %>
+
+<div>
+  <%= link_to "Edit this bodygraph", edit_bodygraph_path(@bodygraph) %> |
+  <%= link_to "Back to bodygraphs", bodygraphs_path %>
+
+  <%= button_to "Destroy this bodygraph", @bodygraph, method: :delete %>
+</div>

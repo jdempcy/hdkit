@@ -1,0 +1,363 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 851.41 1309.4">
+  <defs>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+  <g id="Channels">
+    <path id="Gate34" d="M139.46,819.72l213,148.33-6.21,14-213-148.32,6.21-14.05" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate26" d="M324.86,877.2,536,819.5l7.58,15.66L329.22,893.75" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate48" d="M191.8,694.87,49.37,910.05,34,901.82l142.3-215" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate36" d="M671.37,680.74l139.5,221.93-15,8.82-139-221.12" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate22" d="M642.37,697.5l137.53,224-15.13,8.59-136.88-223" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate21" d="M552.66,630.14,608,751.29l-12.23,16-58.06-130.5" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate30" d="M648.29,1146.45l152.08-113.71,8.58,15.13L658.83,1160.14" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate55" d="M629,1121.64l140.21-107,8.53,15.15L639.63,1135.14" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate49" d="M608.5,1096.14l128.41-99,8.53,15.16L618.84,1110" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate58" d="M194.22,1145.83l160.44,120.41-8.58,15.13L184,1159.72" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate38" d="M212.72,1121.9l142,108.27-8.54,15.16L202.37,1135.64" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate54" d="M232.37,1096.67,355.56,1191l-8.51,15.13-125-95.76" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate27" d="M241.79,989.74l105.77,26.54.16,17.4L239.43,1006.5" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate6" d="M592,990.7l109.78-25.1.16,17.4L594,1007.68" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate40" d="M690.61,891.54,647.73,833l17-3.8L703.37,882" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate10" data-name="Gate 10" d="M342.37,683.81l.15,15.4L224,700.67l-.14-15.39,118.48-1.47" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate25" d="M523.68,744l-35.94-39.16L501.26,694l35.92,39.12" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate57" d="M147.44,824.86,79.76,929.14l-15.32-8.22L133.78,814Z" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate20" d="M207.63,700.23,347,485.46l15.32,8.23L228,700.69" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <polygon id="GateSpan" points="227.96 700.74 147.44 824.86 133.78 814.07 207.63 700.23 227.96 700.74" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="GateConnect34" d="M138.86,839.14l-5.08-25.09,13.66,10.79Z" fill="#fff" stroke="transparent" stroke-linejoin="bevel"/>
+    <path id="GateConnect10" d="M228,700.74l-20.33-.51,31.7-15.68Z" fill="#fff" stroke="transparent"/>
+    <path id="Gate24" d="M429.37,183.54l.38,30.8-17.39.16-.38-31" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate3" d="M412,1113.75l-.37-38.78,17.4-.16.38,39.33" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate23" d="M429.3,373.22l.48,27.3-17.39.16-.49-27.46" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate1" d="M429.37,572.57l.38,31.77-17.4.16L412,572.77" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate14" d="M429.15,838.06l.93,90.47-17.4.16-.93-90.2" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate63" d="M449.49,183.73,449.14,153l17.4-.16.35,31.09" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate9" d="M449.5,1113.75l-.36-39.19,17.4-.16.37,39.72" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate56" d="M467.05,350.14l.56,51.08-17.4.16-.56-50.87" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate13" d="M466.78,586.87l.83,60.56-17.4.16-.84-60.53" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate29" d="M466.89,838.48l1.08,90-17.4.16L449.49,838" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate47" d="M391.91,183.35l.38,31.39-17.4.17-.38-31.56" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate42" d="M374.52,1113.38l-.35-38,17.4-.16.35,38.16" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate62" d="M392.1,350.34l.54,51-17.4.16-.54-51.36" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate7" d="M391.81,586.87l.83,60.56-17.4.16-.87-60.53" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate5" d="M391.93,837.64,393,929.22l-17.4.16-1.07-91.31" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <polyline id="Gate4" points="466.89 183.91 467.26 213.93 449.86 214.09 449.49 183.73" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate61" d="M412,183.54l-.35-30.15,17.4-.16.31,30.31" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate64" d="M374.51,183.35l-.34-29.55,17.4-.16.34,29.71" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <polyline id="Gate17" data-name="Gate 17" points="374.7 350.15 373.82 266.79 391.22 266.62 392.1 350.34" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate43" d="M411.9,373.22l-.24-32.28,17.4-.16.24,32.44" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <polyline id="Gate11" points="449.65 350.52 448.79 272.34 466.19 272.17 467.05 350.15" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate35" d="M656.89,690.37,480.23,418.14l15-8.82L671.37,680.74" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate12" d="M627.89,707.14,478.12,463.22l15.13-8.59L642.37,697.5" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate45" d="M537.66,636.79,478.37,503.44l14.89-4.37,59.4,131.07" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate33" d="M449.37,587.09l-.59-43,17.4-.17.59,43" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate8" d="M411.94,572.77l-.35-29,17.4-.16.35,29" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <polyline id="Gate31" points="374.41 587.09 373.82 544.05 391.22 543.89 391.81 586.9" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate16" d="M176.37,686.82,345.85,430.73,361.18,439,191.8,694.87" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate44" d="M329.22,893.75l-223.06,61-7.58-15.66,226.28-61.85" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate50" d="M239.43,1006.5,147,983.31l-.16-17.4,94.91,23.83" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate32" d="M222,1110.4,97.24,1014.87l8.54-15.16,126.61,97" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate28" d="M202.37,1135.64,66.92,1032.37l8.53-15.16L212.72,1121.9" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate18" d="M184,1159.72,36.93,1049.36l8.58-15.13,148.71,111.6" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate41" d="M658.83,1160.14l-164,122.58-8.58-15.13,162-121.12" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate39" d="M639.63,1135.14,494.37,1246l-8.53-15.15L629,1121.64" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate19" d="M618.84,1109.91,494,1206.14,485.49,1191l123-94.88" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate59" d="M594,1007.68l-101.47,23.19-.16-17.39L592,990.7" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate37" d="M703.37,882,750,945.61l-17,3.8-42.4-57.87" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate51" d="M537.18,733.07l42.22,46L565.87,790l-42.19-46" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate2" d="M411.75,838.49l-.52-67.76,17.4-.16.52,67.49" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate46" d="M449.49,838.06l-1.06-110.7,17.4-.16,1.06,111.28" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate15" d="M374.53,838.07l-1.07-113.93,17.4-.17,1.07,113.67" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <polyline id="Gate53" points="391.92 1113.38 392.29 1152.9 374.89 1153.06 374.52 1113.38" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate60" d="M429.37,1114.14l.36,38.37-17.4.16-.36-38.9" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Gate52" d="M466.91,1114.14l.35,38-17.4.16-.36-38.49" fill="#fff" stroke="transparent" stroke-miterlimit="10" stroke-width="2" />
+  </g>
+  <g id="Centers">
+    <g id="Ajna">
+      <path filter="url(#drop-shadow)" d="M420.37,355.14a5.44,5.44,0,0,1-4.73-2.69L335.92,218.14a5.49,5.49,0,0,1,1.89-7.53,5.57,5.57,0,0,1,2.84-.78l159.5.82a5.51,5.51,0,0,1,4.7,8.32L425.12,352.49A5.48,5.48,0,0,1,420.37,355.14Z" fill="#fff"/>
+    </g>
+    <g id="Head">
+      <path filter="url(#drop-shadow)" d="M340.59,156.62a5.48,5.48,0,0,1-4.68-8.32L414,17.86a5.49,5.49,0,0,1,7.54-1.9,5.64,5.64,0,0,1,1.86,1.84l81.12,131.34a5.5,5.5,0,0,1-4.68,8.39Z" fill="#fff"/>
+    </g>
+    <g id="SolarPlexus">
+      <path filter="url(#drop-shadow)" d="M831.56,1063.92a5.48,5.48,0,0,1-2.68-.71L685,982.36a5.5,5.5,0,0,1-2.11-7.49h0a5.48,5.48,0,0,1,2-2l145.71-86.2a5.18,5.18,0,0,1,2.79-.78,5.51,5.51,0,0,1,5.51,5.51v.06l-1.78,167A5.53,5.53,0,0,1,831.56,1063.92Z" fill="#fff"/>
+    </g>
+    <g id="Spleen">
+      <path filter="url(#drop-shadow)" d="M15.53,1063.92a5.53,5.53,0,0,1-5.5-5.45l-1.78-167a5.31,5.31,0,0,1,1.57-3.91,5.52,5.52,0,0,1,3.94-1.66,5.39,5.39,0,0,1,2.79.78l145.71,86.2a5.49,5.49,0,0,1,1.94,7.52h0a5.48,5.48,0,0,1-2,2l-144,80.85A5.61,5.61,0,0,1,15.53,1063.92Z" fill="#fff"/>
+    </g>
+    <g id="Throat">
+      <path filter="url(#drop-shadow)" d="M349.37,558.45a6,6,0,0,1-6-6l.68-148a6,6,0,0,1,6-6L491.4,399a6,6,0,0,1,6,6l-.67,148a6,6,0,0,1-6,6Z" fill="#fff"/>
+    </g>
+    <g id="Sacral">
+      <path filter="url(#drop-shadow)" d="M348.86,1078.19a5.5,5.5,0,0,1-5.48-5.52L344,930.26a5.5,5.5,0,0,1,5.5-5.48l142.43.56a5.5,5.5,0,0,1,5.48,5.52l-.57,142.41a5.54,5.54,0,0,1-5.5,5.48Z" fill="#fff"/>
+    </g>
+    <g id="Root">
+      <path filter="url(#drop-shadow)" d="M348.86,1295.7a5.43,5.43,0,0,1-3.88-1.62,5.49,5.49,0,0,1-1.6-3.9l.57-135.56a5.5,5.5,0,0,1,5.5-5.48l142.43.57a5.5,5.5,0,0,1,5.48,5.52l-.57,135.56a5.54,5.54,0,0,1-5.5,5.48Z" fill="#fff"/>
+    </g>
+    <g id="G">
+      <path filter="url(#drop-shadow)" d="M420,795.51a6.4,6.4,0,0,1-4.58-1.9l-95.86-96.68a6.48,6.48,0,0,1,0-9.13l96.69-95.92a6.46,6.46,0,0,1,9.12,0l95.9,96.72a6.48,6.48,0,0,1,0,9.12l-96.69,95.93A6.48,6.48,0,0,1,420,795.51Z" fill="#fff"/>
+    </g>
+    <g id="Ego">
+      <path filter="url(#drop-shadow)" d="M527.17,838.36a6.76,6.76,0,0,1-4.73-11.54l78.29-78.14a6.66,6.66,0,0,1,4.76-2,6.75,6.75,0,0,1,5.5,2.83l56.48,79A6.76,6.76,0,0,1,662,839.19Z" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Gates">
+    <g id="GateTextBg10">
+      <path d="M345.46,703.22a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,345.46,703.22Z" fill="transparent"/>
+    </g>
+    <g id="GateTextBg25">
+      <path d="M492.62,711.77a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,492.62,711.77Z" fill="transparent"/>
+    </g>
+    <g id="GateTextBg51">
+      <path d="M580.15,806.4a14.76,14.76,0,1,1,14.79-14.76h0A14.78,14.78,0,0,1,580.15,806.4Z" fill="transparent"/>
+    </g>
+    <g id="GateTextBg21" transform="translate(0,-4)">
+      <path d="M604.08,782.47a14.76,14.76,0,1,1,14.79-14.76h0A14.78,14.78,0,0,1,604.08,782.47Z" fill="transparent"/>
+    </g>
+    <g id="GateTextBg26">
+<path d="M554.09,832.46a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,554.09,832.46Z" fill="transparent"/>
+    </g>
+    <g id="GateTextBg40">
+  <path d="M638,832.46a14.76,14.76,0,1,1,14.79-14.76h0A14.78,14.78,0,0,1,638,832.46Z" fill="transparent"/>
+</g>
+<g id="GateTextBg16">
+  <path d="M362.37,459.24a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,362.37,459.24Z" fill="transparent"/>
+</g>
+<g id="GateTextBg20">
+  <path d="M362.37,506.93a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,362.37,506.93Z" fill="transparent"/>
+</g>
+<g id="GateTextBg35">
+  <path d="M479.09,454.46a14.76,14.76,0,1,1,14.79-14.76h0A14.78,14.78,0,0,1,479.09,454.46Z" fill="transparent"/>
+</g>
+<g id="GateTextBg12">
+  <path d="M479.09,488.5a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,479.09,488.5Z" fill="transparent"/>
+</g>
+<g id="GateTextBg45">
+  <path d="M479.09,522.14a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,479.09,522.14Z" fill="transparent"/>
+</g>
+<g id="GateTextBg34">
+  <path d="M363.54,991a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,363.54,991Z" fill="transparent"/>
+</g>
+<g id="GateTextBg27">
+  <path d="M363.54,1037.14a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,363.54,1037.14Z" fill="transparent"/>
+</g>
+<g id="GateTextBg59">
+  <path d="M476.37,1037.14a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,476.37,1037.14Z" fill="transparent"/>
+</g>
+<g id="GateTextBg38">
+  <path d="M363.37,1250.69a14.76,14.76,0,1,1,14.79-14.76h0A14.78,14.78,0,0,1,363.37,1250.69Z" fill="transparent"/>
+</g>
+<g id="GateTextBg39">
+  <path d="M478.07,1250.69a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,478.07,1250.69Z" fill="transparent"/>
+</g>
+<g id="GateTextBg54">
+  <path d="M363.37,1214.56a14.76,14.76,0,1,1,14.79-14.76h0A14.78,14.78,0,0,1,363.37,1214.56Z" fill="transparent"/>
+</g>
+<g id="GateTextBg19">
+  <path d="M478.07,1217.17a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,478.07,1217.17Z" fill="transparent"/>
+</g>
+<g id="GateTextBg58">
+  <path d="M363.37,1286.93a14.76,14.76,0,1,1,14.79-14.76h0A14.78,14.78,0,0,1,363.37,1286.93Z" fill="transparent"/>
+</g>
+<g id="GateTextBg41">
+  <path d="M478.07,1286.93a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,478.07,1286.93Z" fill="transparent"/>
+</g>
+<g id="GateTextBg55">
+  <path d="M781.37,1024.93a12.43,12.43,0,0,1-5.91-1.52,14.76,14.76,0,1,1,5.91,1.52Z" fill="transparent"/>
+</g>
+<g id="GateTextBg30">
+  <path d="M813.62,1043.78a14.76,14.76,0,1,1,10.79-6.37A14.76,14.76,0,0,1,813.62,1043.78Z" fill="transparent"/>
+</g>
+<g id="GateTextBg49">
+  <path d="M748.22,1006.05a14.76,14.76,0,1,1,14.76-14.76,15.07,15.07,0,0,1-1.52,5.92A14.76,14.76,0,0,1,748.22,1006.05Z" fill="transparent"/>
+</g>
+<g id="GateTextBg22">
+  <path d="M781.37,951.31A14.76,14.76,0,1,1,793.68,939a15.1,15.1,0,0,1-1.52,5.9A14.76,14.76,0,0,1,781.37,951.31Z" fill="transparent"/>
+</g>
+<g id="GateTextBg36">
+  <path d="M813.62,930.64a14.76,14.76,0,1,1,10.79-6.38A14.76,14.76,0,0,1,813.62,930.64Z" fill="transparent"/>
+</g>
+<g id="GateTextBg37">
+  <path d="M748.22,969.55a14.76,14.76,0,1,1,14.76-14.76,15.07,15.07,0,0,1-1.52,5.92A14.76,14.76,0,0,1,748.22,969.55Z" fill="transparent"/>
+</g>
+<g id="GateTextBg6">
+  <path d="M712.57,989a14.76,14.76,0,1,1,14.76-14.76,15.1,15.1,0,0,1-1.52,5.9A14.76,14.76,0,0,1,712.57,989Z" fill="transparent"/>
+</g>
+<g id="GateTextBg28">
+  <path d="M62.57,1024.93a14.76,14.76,0,1,1,5.91-1.52A14.76,14.76,0,0,1,62.57,1024.93Z" fill="transparent"/>
+</g>
+<g id="GateTextBg18">
+  <path d="M30.37,1043.78a14.76,14.76,0,1,1,5.92-1.52A14.76,14.76,0,0,1,30.37,1043.78Z" fill="transparent"/>
+</g>
+<g id="GateTextBg32">
+  <path d="M95.75,1006.05a14.76,14.76,0,1,1,5.91-1.52A14.76,14.76,0,0,1,95.75,1006.05Z" fill="transparent"/>
+</g>
+<g id="GateTextBg57">
+  <path d="M62.57,951.31a14.76,14.76,0,1,1,5.91-1.52A14.76,14.76,0,0,1,62.57,951.31Z" fill="transparent"/>
+</g>
+<g id="GateTextBg48">
+  <path d="M30.37,930.64a14.76,14.76,0,1,1,5.92-1.52A14.76,14.76,0,0,1,30.37,930.64Z" fill="transparent"/>
+</g>
+<g id="GateTextBg44">
+  <path d="M95.74,969.55a14.76,14.76,0,1,1,5.92-1.53A14.76,14.76,0,0,1,95.74,969.55Z" fill="transparent"/>
+</g>
+<g id="GateTextBg50">
+  <path d="M131.37,989a14.76,14.76,0,1,1,14.76-14.76A15.14,15.14,0,0,1,131.37,989Z" fill="transparent"/>
+</g>
+<g id="GateTextBg43">
+  <path d="M420.72,337a14.76,14.76,0,1,1,12.33-14.76h0A14.78,14.78,0,0,1,420.72,337Z" fill="transparent"/>
+</g>
+<g id="GateTextBg2">
+  <path d="M420.66,778.56a14.76,14.76,0,1,1,12.34-14.76h0A14.78,14.78,0,0,1,420.66,778.56Z" fill="transparent"/>
+</g>
+<g id="GateTextBg1">
+  <path d="M420.77,628.3a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,420.77,628.3Z" fill="transparent"/>
+</g>
+<g id="GateTextBg23">
+  <circle cx="420.72" cy="416.3" r="14.76" fill="transparent"/>
+</g>
+<g id="GateTextBg8">
+  <path d="M420.66,552.48a14.76,14.76,0,1,1,.08,0h-.08Z" fill="transparent"/>
+</g>
+<g id="GateTextBg14">
+  <path d="M420.66,955a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,420.66,955Z" fill="transparent"/>
+</g>
+<g id="GateTextBg3">
+  <circle cx="420.66" cy="1060.1" r="14.76" fill="transparent"/>
+</g>
+<g id="GateTextBg60">
+  <path d="M420.66,1183.53a14.76,14.76,0,1,1,14.76-14.76A15.14,15.14,0,0,1,420.66,1183.53Z" fill="transparent"/>
+</g>
+<g id="GateTextBg11">
+  <path d="M458.2,275.67a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,458.2,275.67Z" fill="transparent"/>
+</g>
+<g id="GateTextBg46">
+  <path d="M458.2,747a14.76,14.76,0,1,1,14.76-14.76h0A14.76,14.76,0,0,1,458.2,747Z" fill="transparent"/>
+</g>
+<g id="GateTextBg13">
+  <path d="M458.2,663.23a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,458.2,663.23Z" fill="transparent"/>
+</g>
+<g id="GateTextBg56">
+  <circle cx="458.2" cy="416.3" r="14.76" fill="transparent"/>
+</g>
+<g id="GateTextBg33">
+  <path d="M458.2,552.48a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,458.2,552.48Z" fill="transparent"/>
+</g>
+<g id="GateTextBg29">
+  <path d="M458.2,955a14.76,14.76,0,1,1,14.76-14.76h0A14.76,14.76,0,0,1,458.2,955Z" fill="transparent"/>
+</g>
+<g id="GateTextBg9">
+  <circle cx="458.2" cy="1060.1" r="14.76" fill="transparent"/>
+</g>
+<g id="GateTextBg52">
+  <path d="M458.2,1183.53a14.76,14.76,0,1,1,14.76-14.76,14.76,14.76,0,0,1-14.76,14.76Z" fill="transparent"/>
+</g>
+<g id="GateTextBg17">
+  <path d="M383.23,274.26a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,383.23,274.26Z" fill="transparent"/>
+</g>
+<g id="GateTextBg15">
+  <path d="M383.23,747a14.76,14.76,0,1,1,14.76-14.76h0A14.76,14.76,0,0,1,383.23,747Z" fill="transparent"/>
+</g>
+<g id="GateTextBg7">
+  <path d="M383.23,663.23a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,383.23,663.23Z" fill="transparent"/>
+</g>
+<g id="GateTextBg62">
+  <path d="M383.23,428.6a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,383.23,428.6Z" fill="transparent"/>
+</g>
+<g id="GateTextBg31">
+  <path d="M383.23,552.48a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,383.23,552.48Z" fill="transparent"/>
+</g>
+<g id="GateTextBg5">
+  <path d="M383.23,955a14.76,14.76,0,1,1,14.76-14.76h0A14.76,14.76,0,0,1,383.23,955Z" fill="transparent"/>
+</g>
+<g id="GateTextBg42">
+  <path d="M383.23,1072.4a14.76,14.76,0,1,1,14.76-14.76A14.77,14.77,0,0,1,383.23,1072.4Z" fill="transparent"/>
+</g>
+<g id="GateTextBg53">
+  <path d="M383.23,1183.53a14.76,14.76,0,1,1,14.76-14.76,14.77,14.77,0,0,1-14.76,14.76Z" fill="transparent"/>
+</g>
+<g id="GateTextBg4">
+  <circle cx="458.2" cy="228.55" r="14.76" fill="transparent"/>
+</g>
+<g id="GateTextBg24">
+  <circle cx="420.72" cy="228.55" r="14.76" fill="transparent"/>
+</g>
+<g id="GateTextBg47">
+  <path d="M383.23,240.85a14.76,14.76,0,1,1,14.76-14.76h0A14.78,14.78,0,0,1,383.23,240.85Z" fill="transparent"/>
+</g>
+<g id="GateTextBg63">
+  <path d="M458.2,128.5a14.13,14.13,0,1,1-14.13,14.13h0A14.14,14.14,0,0,1,458.2,128.5Z" fill="transparent"/>
+</g>
+<g id="GateTextBg61">
+  <path d="M420.72,128.5a14.13,14.13,0,1,1-14.13,14.13h0A14.14,14.14,0,0,1,420.72,128.5Z" fill="transparent"/>
+</g>
+<g id="GateTextBg64">
+  <path d="M383.23,152.76a14.13,14.13,0,1,1,14.13-14.13h0A14.14,14.14,0,0,1,383.23,152.76Z" fill="transparent"/>
+</g>
+    <text fill="#B2A8A6" id="GateText59" transform="translate(466 1030)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">59</text>
+    <text fill="#B2A8A6" id="GateText27" transform="translate(353 1031)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">27</text>
+    <text fill="#B2A8A6" id="GateText34" transform="translate(353 984.5)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">34</text>
+    <text fill="#B2A8A6" id="GateText25" transform="translate(482 705)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">25</text>
+    <text fill="#B2A8A6" id="GateText51" transform="translate(571.51 800.95)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">51</text>
+    <text fill="#B2A8A6" id="GateText26" transform="translate(543.84 826.05)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">26</text>
+    <text fill="#B2A8A6" id="GateText21" transform="translate(594.91 771.84)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">21</text>
+    <text fill="#B2A8A6" id="GateText40" transform="translate(628.36 826.03)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">40</text>
+    <text fill="#B2A8A6" id="GateText37" transform="translate(738.87 964.19)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">37</text>
+    <text fill="#B2A8A6" id="GateText22" transform="translate(768.5 945)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">22</text>
+    <text fill="#B2A8A6" id="GateText36" transform="translate(801.5 923)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">36</text>
+    <text fill="#B2A8A6" id="GateText49" transform="translate(738.85 1000.17)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">49</text>
+    <text fill="#B2A8A6" id="GateText19" transform="translate(467.58 1208.69)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">19</text>
+    <text fill="#B2A8A6" id="GateText39" transform="translate(468.43 1244.62)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">39</text>
+    <text fill="#B2A8A6" id="GateText41" transform="translate(468.43 1280.66)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">41</text>
+    <text fill="#B2A8A6" id="GateText54" transform="translate(353.72 1208.69)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">54</text>
+    <text fill="#B2A8A6" id="GateText38" transform="translate(353.72 1244.62)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">38</text>
+    <text fill="#B2A8A6" id="GateText58" transform="translate(353.72 1280.66)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">58</text>
+    <text fill="#B2A8A6" id="GateText45" transform="translate(469.31 516.23)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">45</text>
+    <text fill="#B2A8A6" id="GateText35" transform="translate(469.31 448.4)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">35</text>
+    <text fill="#B2A8A6" id="GateText55" transform="translate(771.48 1019.45)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">55</text>
+    <text fill="#B2A8A6" id="GateText30" transform="translate(804.13 1037.88)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">30</text>
+    <text fill="#B2A8A6" id="GateText6" transform="translate(706.58 982.61)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">6</text>
+    <text fill="#B2A8A6" id="GateText44" transform="translate(85.83 963.33)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">44</text>
+    <text fill="#B2A8A6" id="GateText57" transform="translate(52.32 945.77)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">57</text>
+    <text fill="#B2A8A6" id="GateText48" transform="translate(17.5 923)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">48</text>
+    <text fill="#B2A8A6" id="GateText32" transform="translate(85.81 999.32)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">32</text>
+    <text fill="#B2A8A6" id="GateText28" transform="translate(52.3 1018.59)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">28</text>
+    <text fill="#B2A8A6" id="GateText18" transform="translate(16.61 1037.03)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">18</text>
+    <text fill="#B2A8A6" id="GateText50" transform="translate(121.75 982.61)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">50</text>
+    <text fill="#B2A8A6" id="GateText10" transform="translate(334.31 697.9)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">10</text>
+    <text fill="#B2A8A6" id="GateText8" transform="translate(415.9 546.37)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">8</text>
+    <text fill="#B2A8A6" id="GateText14" transform="translate(409.14 948.5)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">14</text>
+    <text fill="#B2A8A6" id="GateText3" transform="translate(415.9 1065.47)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">3</text>
+    <text fill="#B2A8A6" id="GateText60" transform="translate(410.13 1176.86)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">60</text>
+    <text fill="#B2A8A6" id="GateText1" transform="translate(415.9 622.01)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">1</text>
+    <text fill="#B2A8A6" id="GateText2" transform="translate(415.9 773.05)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">2</text>
+    <text fill="#B2A8A6" id="GateText33" transform="translate(448.15 546.37)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">33</text>
+    <text fill="#B2A8A6" id="GateText29" transform="translate(448.15 949.08)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">29</text>
+    <text fill="#B2A8A6" id="GateText9" transform="translate(453.92 1066.33)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">9</text>
+    <text fill="#B2A8A6" id="GateText52" transform="translate(448.15 1177.72)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">52</text>
+    <text fill="#B2A8A6" id="GateText13" transform="translate(447.29 657.34)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">13</text>
+    <text fill="#B2A8A6" id="GateText46" transform="translate(447 740.5)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">46</text>
+    <text fill="#B2A8A6" id="GateText31" transform="translate(374.04 547.19)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">31</text>
+    <text fill="#B2A8A6" id="GateText5" transform="translate(378.55 949.04)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">5</text>
+    <text fill="#B2A8A6" id="GateText42" transform="translate(373.18 1066.29)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">42</text>
+    <text fill="#B2A8A6" id="GateText53" transform="translate(373.18 1177.68)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">53</text>
+    <text fill="#B2A8A6" id="GateText7" transform="translate(378.09 658.16)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">7</text>
+    <text fill="#B2A8A6" id="GateText15" transform="translate(372.32 741.89)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">15</text>
+    <text fill="#B2A8A6" id="GateText12" transform="translate(468.45 482.09)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">12</text>
+    <text fill="#B2A8A6" id="GateText20" transform="translate(353.01 501.14)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">20</text>
+    <text fill="#B2A8A6" id="GateText16" transform="translate(351.3 453.4)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">16</text>
+    <text fill="#B2A8A6" id="GateText56" transform="translate(449.01 423.26)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">56</text>
+    <text fill="#B2A8A6" id="GateText23" transform="translate(410.67 422.4)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">23</text>
+    <text fill="#B2A8A6" id="GateText62" transform="translate(373.18 422.4)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">62</text>
+    <text fill="#B2A8A6" id="GateText43" transform="translate(410.67 331.4)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">43</text>
+    <text fill="#B2A8A6" id="GateText11" transform="translate(448.15 270.01)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">11</text>
+    <text fill="#B2A8A6" id="GateText17" transform="translate(372.32 268.33)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">17</text>
+    <text fill="#B2A8A6" id="GateText4" transform="translate(452.7 235.11)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">4</text>
+    <text fill="#B2A8A6" id="GateText24" transform="translate(410.67 235.13)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">24</text>
+    <text fill="#B2A8A6" id="GateText47" transform="translate(373.18 235.13)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">47</text>
+    <text fill="#B2A8A6" id="GateText63" transform="translate(448.15 146.38)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">63</text>
+    <text fill="#B2A8A6" id="GateText61" transform="translate(411.53 146.38)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">61</text>
+    <text fill="#B2A8A6" id="GateText64" transform="translate(373.18 146.38)" font-size="21" font-family="Proxima Sans, Helvetica, Arial, sans-serif" font-weight="normal" letter-spacing="-0.03em" style="isolation: isolate">64</text>
+  </g>
+</svg>

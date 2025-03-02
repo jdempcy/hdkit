@@ -1,0 +1,349 @@
+<object class="absolute" style="left: 99px;" id="bodygraph-<%= activations_to_show %>" type="image/svg+xml" data="<%= image_url('bodygraph-blank.svg') %>" width="430"></object>
+<script>
+  document.getElementById('bodygraph-<%= activations_to_show %>').addEventListener('load', function() {
+    const svgDoc = this.contentDocument;
+    if (!svgDoc) return;
+
+    // Create defs if it doesn't exist
+    let defs = svgDoc.querySelector('defs');
+    if (!defs) {
+      defs = svgDoc.createElementNS(SVG_NS, 'defs');
+      centerElement.appendChild(defs);
+    }
+
+    // Iterate over all centers and create gradient for each one
+    const SVG_NS = 'http://www.w3.org/2000/svg';
+    const centers = ['Head', 'Ajna', 'Throat', 'Spleen', 'Ego', 'G', 'SolarPlexus', 'Sacral', 'Root'];
+    const colors = ['#F9F6C4', '#48BB78', '#655144', '#655144', '#F56565', '#F9F6C4', '#655144', '#F56565', '#655144'];
+    centers.forEach((center, index) => {
+      const centerElement = svgDoc.getElementById(center);
+
+      // Create a linear gradient element
+      const gradient = svgDoc.createElementNS(SVG_NS, 'linearGradient');
+      gradient.setAttribute('id', `${center.toLowerCase()}Gradient`);
+      gradient.setAttribute('x1', '0%');
+      gradient.setAttribute('y1', '0%');
+      gradient.setAttribute('x2', '0%');
+      gradient.setAttribute('y2', '140%');
+
+      // Function to darken a color by a specified factor
+      function darkenColor(color, factor) {
+          // Parse the color string into RGB components
+          const hex = color.replace(/^#/, '');
+          const r = parseInt(hex.substring(0, 2), 16);
+          const g = parseInt(hex.substring(2, 4), 16);
+          const b = parseInt(hex.substring(4, 6), 16);
+
+          // Darken each RGB component by multiplying by the factor
+          const newR = Math.round(r * (1 - factor));
+          const newG = Math.round(g * (1 - factor));
+          const newB = Math.round(b * (1 - factor));
+
+          // Convert the darkened RGB components back to a hex color string
+          const darkenedColor = `#${(newR < 16 ? '0' : '') + newR.toString(16)}${(newG < 16 ? '0' : '') + newG.toString(16)}${(newB < 16 ? '0' : '') + newB.toString(16)}`;
+
+          return darkenedColor;
+      }
+
+      // Usage within your code:
+      const stop1 = svgDoc.createElementNS(SVG_NS, 'stop');
+      stop1.setAttribute('offset', '0%');
+      stop1.setAttribute('stop-color', colors[index]);
+      gradient.appendChild(stop1);
+
+      // Darkening the color for the second stop using the darkenColor function
+      const slightlyDarkerColor = darkenColor(colors[index], 0.4); // Adjust the darkness factor as needed
+      const stop2 = svgDoc.createElementNS(SVG_NS, 'stop');
+      stop2.setAttribute('offset', '100%');
+      stop2.setAttribute('stop-color', slightlyDarkerColor);
+      gradient.appendChild(stop2);
+
+
+      // Append the gradient to the defs element
+      defs.appendChild(gradient);
+    });
+
+  // Function to create a gradient
+  function createGradient(id, x1, y1, x2, y2) {
+      const gradient = document.createElementNS(SVG_NS, "linearGradient");
+      gradient.setAttribute("id", id);
+      gradient.setAttribute("x1", x1);
+      gradient.setAttribute("y1", y1);
+      gradient.setAttribute("x2", x2);
+      gradient.setAttribute("y2", y2);
+
+      const stop1 = document.createElementNS(SVG_NS, "stop");
+      stop1.setAttribute("offset", "50%");
+      stop1.setAttribute("style", "stop-color: #A44344; stop-opacity: 1");
+
+      const stop2 = document.createElementNS(SVG_NS, "stop");
+      stop2.setAttribute("offset", "50%");
+      stop2.setAttribute("style", "stop-color: black; stop-opacity: 1");
+
+      gradient.appendChild(stop1);
+      gradient.appendChild(stop2);
+
+      defs.appendChild(gradient);
+  }
+
+  // Adding gradients with the new function
+  createGradient("gradientForVerticalChannels", "0%", "0%", "100%", "0%");
+  createGradient("gradientForHorizontalChannels", "0%", "0%", "0%", "100%");
+  createGradient("gradientForDiagonalChannels", "0%", "0%", "100%", "100%");
+  createGradient("gradientForSpleenRootChannels", "100%", "0%", "4%", "100%");
+  createGradient("gradientForSolarPlexusRootChannels", "4%", "0%", "100%", "100%");
+  createGradient("gradientFor59_6", "9%", "25%", "50%", "100%");
+  createGradient("gradientFor50_27", "50%", "0%", "9%", "75%");
+  createGradient("gradientFor25_51", "100%", "0%", "4%", "100%");
+  createGradient("gradientForGate34", "100%", "0%", "4%", "100%");
+  createGradient("gradientForGate10Connect", "100%", "90%", "0%", "0%");
+
+    const activationsToShow = '<%= activations_to_show %>';
+    let activations, activatedGatesToShow;
+    if (activationsToShow === 'all') {
+      activations = allActivations;
+      activatedGatesToShow = activatedGates;
+    } else if (activationsToShow === 'design') {
+      activations = allActivations.filter((activation) => {
+        return activation.personalityOrDesign === 'design';
+      });
+      activatedGatesToShow = designGates;
+    } else if (activationsToShow === 'personality') {
+      activations = allActivations.filter((activation) => {
+        return activation.personalityOrDesign === 'personality';
+      });
+      activatedGatesToShow = personalityGates;
+    } else if (activationsToShow === 'incarnation-cross') {
+      activations = [personalityActivations['Sun'], personalityActivations['Earth'], designActivations['Sun'], designActivations['Earth']];
+      activatedGatesToShow = {};
+      activatedGatesToShow[personalityActivations['Sun'].g] = true;
+      activatedGatesToShow[personalityActivations['Earth'].g] = true;
+      activatedGatesToShow[designActivations['Sun'].g] = true;
+      activatedGatesToShow[designActivations['Earth'].g] = true;
+    }
+
+    // Populate the bodygraph
+    activations.forEach((activation, i) => {
+      const gate = activation.g;
+      const hangingGate = svgDoc.getElementById(`Gate${gate}`);
+      const gateText = svgDoc.getElementById(`GateText${gate}`);
+      const gateBackground = svgDoc.getElementById(`GateTextBg${gate}`);
+      const gateBackgroundPath = gateBackground.querySelector('path');
+      const gateBackgroundCircle = gateBackground.querySelector('circle');
+      if (hangingGate && gateText && gateBackground) {
+        let color = '';
+        if (activationsToShow === 'all' && personalityGates[gate] && designGates[gate]) {
+          if (gate == 10) {
+            color = 'url(#gradientForHorizontalChannels)';
+          } else if ([50, 27].includes(gate)) {
+            color = 'url(#gradientFor50_27)';
+          } else if ([6, 59].includes(gate)) {
+            color = 'url(#gradientFor59_6)';
+          } else if ([16, 48, 57, 20].includes(gate)) {
+            color = 'url(#gradientForGate10Connect)';
+          } else if ([32, 54, 28, 38, 58, 18].includes(gate)) {
+            color = 'url(#gradientForSpleenRootChannels)';
+          } else if ([34].includes(gate)) {
+            color = 'url(#gradientForGate34)';
+          } else if ([25, 51].includes(gate)) {
+            color = 'url(#gradientFor25_51)';
+          } else if ([44, 26].includes(gate)) {
+            color = 'url(#gradientForDiagonalChannels)';
+          } else if ([45, 21].includes(gate)) {
+            color = 'url(#gradientForDiagonalChannels)';
+          } else if ([12, 22, 35, 36, 37, 40].includes(gate)) {
+            color = 'url(#gradientForDiagonalChannels)';
+          } else if ([19, 49, 39, 55, 41, 30].includes(gate)) {
+            color = 'url(#gradientForSolarPlexusRootChannels)';
+          } else {
+            color = 'url(#gradientForVerticalChannels)';
+          }
+        } else if (personalityGates[gate] && (activationsToShow === 'all' || activationsToShow === 'personality' || (activationsToShow === 'incarnation-cross' && i < 2))) {
+          color = 'black';
+        } else {
+          color = '#A44344';
+        }
+        hangingGate.style.fill = color;
+        gateText.style.fill = '#343434';
+        if (gateBackgroundPath) gateBackgroundPath.style.fill = '#EFEFEF';
+        if (gateBackgroundCircle) gateBackgroundCircle.style.fill = '#EFEFEF';
+      }
+
+      // Fill in the labels
+      const line = activation.l;
+      document.getElementById(`bodygraph-label-${activation.personalityOrDesign}-${activation.planet}`).innerHTML = `${gate}.${line}`;
+    });
+
+    // The Centers
+    const headCenter = svgDoc.getElementById('Head');
+    const ajnaCenter = svgDoc.getElementById('Ajna');
+    const throatCenter = svgDoc.getElementById('Throat');
+    const egoCenter = svgDoc.getElementById('Ego');
+    const gCenter = svgDoc.getElementById('G');
+    const solarPlexusCenter = svgDoc.getElementById('SolarPlexus');
+    const spleenCenter = svgDoc.getElementById('Spleen');
+    const sacralCenter = svgDoc.getElementById('Sacral');
+    const rootCenter = svgDoc.getElementById('Root');
+
+    // Color in the Centers if channels are made
+    if (
+      (activatedGatesToShow[3] && activatedGatesToShow[60]) ||
+      (activatedGatesToShow[42] && activatedGatesToShow[53]) ||
+      (activatedGatesToShow[9] && activatedGatesToShow[52])
+    ) {
+      // Set the gradient as the fill for the path element within sacralCenter
+      sacralCenter.querySelector('path').style.fill = 'url(#sacralGradient)';
+      rootCenter.querySelector('path').style.fill = 'url(#rootGradient)';
+    }
+
+    // Color in the Root and Solar Plexus Center if channels are made
+    if (
+      (activatedGatesToShow[19] && activatedGatesToShow[49]) ||
+      (activatedGatesToShow[39] && activatedGatesToShow[55]) ||
+      (activatedGatesToShow[41] && activatedGatesToShow[30])
+    ) {
+      // Set the gradient as the fill for the path element within rootCenter and solarPlexusCenter
+      rootCenter.querySelector('path').style.fill = 'url(#rootGradient)';
+      solarPlexusCenter.querySelector('path').style.fill = 'url(#solarplexusGradient)';
+    }
+    // Color in the Spleen and Root Center if channels are made
+    if ((activatedGatesToShow[54] && activatedGatesToShow[32]) || (activatedGatesToShow[28] && activatedGatesToShow[38]) || (activatedGatesToShow[18] && activatedGatesToShow[58])) {
+      // Set the gradient as the fill for the path element within spleenCenter and rootCenter
+      spleenCenter.querySelector('path').style.fill = 'url(#spleenGradient)';
+      rootCenter.querySelector('path').style.fill = 'url(#rootGradient)';
+    }
+
+    // Color in the Spleen and Throat Center if channels are made
+    if ((activatedGatesToShow[48] && activatedGatesToShow[16]) || (activatedGatesToShow[57] && activatedGatesToShow[20])) {
+      // Set the gradient as the fill for the path element within spleenCenter and throatCenter
+      spleenCenter.querySelector('path').style.fill = 'url(#spleenGradient)';
+      throatCenter.querySelector('path').style.fill = 'url(#throatGradient)';
+    }
+
+    // Color in the Spleen and G Center if channels are made
+    if (activatedGatesToShow[57] && activatedGatesToShow[10]) {
+      // Set the gradient as the fill for the path element within spleenCenter and gCenter
+      spleenCenter.querySelector('path').style.fill = 'url(#spleenGradient)';
+      gCenter.querySelector('path').style.fill = 'url(#gGradient)';
+    }
+
+    // Color in the Sacral and Throat Center if channels are made
+    if (activatedGatesToShow[34] && activatedGatesToShow[20]) {
+      // Set the gradient as the fill for the path element within sacralCenter and throatCenter
+      sacralCenter.querySelector('path').style.fill = 'url(#sacralGradient)';
+      throatCenter.querySelector('path').style.fill = 'url(#throatGradient)';
+    }
+
+
+    // Color in the Sacral and Spleen Center if channels are made
+    if ((activatedGatesToShow[57] && activatedGatesToShow[34]) || (activatedGatesToShow[50] && activatedGatesToShow[27])) {
+      // Set the gradient as the fill for the path element within sacralCenter and spleenCenter
+      sacralCenter.querySelector('path').style.fill = 'url(#sacralGradient)';
+      spleenCenter.querySelector('path').style.fill = 'url(#spleenGradient)';
+    }
+
+    // Color in the Solar Plexus and Ego Center if channels are made
+    if (activatedGatesToShow[37] && activatedGatesToShow[40]) {
+      // Set the gradient as the fill for the path element within solarPlexusCenter and egoCenter
+      solarPlexusCenter.querySelector('path').style.fill = 'url(#solarplexusGradient)';
+      egoCenter.querySelector('path').style.fill = 'url(#egoGradient)';
+    }
+
+    // Color in the Solar Plexus and Throat Center if channels are made
+    if ((activatedGatesToShow[22] && activatedGatesToShow[12]) || (activatedGatesToShow[35] && activatedGatesToShow[36])) {
+      // Set the gradient as the fill for the path element within solarPlexusCenter and throatCenter
+      solarPlexusCenter.querySelector('path').style.fill = 'url(#solarplexusGradient)';
+      throatCenter.querySelector('path').style.fill = 'url(#throatGradient)';
+    }
+
+    // Color in the Ego and G Center if channels are made
+    if (activatedGatesToShow[51] && activatedGatesToShow[25]) {
+      // Set the gradient as the fill for the path element within egoCenter and gCenter
+      egoCenter.querySelector('path').style.fill = 'url(#egoGradient)';
+      gCenter.querySelector('path').style.fill = 'url(#gGradient)';
+    }
+
+    // Color in the Ego and Throat Center if channels are made
+    if (activatedGatesToShow[21] && activatedGatesToShow[45]) {
+      // Set the gradient as the fill for the path element within egoCenter and throatCenter
+      egoCenter.querySelector('path').style.fill = 'url(#egoGradient)';
+      throatCenter.querySelector('path').style.fill = 'url(#throatGradient)';
+    }
+
+    // Color in the Ego and Spleen Center if channels are made
+    if (activatedGatesToShow[44] && activatedGatesToShow[26]) {
+      // Set the gradient as the fill for the path element within egoCenter and spleenCenter
+      egoCenter.querySelector('path').style.fill = 'url(#egoGradient)';
+      spleenCenter.querySelector('path').style.fill = 'url(#spleenGradient)';
+    }
+
+        // Color in the Sacral and Solar Plexus
+    if (activatedGatesToShow[59] && activatedGatesToShow[6]) {
+      // Set the gradient as the fill for the path element within egoCenter and spleenCenter
+      sacralCenter.querySelector('path').style.fill = 'url(#sacralGradient)';
+      solarPlexusCenter.querySelector('path').style.fill = 'url(#solarplexusGradient)';
+    }
+
+    // Color in the Sacral and G Center if channels are made
+    if (
+      (activatedGatesToShow[34] && activatedGatesToShow[10]) ||
+      (activatedGatesToShow[29] && activatedGatesToShow[46]) ||
+      (activatedGatesToShow[14] && activatedGatesToShow[2]) ||
+      (activatedGatesToShow[5] && activatedGatesToShow[15])
+    ) {
+      // Set the gradient as the fill for the path element within sacralCenter and gCenter
+      sacralCenter.querySelector('path').style.fill = 'url(#sacralGradient)';
+      gCenter.querySelector('path').style.fill = 'url(#gGradient)';
+    }
+
+    // Color in the G and Throat Center if channels are made
+    if (
+      (activatedGatesToShow[7] && activatedGatesToShow[31]) ||
+      (activatedGatesToShow[1] && activatedGatesToShow[8]) ||
+      (activatedGatesToShow[13] && activatedGatesToShow[33])
+    ) {
+      // Set the gradient as the fill for the path element within gCenter and throatCenter
+      gCenter.querySelector('path').style.fill = 'url(#gGradient)';
+      throatCenter.querySelector('path').style.fill = 'url(#throatGradient)';
+    }
+
+    // Color in the Throat and Ajna Center if channels are made
+    if (
+      (activatedGatesToShow[17] && activatedGatesToShow[62]) ||
+      (activatedGatesToShow[43] && activatedGatesToShow[23]) ||
+      (activatedGatesToShow[56] && activatedGatesToShow[11])
+    ) {
+      // Set the gradient as the fill for the path element within throatCenter and ajnaCenter
+      throatCenter.querySelector('path').style.fill = 'url(#throatGradient)';
+      ajnaCenter.querySelector('path').style.fill = 'url(#ajnaGradient)';
+    }
+
+    // Color in the Ajna and Head Center if channels are made
+    if ((activatedGatesToShow[47] && activatedGatesToShow[64]) || (activatedGatesToShow[24] && activatedGatesToShow[61]) || (activatedGatesToShow[4] && activatedGatesToShow[63])) {
+      // Set the gradient as the fill for the path element within ajnaCenter and headCenter
+      ajnaCenter.querySelector('path').style.fill = 'url(#ajnaGradient)';
+      headCenter.querySelector('path').style.fill = 'url(#headGradient)';
+    }
+    // Fill in the GateSpan if 34-20, 34-10, or 57-20
+    if (activationsToShow != 'design' && (personalityGates[34] && personalityGates[20]) || (personalityGates[34] && personalityGates[10]) || (personalityGates[57] && personalityGates[20])) {
+      svgDoc.getElementById('GateSpan').style.fill = 'black';
+      svgDoc.getElementById('GateConnect10').style.fill = 'black';
+      svgDoc.getElementById('GateConnect34').style.fill = 'black';
+    }
+    if (activationsToShow != 'personality' && (designGates[34] && designGates[20]) || (designGates[34] && designGates[10]) || (designGates[57] && designGates[20])) {
+      svgDoc.getElementById('GateSpan').style.fill = '#A44344';
+      svgDoc.getElementById('GateConnect10').style.fill = '#A44344';
+      svgDoc.getElementById('GateConnect34').style.fill = '#A44344';
+    }
+    if (activationsToShow != 'personality' && ((personalityGates[34] && designGates[34]) || (personalityGates[57] && designGates[57]))) {
+      svgDoc.getElementById('GateSpan').style.fill = 'url(#gradientForGate10Connect)';
+      svgDoc.getElementById('GateConnect34').style.fill = 'black';
+      if (personalityGates[10] || personalityGates[20]) {
+        svgDoc.getElementById('GateConnect10').style.fill = '#A44344';
+      } else {
+      svgDoc.getElementById('GateConnect10').style.fill = 'black';
+
+      }
+    }
+  });
+</script>

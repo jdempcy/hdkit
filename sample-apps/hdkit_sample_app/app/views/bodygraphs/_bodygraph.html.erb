@@ -1,0 +1,1244 @@
+<div id="<%= dom_id bodygraph %>">
+<% if action_name != "show" %>
+  <%= link_to "Show this bodygraph", bodygraph, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+  <%= link_to 'Edit this bodygraph', edit_bodygraph_path(bodygraph), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+  <hr class="mt-6">
+<% end %>
+  <p>
+    <strong>Name:</strong>
+    <%= bodygraph.name %>
+  </p>
+
+  <p>
+    <strong>Birth date local:</strong>
+    <%= bodygraph.birth_date_local %>
+  </p>
+
+  <p>
+    <strong>Birth date utc:</strong>
+    <%= bodygraph.birth_date_utc %>
+  </p>
+
+  <p>
+    <strong>Design date utc:</strong>
+    <%= bodygraph.design_date_utc %>
+  </p>
+
+  <p>
+    <strong>Birth country:</strong>
+    <%= bodygraph.birth_country %>
+  </p>
+
+  <p>
+    <strong>Birth city:</strong>
+    <%= bodygraph.birth_city %>
+  </p>
+
+  <p>
+    <strong>Aura type:</strong>
+    <%= bodygraph.aura_type %>
+  </p>
+
+  <p>
+    <strong>Inner authority:</strong>
+    <%= bodygraph.inner_authority %>
+  </p>
+
+  <p>
+    <strong>Definition:</strong>
+    <%= bodygraph.definition %>
+  </p>
+
+  <p>
+    <strong>Profile:</strong>
+    <%= bodygraph.profile %>
+  </p>
+
+  <p>
+    <strong>Incarnation cross:</strong>
+    <%= bodygraph.incarnation_cross %>
+  </p>
+
+  <p>
+    <strong>Determination:</strong>
+    <%= bodygraph.determination %>
+  </p>
+
+  <p>
+    <strong>Environment:</strong>
+    <%= bodygraph.environment %>
+  </p>
+
+  <p>
+    <strong>View:</strong>
+    <%= bodygraph.view %>
+  </p>
+
+  <p>
+    <strong>Motivation:</strong>
+    <%= bodygraph.motivation %>
+  </p>
+
+  <p>
+    <strong>Cognition:</strong>
+    <%= bodygraph.cognition %>
+  </p>
+
+  <p>
+    <strong>Sense:</strong>
+    <%= bodygraph.sense %>
+  </p>
+
+  <p>
+    <strong>Variable:</strong>
+    <%= bodygraph.variable %>
+  </p>
+
+  <p>
+    <strong>Personality activations:</strong>
+    <%= bodygraph.personality_activations %>
+  </p>
+
+  <p>
+    <strong>Design activations:</strong>
+    <%= bodygraph.design_activations %>
+  </p>
+
+  <p>
+    <strong>Head defined:</strong>
+    <%= bodygraph.head_defined %>
+  </p>
+
+  <p>
+    <strong>Ajna defined:</strong>
+    <%= bodygraph.ajna_defined %>
+  </p>
+
+  <p>
+    <strong>Throat defined:</strong>
+    <%= bodygraph.throat_defined %>
+  </p>
+
+  <p>
+    <strong>Spleen defined:</strong>
+    <%= bodygraph.spleen_defined %>
+  </p>
+
+  <p>
+    <strong>Solar plexus defined:</strong>
+    <%= bodygraph.solar_plexus_defined %>
+  </p>
+
+  <p>
+    <strong>G center defined:</strong>
+    <%= bodygraph.g_center_defined %>
+  </p>
+
+  <p>
+    <strong>Sacral defined:</strong>
+    <%= bodygraph.sacral_defined %>
+  </p>
+
+  <p>
+    <strong>Root defined:</strong>
+    <%= bodygraph.root_defined %>
+  </p>
+
+  <p>
+    <strong>Ego defined:</strong>
+    <%= bodygraph.ego_defined %>
+  </p>
+
+  <p>
+    <strong>Personality nodes tone:</strong>
+    <%= bodygraph.personality_nodes_tone %>
+  </p>
+
+  <p>
+    <strong>Design nodes tone:</strong>
+    <%= bodygraph.design_nodes_tone %>
+  </p>
+
+  <p>
+    <strong>Timezone:</strong>
+    <%= bodygraph.timezone %>
+  </p>
+
+  <p>
+    <strong>Latitude:</strong>
+    <%= bodygraph.latitude %>
+  </p>
+
+  <p>
+    <strong>Longitude:</strong>
+    <%= bodygraph.longitude %>
+  </p>
+
+  <p>
+    <strong>Birth date:</strong>
+    <%= bodygraph.birth_date %>
+  </p>
+
+  <p>
+    <strong>Birth time:</strong>
+    <%= bodygraph.birth_time %>
+  </p>
+
+  <p>
+    <strong>All activated gates:</strong>
+    <%= bodygraph.all_activated_gates %>
+  </p>
+
+</div>
+
+
+      <div id="advanced-details-wrapper" class="" style="color: grey; font-weight: 100;">
+        <div id="advanced-details-left" style="position: relative;">
+          <p class="my-5">
+            <strong class="block font-medium mb-1">Name:</strong>
+            <%= bodygraph.name %>
+          </p>
+          <p class="my-5">
+            <strong class="block font-medium mb-1">Birth date utc:</strong>
+            <%= bodygraph.birth_date_utc %>
+          </p>
+          <p class="my-5">
+            <strong class="block font-medium mb-1">Design date utc:</strong>
+            <%= bodygraph.design_date_utc %>
+          </p>
+          <p class="my-5">
+            <strong class="block font-medium mb-1">Birth country:</strong>
+            <%= bodygraph.birth_country %>
+          </p>
+          <p class="my-5">
+            <strong class="block font-medium mb-1">Birth city:</strong>
+            <%= bodygraph.birth_city %>
+          </p>
+        </div>
+        <div id="advanced-details-right" style="text-align: right;">
+          <p class="my-5">
+            <strong class="block font-medium mb-1">Aura Type:</strong>
+            <%= bodygraph.aura_type %>
+          </p>
+          <p class="my-5">
+            <strong class="block font-medium mb-1">Inner authority:</strong>
+            <%= bodygraph.inner_authority %>
+          </p>
+          <p class="my-5">
+            <strong class="block font-medium mb-1">Definition:</strong>
+            <%= bodygraph.definition %>
+          </p>
+          <p class="my-5">
+            <strong class="block font-medium mb-1">Profile:</strong>
+            <%= bodygraph.profile %>
+          </p>
+        </div>
+        <div id="advanced-details-bottom" style="position: relative;">
+          <div class="grid grid-cols-5 gap-0">
+            <div class="col-span-1">
+              <p class="my-5">
+                <strong class="block font-medium mb-1">Determination:</strong>
+                <%= bodygraph.determination %>
+              </p>
+            </div>
+            <div class="col-span-1">
+              <p class="my-5">
+                <strong class="block font-medium mb-1">Environment:</strong>
+                <%= bodygraph.environment %>
+              </p>
+            </div>
+            <div class="col-span-1">
+              <p class="my-5">
+                <strong class="block font-medium mb-1">View:</strong>
+                <%= bodygraph.view %>
+              </p>
+            </div>
+            <div class="col-span-1">
+              <p class="my-5">
+                <strong class="block font-medium mb-1">Motivation:</strong>
+                <%= bodygraph.motivation %>
+              </p>
+            </div>
+            <div class="col-span-1">
+              <p class="my-5">
+                <strong class="block font-medium mb-1">Variable:</strong>
+                <%= bodygraph.variable %>
+              </p>
+            </div>
+            <div class="col-span-3">
+              <p class="my-5">
+                <strong class="block font-medium mb-1">Incarnation cross:</strong>
+                <%= bodygraph.incarnation_cross %>
+              </p>
+            </div>
+            <div class="col-span-1">
+              <p class="my-5">
+                <strong class="block font-medium mb-1">Cognition:</strong>
+                <%= bodygraph.cognition %>
+              </p>
+            </div>
+            <div class="col-span-1">
+              <p class="my-5">
+                <strong class="block font-medium mb-1">Sense:</strong>
+                <%= bodygraph.sense %>
+              </p>
+            </div>
+            <div class="col-span-3">
+              <p class="my-5">
+                <strong class="block font-medium mb-1">Defined Centers:</strong>
+                <% defined_centers = [
+                    { name: 'Head', defined: bodygraph.head_defined },
+                    { name: 'Ajna', defined: bodygraph.ajna_defined },
+                    { name: 'Throat', defined: bodygraph.throat_defined },
+                    { name: 'Spleen', defined: bodygraph.spleen_defined },
+                    { name: 'Solar Plexus', defined: bodygraph.solar_plexus_defined },
+                    { name: 'G Center', defined: bodygraph.g_center_defined },
+                    { name: 'Sacral', defined: bodygraph.sacral_defined },
+                    { name: 'Root', defined: bodygraph.root_defined },
+                    { name: 'Ego', defined: bodygraph.ego_defined }
+                  ].select { |center| center[:defined] }.map { |center| center[:name] }
+                %>
+                <% if defined_centers.any? %>
+                  <%= defined_centers.join(', ') %>
+                <% else %>
+                  None
+                <% end %>
+              </p>
+            </div>
+            <div class="col-span-1">
+              <p class="my-5">
+                <strong class="block font-medium mb-1">Personality Nodes Tone:</strong>
+                <%= bodygraph.personality_nodes_tone %>
+              </p>
+            </div>
+            <div class="col-span-1">
+              <p class="my-5">
+                <strong class="block font-medium mb-1">Design Nodes Tone:</strong>
+                <%= bodygraph.design_nodes_tone %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End advanced mode wrapper -->
+  </div>
+</div>
+
+<script>
+  <%
+     @personality_activations = JSON.parse(bodygraph.personality_activations)
+     sun_line_remainder = @personality_activations['sun_line'].to_i % 1.0
+     sun_base = ((sun_line_remainder % 0.16666666 % 0.02777777) * 5).floor
+     sun_tone = ((sun_line_remainder % 0.16666666) * 6).floor
+     sun_color = (sun_line_remainder * 6).floor
+     north_node_remainder = @personality_activations['north_node_line'].to_i % 1.0
+     north_node_base = ((north_node_remainder % 0.16666666 % 0.02777777) * 5).floor
+     north_node_tone = ((north_node_remainder % 0.16666666) * 6).floor
+     north_node_color = (north_node_remainder * 6).floor
+
+     personality_activations_json = {
+       Sun: { g: @personality_activations['sun_gate'], l: @personality_activations['sun_line'].to_i.floor, c: sun_color, t: sun_tone, b: sun_base },
+       Earth: { g: opposite_gate(@personality_activations['sun_gate']), l: @personality_activations['sun_line'].to_i.floor, c: sun_color, t: sun_tone, b: sun_base },
+       NorthNode: { g: @personality_activations['north_node_gate'], l: @personality_activations['north_node_line'].to_i.floor, c: north_node_color, t: north_node_tone, b: north_node_base },
+       SouthNode: { g: opposite_gate(@personality_activations['north_node_gate']), l: @personality_activations['north_node_line'].to_i.floor, c: north_node_color, t: north_node_tone, b: north_node_base },
+       Moon: { g: @personality_activations['moon_gate'], l: @personality_activations['moon_line'].to_i, c: @personality_activations['moon_color'].to_i },
+       Mercury: { g: @personality_activations['mercury_gate'], l: @personality_activations['mercury_line'].to_i, c: @personality_activations['mercury_color'].to_i },
+       Venus: { g: @personality_activations['venus_gate'], l: @personality_activations['venus_line'].to_i, c: @personality_activations['venus_color'].to_i },
+       Mars: { g: @personality_activations['mars_gate'], l: @personality_activations['mars_line'].to_i, c: @personality_activations['mars_color'].to_i },
+       Jupiter: { g: @personality_activations['jupiter_gate'], l: @personality_activations['jupiter_line'].to_i, c: @personality_activations['jupiter_color'].to_i },
+       Saturn: { g: @personality_activations['saturn_gate'], l: @personality_activations['saturn_line'].to_i, c: @personality_activations['saturn_color'].to_i },
+       Uranus: { g: @personality_activations['uranus_gate'], l: @personality_activations['uranus_line'].to_i, c: @personality_activations['uranus_color'].to_i },
+       Neptune: { g: @personality_activations['neptune_gate'], l: @personality_activations['neptune_line'].to_i, c: @personality_activations['neptune_color'].to_i }, Pluto: { g: @personality_activations['pluto_gate'], l: @personality_activations['pluto_line'].to_i, c: @personality_activations['pluto_color'].to_i } }.to_json
+
+     @design_activations = JSON.parse(bodygraph.design_activations)
+     sun_line_remainder = @design_activations['sun_line'].to_i % 1.0
+     sun_base = ((sun_line_remainder % 0.16666666 % 0.02777777) * 5).floor
+     sun_tone = ((sun_line_remainder % 0.16666666) * 6).floor
+     sun_color = (sun_line_remainder * 6).floor
+     north_node_remainder = @design_activations['north_node_line'].to_i % 1.0
+     north_node_base = ((north_node_remainder % 0.16666666 % 0.02777777) * 5).floor
+     north_node_tone = ((north_node_remainder % 0.16666666) * 6).floor
+     north_node_color = (north_node_remainder * 6).floor
+
+     design_activations_json = {
+       Sun: { g: @design_activations['sun_gate'], l: @design_activations['sun_line'].to_i.floor, c: sun_color, t: sun_tone, b: sun_base },
+       Earth: { g: opposite_gate(@design_activations['sun_gate']), l: @design_activations['sun_line'].to_i.floor, c: sun_color, t: sun_tone, b: sun_base },
+       NorthNode: { g: @design_activations['north_node_gate'], l: @design_activations['north_node_line'].to_i.floor, c: north_node_color, t: north_node_tone, b: north_node_base },
+       SouthNode: { g: opposite_gate(@design_activations['north_node_gate']), l: @design_activations['north_node_line'].to_i.floor, c: north_node_color, t: north_node_tone, b: north_node_base },
+       Moon: { g: @design_activations['moon_gate'], l: @design_activations['moon_line'].to_i, c: @design_activations['moon_color'].to_i },
+       Mercury: { g: @design_activations['mercury_gate'], l: @design_activations['mercury_line'].to_i, c: @design_activations['mercury_color'].to_i },
+       Venus: { g: @design_activations['venus_gate'], l: @design_activations['venus_line'].to_i, c: @design_activations['venus_color'].to_i },
+       Mars: { g: @design_activations['mars_gate'], l: @design_activations['mars_line'].to_i, c: @design_activations['mars_color'].to_i },
+       Jupiter: { g: @design_activations['jupiter_gate'], l: @design_activations['jupiter_line'].to_i, c: @design_activations['jupiter_color'].to_i },
+       Saturn: { g: @design_activations['saturn_gate'], l: @design_activations['saturn_line'].to_i, c: @design_activations['saturn_color'].to_i },
+       Uranus: { g: @design_activations['uranus_gate'], l: @design_activations['uranus_line'].to_i, c: @design_activations['uranus_color'].to_i },
+       Neptune: { g: @design_activations['neptune_gate'], l: @design_activations['neptune_line'].to_i, c: @design_activations['neptune_color'].to_i },
+       Pluto: { g: @design_activations['pluto_gate'], l: @design_activations['pluto_line'].to_i, c: @design_activations['pluto_color'].to_i }
+     }.to_json %>
+
+     const showGodheads = localStorage.getItem('dashboardRaveMandalaShowGodheads') == 'true';
+     const showZodiac = localStorage.getItem('dashboardRaveMandalaShowZodiac') == 'true';
+     const useZodiacSymbols = localStorage.getItem('dashboardRaveMandalaUseZodiacSymbols') == 'true';
+
+     const personalityActivationsString = '<%= raw personality_activations_json %>';
+     const personalityActivations = JSON.parse(personalityActivationsString);
+     const designActivationsString = '<%= raw design_activations_json %>';
+     const designActivations = JSON.parse(designActivationsString);
+
+     const allActivations = [];
+     const personalityGates = {};
+     const designGates = {};
+     const activatedGates = {};
+    const personalityPlanetsByGate = {};
+    const designPlanetsByGate = {};
+
+     Object.keys(personalityActivations).forEach(planet => {
+      const gate = personalityActivations[planet].g;
+      const line = personalityActivations[planet].l;
+       const activation = personalityActivations[planet];
+       activation.planet = planet;
+       activation.personalityOrDesign = 'personality';
+       personalityGates[gate] = true;
+       activatedGates[gate] = true;
+       allActivations.push(activation);
+      if (typeof personalityPlanetsByGate[gate] === 'undefined') {
+        personalityPlanetsByGate[gate] = [];
+      }
+      personalityPlanetsByGate[gate].push(planet);
+
+     });
+     Object.keys(designActivations).forEach(planet => {
+      const gate = designActivations[planet].g;
+      const line = designActivations[planet].l;
+       const activation = designActivations[planet];
+       activation.planet = planet;
+       activation.personalityOrDesign = 'design';
+       designGates[activation.g] = true;
+       activatedGates[activation.g] = true;
+       allActivations.push(activation);
+      if (typeof designPlanetsByGate[gate] === 'undefined') {
+        designPlanetsByGate[gate] = [];
+      }
+      designPlanetsByGate[gate].push(planet);
+     });
+</script>
+<div id="<%= dom_id bodygraph %>" class="p-8" style="background-color: #f1f1f1; min-width: 1070px;">
+  <div class="cursor-pointer" onmouseover="showEditLink();" onmouseout="hideEditLink();" onclick="goToEditPage();" style="position: relative;">
+    <h1 class="text-2xl font-bold pb-6" id="bodygraphHeader">
+      <%= bodygraph.name %>
+      <%= link_to edit_bodygraph_path(@bodygraph || @public_bodygraph), class: "edit-bodygraph-link", id: "editLink", style: "text-decoration: none; margin-left: 5px; display: none;" do %>
+        <span class="underline font-normal">Edit</span>
+      <% end %>
+    </h1>
+  </div>
+  <script>
+    function goToEditPage() {
+      window.location.href = "<%= edit_bodygraph_path(@bodygraph || @public_bodygraph) %>";
+    }
+
+    function showEditLink() {
+      document.getElementById('editLink').style.display = 'inline';
+    }
+
+    function hideEditLink() {
+      document.getElementById('editLink').style.display = 'none';
+    }
+  </script>
+  <style>
+    .bodygraph-header-container {
+      cursor: pointer;
+    }
+  </style>
+ 
+    <% if controller_name == 'public_bodygraphs' && action_name == 'show' %>
+      <div id="biography-details-1" class="text-xs hidden" style="width: 228px;">
+        <%= bodygraph.birth_name.present? ? bodygraph.birth_name : bodygraph.name %><br />
+        <%= bodygraph.birth_city %><br />
+        <span class="font-italic text-xs"><%= number_with_precision(bodygraph.latitude, precision: 3) %>, <%= number_with_precision(bodygraph.longitude, precision: 3) %></span>
+        <% if (bodygraph.rodden_rating) %>
+          <br />
+          <%= bodygraph.rodden_rating %> rated birth time.
+        <% end %>
+      </div>
+      <div id="biography-details-2" class="text-xs hidden" style="width: 147.5px;">
+        <%= bodygraph.birth_date_utc.strftime('%Y-%m-%d %H:%M') %> UTC<br />
+        Design date:<br />
+        <%= bodygraph.design_date_utc.strftime('%Y-%m-%d %H:%M') %> UTC<br />
+      </div>
+      <div class="ml-10">
+        <h3 class="text-xs pb-2">Biography</h3>
+        <div class="flex items-start gap-4 relative">
+          <div class="flex space-x-1 rounded-lg bg-slate-100 p-0.5" role="tablist" aria-orientation="horizontal">
+            <button id="biography-mode-toggle-button" type="button" class="bg-gray-200 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2" role="switch" aria-checked="false" onclick="toggleBiographyMode()">
+              <span id="biography-mode-toggle-span" aria-hidden="true" class="translate-x-0 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <script>
+        function toggleBiographyMode() {
+            const isBiographyMode = localStorage.getItem('isBiographyMode') === 'true';
+            const newMode = !isBiographyMode;
+            localStorage.setItem('isBiographyMode', newMode.toString());
+            updateLinkText();
+          }
+          function updateLinkText() {
+            const isBiographyMode = localStorage.getItem('isBiographyMode') === 'true';
+            const toggleButton = document.getElementById('biography-mode-toggle-button');
+            const toggleSpan = document.getElementById('biography-mode-toggle-span');
+            const chartModeWrapper = document.getElementById('chart-mode-wrapper');
+            const viewModeWrapper = document.getElementById('view-mode-wrapper');
+            const bodygraphWrapper = document.getElementById('bodygraph-wrapper');
+            const biographyWrapper = document.getElementById('biography-wrapper');
+            const biographyDetails1 = document.getElementById('biography-details-1');
+            const biographyDetails2 = document.getElementById('biography-details-2');
+            if (isBiographyMode) {
+              toggleButton.classList.remove('bg-gray-200');
+              toggleButton.classList.add('bg-indigo-600');
+              toggleButton.setAttribute('aria-checked', 'true');
+              toggleSpan.classList.remove('translate-x-0');
+              toggleSpan.classList.add('translate-x-5');
+              chartModeWrapper.classList.add('hidden');
+              viewModeWrapper.classList.add('hidden');
+              bodygraphWrapper.classList.add('hidden');
+              biographyWrapper.classList.remove('hidden');
+              biographyDetails1.classList.remove('hidden');
+              biographyDetails2.classList.remove('hidden');
+            } else {
+              toggleButton.classList.remove('bg-indigo-600');
+              toggleButton.classList.add('bg-gray-200');
+              toggleButton.setAttribute('aria-checked', 'false');
+              toggleSpan.classList.remove('translate-x-5');
+              toggleSpan.classList.add('translate-x-0');
+              biographyWrapper.classList.add('hidden');
+              chartModeWrapper.classList.remove('hidden');
+              viewModeWrapper.classList.remove('hidden');
+              bodygraphWrapper.classList.remove('hidden');
+              biographyDetails1.classList.add('hidden');
+              biographyDetails2.classList.add('hidden');
+            }
+          }
+          window.addEventListener('load', updateLinkText);
+      </script>
+    <% end %>
+  </div>
+
+
+  <div id="bodygraph-wrapper" style="position: relative; z-index: 20; top: 200px; left: 316px;" class="flex items-start gap-4 px-4 py-5 sm:p-6" style="min-height: 800px; min-width: 1000px;">
+    <object class="relative" style="left: 45px; top: 0; opacity: .8;" id="bodygraph-bg" type="image/svg+xml" data="<%= image_url('bodygraph-bg.svg') %>" width="1500px"></object>
+    <div id="bodygraph-image">
+      <%= render partial: 'bodygraphs/bodygraph_image', locals: { activations_to_show: 'all' } %>
+    </div>
+    <div id="bodygraph-image-design" class="hidden">
+      <%= render partial: 'bodygraphs/bodygraph_image', locals: { activations_to_show: 'design' } %>
+    </div>
+    <div id="bodygraph-image-personality" class="hidden">
+      <%= render partial: 'bodygraphs/bodygraph_image', locals: { activations_to_show: 'personality' } %>
+    </div>
+    <div id="bodygraph-image-incarnation-cross" class="hidden">
+      <%= render partial: 'bodygraphs/bodygraph_image', locals: { activations_to_show: 'incarnation-cross' } %>
+    </div>
+    <!-- Standard Chart Mode -->
+    <div id="standard-mode-wrapper">
+      <div id="bodygraph-planets-design-wrapper" class="relative" style="left: 0; color: #A44344;">
+        <object class="absolute" style="left: 14px;" id="bodygraph-planets-design" type="image/svg+xml" data="<%= image_url('bodygraph-design.svg') %>" width="140px"></object>
+        <span id="bodygraph-label-design-Sun" style="position: absolute; top: 63px; width: 32px; text-align: right;"></span>
+        <span id="bodygraph-label-design-Earth" style="position: absolute; top: 100px; width: 32px; text-align: right;"></span>
+        <span id="bodygraph-label-design-NorthNode" style="position: absolute; top: 137px; width: 32px; text-align: right;"></span>
+        <span id="bodygraph-label-design-SouthNode" style="position: absolute; top: 174px; width: 32px; text-align: right;"></span>
+        <span id="bodygraph-label-design-Moon" style="position: absolute; top: 211px; width: 32px; text-align: right;"></span>
+        <span id="bodygraph-label-design-Mercury" style="position: absolute; top: 248px; width: 32px; text-align: right;"></span>
+        <span id="bodygraph-label-design-Venus" style="position: absolute; top: 285px; width: 32px; text-align: right;"></span>
+        <span id="bodygraph-label-design-Mars" style="position: absolute; top: 322px; width: 32px; text-align: right;"></span>
+        <span id="bodygraph-label-design-Jupiter" style="position: absolute; top: 359px; width: 32px; text-align: right;"></span>
+        <span id="bodygraph-label-design-Saturn" style="position: absolute; top: 396px; width: 32px; text-align: right;"></span>
+        <span id="bodygraph-label-design-Uranus" style="position: absolute; top: 433px; width: 32px; text-align: right;"></span>
+        <span id="bodygraph-label-design-Neptune" style="position: absolute; top: 470px; width: 32px; text-align: right;"></span>
+        <span id="bodygraph-label-design-Pluto" style="position: absolute; top: 507px; width: 32px; text-align: right;"></span>
+      </div>
+      <div id="bodygraph-planets-personality-wrapper" class="relative" style="left: 532px; width: 430px;">
+        <object id="bodygraph-planets" type="image/svg+xml" data="<%= image_url('bodygraph-personality.svg') %>" width="140px"></object>
+        <span id="bodygraph-label-personality-Sun" style="position: absolute; top: 63px; left: 60px;"></span>
+        <span id="bodygraph-label-personality-Earth" style="position: absolute; top: 100px; left: 60px;"></span>
+        <span id="bodygraph-label-personality-NorthNode" style="position: absolute; top: 137px; left: 60px;"></span>
+        <span id="bodygraph-label-personality-SouthNode" style="position: absolute; top: 174px; left: 60px;"></span>
+        <span id="bodygraph-label-personality-Moon" style="position: absolute; top: 211px; left: 60px;"></span>
+        <span id="bodygraph-label-personality-Mercury" style="position: absolute; top: 248px; left: 60px;"></span>
+        <span id="bodygraph-label-personality-Venus" style="position: absolute; top: 285px; left: 60px;"></span>
+        <span id="bodygraph-label-personality-Mars" style="position: absolute; top: 322px; left: 60px;"></span>
+        <span id="bodygraph-label-personality-Jupiter" style="position: absolute; top: 359px; left: 60px;"></span>
+        <span id="bodygraph-label-personality-Saturn" style="position: absolute; top: 396px; left: 60px;"></span>
+        <span id="bodygraph-label-personality-Uranus" style="position: absolute; top: 433px; left: 60px;"></span>
+        <span id="bodygraph-label-personality-Neptune" style="position: absolute; top: 470px; left: 60px;"></span>
+        <span id="bodygraph-label-personality-Pluto" style="position: absolute; top: 507px; left: 60px;"></span>
+      </div>
+      <!-- Bodygraph info -->
+      <div style="position: relative;">
+        <dl class="divide-y divide-gray-200">
+          <div class="pb-4">
+            <dt class="text-sm text-gray-500">Type</dt>
+            <dd class="text-lg text-gray-800"><%= bodygraph.aura_type %></dd>
+          </div>
+          <div class="py-4">
+            <dt class="text-sm text-gray-500">Strategy</dt>
+            <dd class="text-lg text-gray-800">
+              <%= case bodygraph.aura_type
+                  when 'Generator', 'Manifesting Generator'
+                    'To Respond'
+                  when 'Manifestor'
+                    'To Inform'
+                  when 'Projector'
+                    'Wait to be Invited'
+                  when 'Reflector'
+                    'Wait a Lunar Cycle'
+                end %>
+            </dd>
+          </div>
+          <div class="py-4">
+            <dt class="text-sm text-gray-500">Not-Self Theme</dt>
+            <dd class="text-lg text-gray-800">
+              <%= case bodygraph.aura_type
+                  when 'Generator', 'Manifesting Generator'
+                    'Frustration'
+                  when 'Manifestor'
+                    'Anger'
+                  when 'Projector'
+                    'Bitterness'
+                  when 'Reflector'
+                    'Disappointment'
+                end %>
+            </dd>
+          </div>
+          <div class="py-4">
+            <dt class="text-sm text-gray-500">Signature</dt>
+            <dd class="text-lg text-gray-800">
+              <%= case bodygraph.aura_type
+                  when 'Generator', 'Manifesting Generator'
+                    'Satisfaction'
+                  when 'Manifestor'
+                    'Peace'
+                  when 'Projector'
+                    'Success'
+                  when 'Reflector'
+                    'Surprise'
+                end %>
+            </dd>
+          </div>
+          <div class="py-4">
+            <dt class="text-sm text-gray-500">Definition</dt>
+            <dd class="text-lg text-gray-800"><%= bodygraph.definition %></dd>
+          </div>
+          <div class="py-4">
+            <dt class="text-sm text-gray-500">Authority</dt>
+            <dd class="text-lg text-gray-800"><%= bodygraph.inner_authority %></dd>
+          </div>
+          <div class="py-4">
+            <dt class="text-sm text-gray-500">Profile</dt>
+            <dd class="text-lg text-gray-800"><%= bodygraph.profile %></dd>
+          </div>
+          <div class="py-4">
+            <dt class="text-sm text-gray-500">Incarnation Cross</dt>
+            <dd class="text-lg text-gray-800"><%= bodygraph.incarnation_cross %></dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <!-- Advanced Mode -->
+    <% 
+      @design_activations = JSON.parse(bodygraph.design_activations) 
+      @personality_activations = JSON.parse(bodygraph.personality_activations)
+      design_sun_earth_color_index = ((@design_activations['sun_line'] % 1) / (1.0 / 6))
+      design_sun_earth_tone_index = ((design_sun_earth_color_index % 1) / (1.0 / 6))
+      @design_sun_earth_color = design_sun_earth_color_index.to_i + 1
+      @design_sun_earth_tone = design_sun_earth_tone_index.to_i + 1
+      @design_sun_earth_base = ((design_sun_earth_tone_index % 1) / (1.0 / 5)).to_i + 1
+      design_nodes_color_index = ((@design_activations['north_node_line'] % 1) / (1.0 / 6))
+      design_nodes_tone_index = ((design_nodes_color_index % 1) / (1.0 / 6))
+      @design_nodes_color = design_nodes_color_index.to_i + 1
+      @design_nodes_tone = design_nodes_tone_index.to_i + 1
+      @design_nodes_base = ((design_nodes_tone_index % 1) / (1.0 / 5)).to_i + 1
+      personality_nodes_color_index = ((@personality_activations['north_node_line'] % 1) / (1.0 / 6))
+      personality_nodes_tone_index = ((personality_nodes_color_index % 1) / (1.0 / 6))
+      @personality_nodes_color = personality_nodes_color_index.to_i + 1
+      @personality_nodes_tone = personality_nodes_tone_index.to_i + 1
+      @personality_nodes_base = ((personality_nodes_tone_index % 1) / (1.0 / 5)).to_i + 1
+      personality_sun_earth_color_index = ((@personality_activations['sun_line'] % 1) / (1.0 / 6))
+      personality_sun_earth_tone_index = ((personality_sun_earth_color_index % 1) / (1.0 / 6))
+      @personality_sun_earth_color = personality_sun_earth_color_index.to_i + 1
+      @personality_sun_earth_tone = personality_sun_earth_tone_index.to_i + 1
+      @personality_sun_earth_base = ((personality_sun_earth_tone_index % 1) / (1.0 / 5)).to_i + 1
+    %>
+    <div id="advanced-mode-wrapper" class="hidden relative">
+      <div id="advanced-design" class="absolute" style="left: -23px; color: #F56565;">
+        <h3 class="text-center pb-2">Design</h3>
+        <div class="flex flex-wrap" style="width: 358px;">
+          <!-- Sun -->
+          <div style="height: 48px; width: 175px; background: #FCFCFC" class="advanced-design-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2 mb-2">
+            <div class="pl-6" style="width: 100px;">
+              <span class="font-semibold"><%= @design_activations['sun_gate'] %></span>.<span class="font-semibold"><%= @design_activations['sun_line'].to_i.to_i %></span>.<span class="activation-color text-sm"><%= @design_sun_earth_color %></span>.<span class="text-sm"><%= @design_sun_earth_tone %></span>.<span class="text-sm"><%= @design_sun_earth_base %></span>
+            </div>
+            <svg id="advanced-design-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12"><path d="M10 6a4 4 0 1 0-8 0 4 4 0 1 0 8 0zm0 0" fill="none" stroke="#F56565" stroke-width=".6" stroke-miterlimit="10"/><path stroke="#F56565" d="M6.9 6c0-.5-.4-.9-.9-.9s-.9.4-.9.9.4.9.9.9.9-.4.9-.9"/></svg>
+          </div>
+          <!-- Earth -->
+          <div style="height: 48px; width: 175px; background: #FCFCFC" class="advanced-design-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3">
+            <div class="pl-6" style="width: 100px;">
+              <span class="font-semibold"><%= opposite_gate(@design_activations['sun_gate']) %></span>.<span class="font-semibold"><%= @design_activations['sun_line'].to_i.to_i %></span>.<span class="activation-color text-sm"><%= @design_sun_earth_color %></span>.<span class="text-sm"><%= @design_sun_earth_tone %></span>.<span class="text-sm"><%= @design_sun_earth_base %></span>
+            </div>
+            <svg id="advanced-design-earth" width="24" height="24" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="12pt" height="12pt" viewBox="0 0 12 12" version="1.1" id="svg9" sodipodi:docname="U+1F728 (8 point).svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+              <path inkscape:connector-curvature="0" id="path4" d="M 6,9.9999997 V 2.0000002" style="fill:none;stroke:#F56565;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" sodipodi:nodetypes="cc"/>
+              <path inkscape:connector-curvature="0" id="path6" d="m 2,6.0000001 h 8" style="fill:none;stroke:#F56565;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" sodipodi:nodetypes="cc"/>
+              <path inkscape:connector-curvature="0" id="path2-5" d="M 10,6.0000001 C 10,3.7929689 8.207031,2.0000002 6,2.0000002 c -2.207031,0 -4,1.7929687 -4,3.9999999 0,2.2070311 1.792969,3.9999996 4,3.9999996 2.207031,0 4,-1.7929685 4,-3.9999996 z m 0,0" style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"/>
+            </svg>
+          </div>
+          <!-- North Node -->
+          <div style="height: 48px; width: 175px; background: #FCFCFC" class="advanced-design-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2 mb-2">
+            <div class="pl-6" style="width: 100px;">
+              <span class="font-semibold"><%= @design_activations['north_node_gate'] %></span>.<span class="font-semibold"><%= @design_activations['north_node_line'].to_i.to_i %></span>.<span class="activation-color text-sm"><%= @design_nodes_color %></span>.<span class="text-sm"><%= @design_nodes_tone %></span>.<span class="text-sm"><%= @design_nodes_base %></span>
+            </div>
+            <svg id="advanced-design-north-node" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" height="24" viewBox="0 0 12 12" version="1.1" id="svg9" sodipodi:docname="Mars.svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+              <g id="g1413" transform="rotate(-45,5.233483,5.4282608)">
+                <path style="fill:none;stroke:#F56565;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 5.7118644,10.033898 c 2.2070312,0 4,-1.7929685 4,-3.9999997 0,-2.2070312 -1.7929688,-4 -4,-4 -2.2070312,0 -4,1.7929688 -4,4" id="path2" inkscape:connector-curvature="0" sodipodi:nodetypes="cssc"/>
+                <path style="fill:none;stroke:#F56565;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 1.7118644,6.0338983 c 0,-0.691406 -0.5585939,-1.25 -1.25,-1.25 -0.6914063,0 -1.25,0.558594 -1.25,1.25 0,0.691406 0.5585937,1.25 1.25,1.25 0.6914061,0 1.25,-0.558594 1.25,-1.25 z m 0,0" id="path23" inkscape:connector-curvature="0"/>
+                <path style="fill:none;stroke:#F56565;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 6.9618644,11.283898 c 0,-0.691406 -0.5585939,-1.25 -1.25,-1.25 -0.6914063,0 -1.25,0.558594 -1.25,1.25 0,0.691406 0.5585937,1.25 1.25,1.25 0.6914061,0 1.25,-0.558594 1.25,-1.25 z m 0,0" id="path23-3" inkscape:connector-curvature="0"/>
+              </g>
+            </svg>
+          </div>
+          <!-- South Node -->
+          <div style="height: 48px; width: 175px; background: #FCFCFC" class="advanced-design-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3">
+            <div class="pl-6" style="width: 100px;">
+              <span class="font-semibold"><%= opposite_gate(@design_activations['north_node_gate']) %></span>.<span class="font-semibold"><%= @design_activations['north_node_line'].to_i.to_i %></span>.<span class="activation-color text-sm"><%= @design_nodes_color %></span>.<span class="text-sm"><%= @design_nodes_tone %></span>.<span class="text-sm"><%= @design_nodes_base %></span>
+            </div>
+            <svg id="advanced-design-south-node" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" height="24" viewBox="0 0 12 12" version="1.1" id="svg9" sodipodi:docname="Mars.svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+              <g id="g1413" transform="matrix(0.70710678,0.70710678,0.70710678,-0.70710678,-2.3055083,6.7094679)">
+                <path style="fill:none;stroke:#F56565;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 5.7118644,10.033898 c 2.2070312,0 4,-1.7929685 4,-3.9999997 0,-2.2070312 -1.7929688,-4 -4,-4 -2.2070312,0 -4,1.7929688 -4,4" id="path2" inkscape:connector-curvature="0" sodipodi:nodetypes="cssc"/>
+                <path style="fill:none;stroke:#F56565;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 1.7118644,6.0338983 c 0,-0.691406 -0.5585939,-1.25 -1.25,-1.25 -0.6914063,0 -1.25,0.558594 -1.25,1.25 0,0.691406 0.5585937,1.25 1.25,1.25 0.6914061,0 1.25,-0.558594 1.25,-1.25 z m 0,0" id="path23" inkscape:connector-curvature="0"/>
+                <path style="fill:none;stroke:#F56565;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 6.9618644,11.283898 c 0,-0.691406 -0.5585939,-1.25 -1.25,-1.25 -0.6914063,0 -1.25,0.558594 -1.25,1.25 0,0.691406 0.5585937,1.25 1.25,1.25 0.6914061,0 1.25,-0.558594 1.25,-1.25 z m 0,0" id="path23-3" inkscape:connector-curvature="0"/>
+              </g>
+            </svg>
+          </div>
+          <!-- Uranus -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-design-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2 mb-2">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @design_activations['uranus_gate']%></span>.<span class="font-semibold"><%= @design_activations['uranus_line'].to_i%></span>.<span class="activation-color text-sm"><%= @design_activations['uranus_color'].to_i%></span>
+            </div>
+            <svg id="advanced-design-uranus" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" height="24" viewBox="0 0 12 12" version="1.1" id="svg13" sodipodi:docname="Uranus.svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+              <path inkscape:connector-curvature="0" id="path2" d="M 7.25,9.75 C 7.25,9.0585938 6.6914062,8.5 6,8.5 5.3085938,8.5 4.75,9.0585938 4.75,9.75 4.75,10.441406 5.3085938,11 6,11 6.6914062,11 7.25,10.441406 7.25,9.75 Z m 0,0" style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"/>
+              <path inkscape:connector-curvature="0" id="path4" d="M 6,8.5 V 2.25" style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"/>
+              <path inkscape:connector-curvature="0" id="path6" d="M 3.5,1 V 6" style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"/>
+              <path inkscape:connector-curvature="0" id="path8" d="M 8.5,1 V 6" style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"/>
+              <path inkscape:connector-curvature="0" id="path10" d="m 3.5,3.5 h 5" style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"/>
+            </svg>
+          </div>
+          <!-- Mercury -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-design-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @design_activations['mercury_gate']%></span>.<span class="font-semibold"><%= @design_activations['mercury_line'].to_i%></span>.<span class="activation-color text-sm"><%= @design_activations['mercury_color'].to_i%></span>
+            </div>
+            <svg id="advanced-design-mercury" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12" version="1.1" style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:round; position: relative; top: -2px;">
+              <path d="M 8,5 C 8,3.8945312 7.1054688,3 6,3 4.8945312,3 4,3.8945312 4,5 4,6.1054688 4.8945312,7 6,7 7.1054688,7 8,6.1054688 8,5 Z m 0,0"/>
+              <path d="M 4,1 C 4,2.1054688 4.8945312,3 6,3 7.1054688,3 8,2.1054688 8,1"/>
+              <path d="M 6,11 V 7"/>
+              <path d="M 4,9 H 8"/>
+            </svg>
+          </div>
+          <!-- Moon -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-design-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @design_activations['moon_gate']%></span>.<span class="font-semibold"><%= @design_activations['moon_line'].to_i%></span>.<span class="activation-color text-sm"><%= @design_activations['moon_color'].to_i%></span>
+            </div>
+            <svg id="advanced-design-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12" version="1.1">
+              <path d="m 8.5,1 c -2.7617188,0 -5,2.2382812 -5,5 0,2.7617188 2.2382812,5 5,5 C 6.7148438,9.96875 5.6132812,8.0625 5.6132812,6 5.6132812,3.9375 6.7148438,2.03125 8.5,1 Z" style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linejoin:round"/>
+            </svg>
+          </div>
+          <!-- Neptune -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-design-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2 mb-2">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @design_activations['neptune_gate']%></span>.<span class="font-semibold"><%= @design_activations['neptune_line'].to_i%></span>.<span class="activation-color text-sm"><%= @design_activations['neptune_color'].to_i%></span>
+            </div>
+            <svg id="advanced-design-neptune" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12" version="1.1" style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round">
+              <path d="M 6,11 V 1"/>
+              <path d="m 3.5,7.25 h 5"/>
+              <path d="M 2.25,1 C 2.25,3.0703125 3.9296875,4.75 6,4.75 8.0703125,4.75 9.75,3.0703125 9.75,1"/>
+            </svg>
+          </div>
+          <!-- Mars -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-design-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @design_activations['mars_gate']%></span>.<span class="font-semibold"><%= @design_activations['mars_line'].to_i%></span>.<span class="activation-color text-sm"><%= @design_activations['mars_color'].to_i%></span>
+            </div>
+            <svg id="advanced-design-mars" style="position: relative; top: -3px;" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" height="24" viewBox="0 0 12 12">
+              <g id="g844" transform="translate(-1.2192323,-1.2805176)">
+                <g transform="translate(-0.0612853,2.5610352)" id="g836">
+                  <path d="M 7.828125,4.171875 11,1" style="fill:none;stroke:#F56565;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"/>
+                  <path id="path6" d="M 9.2304688,1 H 11 v 1.7695312" style="fill:none;stroke:#F56565;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"/>
+                </g>
+                <path sodipodi:nodetypes="ssssss" style="fill:none;stroke:#F56565;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" d="M 8.49975,8.5000006 C 8.49975,7.8105471 8.2194765,7.185547 7.7668397,6.7329102 7.314203,6.2802735 6.689203,6.0000001 5.99975,6.0000001 c -1.378907,0 -2.5,1.1210935 -2.5,2.5000005 0,1.378906 1.121093,2.4999994 2.5,2.4999994 1.378906,0 2.5,-1.1210934 2.5,-2.4999994 z" id="path2-5" inkscape:connector-curvature="0"/>
+              </g>
+            </svg>
+          </div>
+          <!-- Venus -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-design-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @design_activations['venus_gate']%></span>.<span class="font-semibold"><%= @design_activations['venus_line'].to_i%></span>.<span class="activation-color text-sm"><%= @design_activations['venus_color'].to_i%></span>
+            </div>
+            <svg id="advanced-design-venus" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 12 12" version="1.1" style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:round; position: relative; left: 2px;">
+              <circle cx="6" cy="3.5" r="2.5"/>
+              <path d="M 6,11 V 6"/>
+              <path d="m 3.5,8.5 h 5"/>
+            </svg>
+          </div>
+          <!-- Pluto -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-design-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2 mb-2">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @design_activations['pluto_gate']%></span>.<span class="font-semibold"><%= @design_activations['pluto_line'].to_i%></span>.<span class="activation-color text-sm"><%= @design_activations['pluto_color'].to_i%></span>
+            </div>
+            <svg id="advanced-design-pluto" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" height="24" viewBox="0 0 12 12" version="1.1" id="svg11" sodipodi:docname="Pluto.svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+              <g id="g832">
+                <path style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" d="M 6,11 V 4.75" id="path2" inkscape:connector-curvature="0"/>
+                <path style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" d="m 3.5,7.25 h 5" id="path4" inkscape:connector-curvature="0"/>
+                <path style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" d="M 2.25,1 C 2.25,3.0703125 3.9296875,4.75 6,4.75 8.0703125,4.75 9.75,3.0703125 9.75,1" id="path6" inkscape:connector-curvature="0"/>
+                <path style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" d="M 7.25,2.25 C 7.25,1.558594 6.6914062,1 6,1 5.3085938,1 4.75,1.558594 4.75,2.25 4.75,2.9414062 5.3085938,3.5 6,3.5 6.6914062,3.5 7.25,2.9414062 7.25,2.25 Z m 0,0" id="path8" inkscape:connector-curvature="0"/>
+              </g>
+            </svg>
+          </div>
+          <!-- Jupiter -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-design-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @design_activations['jupiter_gate']%></span>.<span class="font-semibold"><%= @design_activations['jupiter_line'].to_i%></span>.<span class="activation-color text-sm"><%= @design_activations['jupiter_color'].to_i%></span>
+            </div>
+            <svg id="advanced-design-jupiter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 12 12" version="1.1">
+              <g id="surface1">
+                <path style="fill:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke:#F56565;stroke-opacity:1;stroke-miterlimit:1.5;" d="M 22.5 110 C 35.898438 102.265625 44.140625 87.96875 44.140625 72.5 C 44.140625 57.03125 35.898438 42.734375 22.5 35 L 97.5 35 " transform="matrix(0.1,0,0,-0.1,0,12)"/>
+                <path style="fill:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke:#F56565;stroke-opacity:1;stroke-miterlimit:1.5;" d="M 72.5 60 L 72.5 10 " transform="matrix(0.1,0,0,-0.1,0,12)"/>
+              </g>
+            </svg>
+          </div>
+          <!-- Saturn -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-design-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @design_activations['saturn_gate']%></span>.<span class="font-semibold"><%= @design_activations['saturn_line'].to_i%></span>.<span class="activation-color text-sm"><%= @design_activations['saturn_color'].to_i%></span>
+            </div>
+            <svg id="advanced-design-saturn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12" version="1.1" style="fill:none;stroke:#F56565;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round">
+              <path d="M 3,3 H 7"/>
+              <path d="M 5,1 V 6"/>
+              <path d="M 5,6 C 5,4.8945312 5.8945312,4 7,4 8.1054688,4 9,4.8945312 9,6 9,6.53125 8.7890625,7.0390625 8.4140625,7.4140625 7.5078125,8.3203125 7,9.71875 7,11"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div id="advanced-personality" class="absolute" style="left: 600px;">
+        <h3 class="text-center pb-2">Personality</h3>
+        <div class="flex flex-wrap" style="width: 358px;">
+          <!-- Earth -->
+          <div style="height: 48px; width: 175px; background: #FCFCFC" class="advanced-personality-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2 mb-2">
+            <div class="pl-6" style="width: 100px;">
+              <span class="font-semibold"><%= opposite_gate(@personality_activations['sun_gate']) %></span>.<span class="font-semibold"><%= @personality_activations['sun_line'].to_i.to_i %></span>.<span class="activation-color text-sm"><%= @personality_sun_earth_color %></span>.<span class="text-sm"><%= @personality_sun_earth_tone %></span>.<span class="text-sm"><%= @personality_sun_earth_base %></span>
+            </div>
+            <svg id="advanced-personality-earth" width="24" height="24" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="12pt" height="12pt" viewBox="0 0 12 12" version="1.1" id="svg9" sodipodi:docname="U+1F728 (8 point).svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+              <path inkscape:connector-curvature="0" id="path4" d="M 6,9.9999997 V 2.0000002" style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" sodipodi:nodetypes="cc"/>
+              <path inkscape:connector-curvature="0" id="path6" d="m 2,6.0000001 h 8" style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" sodipodi:nodetypes="cc"/>
+              <path inkscape:connector-curvature="0" id="path2-5" d="M 10,6.0000001 C 10,3.7929689 8.207031,2.0000002 6,2.0000002 c -2.207031,0 -4,1.7929687 -4,3.9999999 0,2.2070311 1.792969,3.9999996 4,3.9999996 2.207031,0 4,-1.7929685 4,-3.9999996 z m 0,0" style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"/>
+            </svg>
+          </div>
+          <!-- Sun -->
+          <div style="height: 48px; width: 175px; background: #FCFCFC" class="advanced-personality-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3">
+            <div class="pl-6" style="width: 100px;">
+              <span class="font-semibold"><%= @personality_activations['sun_gate'] %></span>.<span class="font-semibold"><%= @personality_activations['sun_line'].to_i.to_i %></span>.<span class="activation-color text-sm"><%= @personality_sun_earth_color %></span>.<span class="text-sm"><%= @personality_sun_earth_tone %></span>.<span class="text-sm"><%= @personality_sun_earth_base %></span>
+            </div>
+            <svg id="advanced-personality-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12"><path d="M10 6a4 4 0 1 0-8 0 4 4 0 1 0 8 0zm0 0" fill="none" stroke="#000000" stroke-width=".6" stroke-miterlimit="10"/><path stroke="#000000" d="M6.9 6c0-.5-.4-.9-.9-.9s-.9.4-.9.9.4.9.9.9.9-.4.9-.9"/></svg>
+          </div>
+          <!-- South Node -->
+          <div style="height: 48px; width: 175px; background: #FCFCFC" class="advanced-personality-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2 mb-2">
+            <div class="pl-6" style="width: 100px;">
+              <span class="font-semibold"><%= opposite_gate(@personality_activations['north_node_gate']) %></span>.<span class="font-semibold"><%= @personality_activations['north_node_line'].to_i.to_i %></span>.<span class="activation-color text-sm"><%= @personality_nodes_color %></span>.<span class="text-sm"><%= @personality_nodes_tone %></span>.<span class="text-sm"><%= @personality_nodes_base %></span>
+            </div>
+            <svg id="advanced-personality-south-node" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" height="24" viewBox="0 0 12 12" version="1.1" id="svg9" sodipodi:docname="Mars.svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+              <g id="g1413" transform="matrix(0.70710678,0.70710678,0.70710678,-0.70710678,-2.3055083,6.7094679)">
+                <path style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 5.7118644,10.033898 c 2.2070312,0 4,-1.7929685 4,-3.9999997 0,-2.2070312 -1.7929688,-4 -4,-4 -2.2070312,0 -4,1.7929688 -4,4" id="path2" inkscape:connector-curvature="0" sodipodi:nodetypes="cssc"/>
+                <path style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 1.7118644,6.0338983 c 0,-0.691406 -0.5585939,-1.25 -1.25,-1.25 -0.6914063,0 -1.25,0.558594 -1.25,1.25 0,0.691406 0.5585937,1.25 1.25,1.25 0.6914061,0 1.25,-0.558594 1.25,-1.25 z m 0,0" id="path23" inkscape:connector-curvature="0"/>
+                <path style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 6.9618644,11.283898 c 0,-0.691406 -0.5585939,-1.25 -1.25,-1.25 -0.6914063,0 -1.25,0.558594 -1.25,1.25 0,0.691406 0.5585937,1.25 1.25,1.25 0.6914061,0 1.25,-0.558594 1.25,-1.25 z m 0,0" id="path23-3" inkscape:connector-curvature="0"/>
+              </g>
+            </svg>
+          </div>
+          <!-- North Node -->
+          <div style="height: 48px; width: 175px; background: #FCFCFC" class="advanced-personality-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3">
+            <div class="pl-6" style="width: 100px;">
+              <span class="font-semibold"><%= @personality_activations['north_node_gate'] %></span>.<span class="font-semibold"><%= @personality_activations['north_node_line'].to_i.to_i %></span>.<span class="activation-color text-sm"><%= @personality_nodes_color %></span>.<span class="text-sm"><%= @personality_nodes_tone %></span>.<span class="text-sm"><%= @personality_nodes_base %></span>
+            </div>
+            <svg id="advanced-personality-north-node" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" height="24" viewBox="0 0 12 12" version="1.1" id="svg9" sodipodi:docname="Mars.svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+              <g id="g1413" transform="rotate(-45,5.233483,5.4282608)">
+                <path style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 5.7118644,10.033898 c 2.2070312,0 4,-1.7929685 4,-3.9999997 0,-2.2070312 -1.7929688,-4 -4,-4 -2.2070312,0 -4,1.7929688 -4,4" id="path2" inkscape:connector-curvature="0" sodipodi:nodetypes="cssc"/>
+                <path style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 1.7118644,6.0338983 c 0,-0.691406 -0.5585939,-1.25 -1.25,-1.25 -0.6914063,0 -1.25,0.558594 -1.25,1.25 0,0.691406 0.5585937,1.25 1.25,1.25 0.6914061,0 1.25,-0.558594 1.25,-1.25 z m 0,0" id="path23" inkscape:connector-curvature="0"/>
+                <path style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 6.9618644,11.283898 c 0,-0.691406 -0.5585939,-1.25 -1.25,-1.25 -0.6914063,0 -1.25,0.558594 -1.25,1.25 0,0.691406 0.5585937,1.25 1.25,1.25 0.6914061,0 1.25,-0.558594 1.25,-1.25 z m 0,0" id="path23-3" inkscape:connector-curvature="0"/>
+              </g>
+            </svg>
+          </div>
+          <!-- Moon -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-personality-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2 mb-2">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @personality_activations['moon_gate']%></span>.<span class="font-semibold"><%= @personality_activations['moon_line'].to_i%></span>.<span class="activation-color text-sm"><%= @personality_activations['moon_color'].to_i%></span>
+            </div>
+            <svg id="advanced-personality-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12" version="1.1">
+              <path d="m 8.5,1 c -2.7617188,0 -5,2.2382812 -5,5 0,2.7617188 2.2382812,5 5,5 C 6.7148438,9.96875 5.6132812,8.0625 5.6132812,6 5.6132812,3.9375 6.7148438,2.03125 8.5,1 Z" style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linejoin:round"/>
+            </svg>
+          </div>
+          <!-- Mercury -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-personality-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @personality_activations['mercury_gate']%></span>.<span class="font-semibold"><%= @personality_activations['mercury_line'].to_i%></span>.<span class="activation-color text-sm"><%= @personality_activations['mercury_color'].to_i%></span>
+            </div>
+            <svg id="advanced-personality-mercury" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12" version="1.1" style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round; position: relative; top: -2px;">
+              <path d="M 8,5 C 8,3.8945312 7.1054688,3 6,3 4.8945312,3 4,3.8945312 4,5 4,6.1054688 4.8945312,7 6,7 7.1054688,7 8,6.1054688 8,5 Z m 0,0"/>
+              <path d="M 4,1 C 4,2.1054688 4.8945312,3 6,3 7.1054688,3 8,2.1054688 8,1"/>
+              <path d="M 6,11 V 7"/>
+              <path d="M 4,9 H 8"/>
+            </svg>
+          </div>
+          <!-- Uranus -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-personality-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @personality_activations['uranus_gate']%></span>.<span class="font-semibold"><%= @personality_activations['uranus_line'].to_i%></span>.<span class="activation-color text-sm"><%= @personality_activations['uranus_color'].to_i%></span>
+            </div>
+            <svg id="advanced-personality-uranus" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" height="24" viewBox="0 0 12 12" version="1.1" id="svg13" sodipodi:docname="Uranus.svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+              <path inkscape:connector-curvature="0" id="path2" d="M 7.25,9.75 C 7.25,9.0585938 6.6914062,8.5 6,8.5 5.3085938,8.5 4.75,9.0585938 4.75,9.75 4.75,10.441406 5.3085938,11 6,11 6.6914062,11 7.25,10.441406 7.25,9.75 Z m 0,0" style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"/>
+              <path inkscape:connector-curvature="0" id="path4" d="M 6,8.5 V 2.25" style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"/>
+              <path inkscape:connector-curvature="0" id="path6" d="M 3.5,1 V 6" style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"/>
+              <path inkscape:connector-curvature="0" id="path8" d="M 8.5,1 V 6" style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"/>
+              <path inkscape:connector-curvature="0" id="path10" d="m 3.5,3.5 h 5" style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"/>
+            </svg>
+          </div>
+          <!-- Venus -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-personality-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2 mb-2">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @personality_activations['venus_gate']%></span>.<span class="font-semibold"><%= @personality_activations['venus_line'].to_i%></span>.<span class="activation-color text-sm"><%= @personality_activations['venus_color'].to_i%></span>
+            </div>
+            <svg id="advanced-personality-venus" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 12 12" version="1.1" style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round; position: relative; left: 2px;">
+              <circle cx="6" cy="3.5" r="2.5"/>
+              <path d="M 6,11 V 6"/>
+              <path d="m 3.5,8.5 h 5"/>
+            </svg>
+          </div>
+          <!-- Mars -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-personality-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @personality_activations['mars_gate']%></span>.<span class="font-semibold"><%= @personality_activations['mars_line'].to_i%></span>.<span class="activation-color text-sm"><%= @personality_activations['mars_color'].to_i%></span>
+            </div>
+            <svg id="advanced-personality-mars" style="position: relative; top: -3px;" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" height="24" viewBox="0 0 12 12">
+              <g id="g844" transform="translate(-1.2192323,-1.2805176)">
+                <g transform="translate(-0.0612853,2.5610352)" id="g836">
+                  <path d="M 7.828125,4.171875 11,1" style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"/>
+                  <path id="path6" d="M 9.2304688,1 H 11 v 1.7695312" style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"/>
+                </g>
+                <path sodipodi:nodetypes="ssssss" style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" d="M 8.49975,8.5000006 C 8.49975,7.8105471 8.2194765,7.185547 7.7668397,6.7329102 7.314203,6.2802735 6.689203,6.0000001 5.99975,6.0000001 c -1.378907,0 -2.5,1.1210935 -2.5,2.5000005 0,1.378906 1.121093,2.4999994 2.5,2.4999994 1.378906,0 2.5,-1.1210934 2.5,-2.4999994 z" id="path2-5" inkscape:connector-curvature="0"/>
+              </g>
+            </svg>
+          </div>
+          <!-- Neptune -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-personality-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @personality_activations['neptune_gate']%></span>.<span class="font-semibold"><%= @personality_activations['neptune_line'].to_i%></span>.<span class="activation-color text-sm"><%= @personality_activations['neptune_color'].to_i%></span>
+            </div>
+            <svg id="advanced-personality-neptune" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12" version="1.1" style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round">
+              <path d="M 6,11 V 1"/>
+              <path d="m 3.5,7.25 h 5"/>
+              <path d="M 2.25,1 C 2.25,3.0703125 3.9296875,4.75 6,4.75 8.0703125,4.75 9.75,3.0703125 9.75,1"/>
+            </svg>
+          </div>
+          <!-- Saturn -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-personality-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2 mb-2">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @personality_activations['saturn_gate']%></span>.<span class="font-semibold"><%= @personality_activations['saturn_line'].to_i%></span>.<span class="activation-color text-sm"><%= @personality_activations['saturn_color'].to_i%></span>
+            </div>
+            <svg id="advanced-personality-saturn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12" version="1.1" style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round">
+              <path d="M 3,3 H 7"/>
+              <path d="M 5,1 V 6"/>
+              <path d="M 5,6 C 5,4.8945312 5.8945312,4 7,4 8.1054688,4 9,4.8945312 9,6 9,6.53125 8.7890625,7.0390625 8.4140625,7.4140625 7.5078125,8.3203125 7,9.71875 7,11"/>
+            </svg>
+          </div>
+          <!-- Jupiter -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-personality-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3 mr-2">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @personality_activations['jupiter_gate']%></span>.<span class="font-semibold"><%= @personality_activations['jupiter_line'].to_i%></span>.<span class="activation-color text-sm"><%= @personality_activations['jupiter_color'].to_i%></span>
+            </div>
+            <svg id="advanced-personality-jupiter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 12 12" version="1.1">
+              <g id="surface1">
+                <path style="fill:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke:#000000;stroke-opacity:1;stroke-miterlimit:1.5;" d="M 22.5 110 C 35.898438 102.265625 44.140625 87.96875 44.140625 72.5 C 44.140625 57.03125 35.898438 42.734375 22.5 35 L 97.5 35 " transform="matrix(0.1,0,0,-0.1,0,12)"/>
+                <path style="fill:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke:#000000;stroke-opacity:1;stroke-miterlimit:1.5;" d="M 72.5 60 L 72.5 10 " transform="matrix(0.1,0,0,-0.1,0,12)"/>
+              </g>
+            </svg>
+          </div>
+          <!-- Pluto -->
+          <div style="height: 48px; width: 114px; background: #FCFCFC" class="advanced-personality-activation cursor-default flex flex-wrap bg-gray-100 border border-gray-200 p-3">
+            <div class="pl-2" style="width: 62px;">
+              <span class="font-semibold"><%= @personality_activations['pluto_gate']%></span>.<span class="font-semibold"><%= @personality_activations['pluto_line'].to_i%></span>.<span class="activation-color text-sm"><%= @personality_activations['pluto_color'].to_i%></span>
+            </div>
+            <svg id="advanced-personality-pluto" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" height="24" viewBox="0 0 12 12" version="1.1" id="svg11" sodipodi:docname="Pluto.svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+              <g id="g832">
+                <path style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" d="M 6,11 V 4.75" id="path2" inkscape:connector-curvature="0"/>
+                <path style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" d="m 3.5,7.25 h 5" id="path4" inkscape:connector-curvature="0"/>
+                <path style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" d="M 2.25,1 C 2.25,3.0703125 3.9296875,4.75 6,4.75 8.0703125,4.75 9.75,3.0703125 9.75,1" id="path6" inkscape:connector-curvature="0"/>
+                <path style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" d="M 7.25,2.25 C 7.25,1.558594 6.6914062,1 6,1 5.3085938,1 4.75,1.558594 4.75,2.25 4.75,2.9414062 5.3085938,3.5 6,3.5 6.6914062,3.5 7.25,2.9414062 7.25,2.25 Z m 0,0" id="path8" inkscape:connector-curvature="0"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+    const chartModeButtons = ['standard-mode', 'advanced-mode', 'rave-mandala-mode'];
+  const viewModeButtons = ['view-mode-normal', 'view-mode-design', 'view-mode-personality', 'view-mode-incarnation-cross'];
+
+  // Event listeners for chart mode buttons
+  chartModeButtons.forEach(buttonId => {
+  const button = document.getElementById(buttonId);
+  button.addEventListener('click', () => selectChartMode(buttonId));
+  });
+
+  // Event listeners for view mode buttons
+  viewModeButtons.forEach(buttonId => {
+  const button = document.getElementById(buttonId);
+  button.addEventListener('click', () => selectViewMode(buttonId));
+  });
+
+  // Load chart mode from localStorage
+  const chartMode = localStorage.getItem('chartMode');
+  if (chartMode) selectChartMode(chartMode);
+
+  // Load view mode from localStorage
+  const viewMode = localStorage.getItem('viewMode');
+  if (viewMode) selectViewMode(viewMode);
+
+  // Function to handle chart mode selection
+  function selectChartMode(buttonId) {
+  localStorage.setItem('chartMode', buttonId);
+  chartModeButtons.forEach(id => {
+    const button = document.getElementById(id);
+    const isSelected = id === buttonId;
+    button.setAttribute('aria-selected', isSelected);
+    if (isSelected) {
+      button.classList.add('bg-white', 'shadow');
+    } else {
+      button.classList.remove('bg-white', 'shadow');
+    }
+  });
+
+  const standardModeWrapper = document.getElementById('standard-mode-wrapper');
+  const advancedModeWrapper = document.getElementById('advanced-mode-wrapper');
+  const raveMandalaModeWrapper = document.getElementById('rave-mandala-mode-wrapper');
+  const bodygraphAll = document.getElementById('bodygraph-all');
+  const bodygraphDesign = document.getElementById('bodygraph-design');
+  const bodygraphPersonality = document.getElementById('bodygraph-personality');
+  const bodygraphIncarnationCross = document.getElementById('bodygraph-incarnation-cross');
+  const bodygraphBg = document.getElementById('bodygraph-bg');
+
+  switch (buttonId) {
+    case 'standard-mode':
+      setVisibility(standardModeWrapper, true);
+      setVisibility(advancedModeWrapper, false);
+      setVisibility(raveMandalaModeWrapper, false);
+      setGraphStyles('430', '99px', '0px');
+      setBgStyles('1500', '45px', '0', '0.8');
+      break;
+    case 'advanced-mode':
+      setVisibility(standardModeWrapper, false);
+      setVisibility(advancedModeWrapper, true);
+      setVisibility(raveMandalaModeWrapper, false);
+      setGraphStyles('430', '295px', '0px');
+      setBgStyles('1500', '239px', '0', '0.8');
+      break;
+    case 'rave-mandala-mode':
+      setVisibility(standardModeWrapper, false);
+      setVisibility(advancedModeWrapper, false);
+      setVisibility(raveMandalaModeWrapper, true);
+      setGraphStyles('354.2', '290px', '103px');
+      setBgStyles('1235.5', '244px', '106px', '1');
+      let bodygraphStyle;
+      if (showZodiac || showGodheads) {
+        bodygraphStyle = 'left: 309px; top:151px;'
+        bodygraphBg.style = `left: 265px; top: 151px; opacity: 1;`;
+        raveMandalaModeWrapper.style.left = '80px';
+        raveMandalaModeWrapper.style.top = '28px';
+        bodygraphAll.style = bodygraphStyle;
+        bodygraphPersonality.style = bodygraphStyle;
+        bodygraphDesign.style = bodygraphStyle;
+        bodygraphIncarnationCross.style = bodygraphStyle;
+      }
+    break;
+  }
+
+  function setVisibility(element, isVisible) {
+    if (isVisible) {
+      element.classList.remove('hidden');
+    } else {
+      element.classList.add('hidden');
+    }
+  }
+
+  function setGraphStyles(width, left, top) {
+    bodygraphAll.width = width;
+    bodygraphAll.style = `left: ${left}; top: ${top};`;
+    bodygraphDesign.width = width;
+    bodygraphDesign.style = `left: ${left}; top: ${top};`;
+    bodygraphPersonality.width = width;
+    bodygraphPersonality.style = `left: ${left}; top: ${top};`;
+    bodygraphIncarnationCross.width = width;
+    bodygraphIncarnationCross.style = `left: ${left}; top: ${top};`;
+  }
+
+  function setBgStyles(width, left, top, opacity) {
+    bodygraphBg.width = width;
+    bodygraphBg.style = `left: ${left}; top: ${top}; opacity: ${opacity};`;
+  }
+  }
+
+  // Function to handle view mode selection
+  function selectViewMode(buttonId) {
+  localStorage.setItem('viewMode', buttonId);
+  viewModeButtons.forEach(id => {
+    const currentButton = document.getElementById(id);
+    const isCurrentButton = id === buttonId;
+
+    if (isCurrentButton) {
+      currentButton.setAttribute('aria-selected', 'true');
+      currentButton.classList.add('bg-white');
+      currentButton.classList.add('shadow');
+    } else {
+      currentButton.setAttribute('aria-selected', 'false');
+      currentButton.classList.remove('bg-white');
+      currentButton.classList.remove('shadow');
+    }
+  });
+
+  const planetsDesignWrapper = document.getElementById('bodygraph-planets-design-wrapper');
+  const planetsPersonalityWrapper = document.getElementById('bodygraph-planets-personality-wrapper');
+  const advancedDesign = document.getElementById('advanced-design');
+  const advancedPersonality = document.getElementById('advanced-personality');
+  const bodygraphImage = document.getElementById('bodygraph-image');
+  const bodygraphImageDesign = document.getElementById('bodygraph-image-design');
+  const bodygraphImagePersonality = document.getElementById('bodygraph-image-personality');
+  const bodygraphImageIncarnationCross = document.getElementById('bodygraph-image-incarnation-cross');
+
+  // Logic to show/hide elements based on selected mode
+  switch (buttonId) {
+    case 'view-mode-normal':
+      planetsDesignWrapper.classList.remove('hidden');
+      planetsPersonalityWrapper.classList.remove('hidden');
+      advancedDesign.classList.remove('hidden');
+      advancedPersonality.classList.remove('hidden');
+      bodygraphImage.classList.remove('hidden');
+      bodygraphImageDesign.classList.add('hidden');
+      bodygraphImagePersonality.classList.add('hidden');
+      bodygraphImageIncarnationCross.classList.add('hidden');
+      Array.from(document.getElementsByClassName('rave-mandala-design-activation')).forEach((el) => {
+        el.classList.remove('hidden');
+      });
+      Array.from(document.getElementsByClassName('rave-mandala-personality-activation')).forEach((el) => {
+        el.classList.remove('hidden');
+      });
+      break;
+    case 'view-mode-design':
+      planetsDesignWrapper.classList.remove('hidden');
+      planetsPersonalityWrapper.classList.add('hidden');
+      advancedDesign.classList.remove('hidden');
+      advancedPersonality.classList.add('hidden');
+      bodygraphImage.classList.add('hidden');
+      bodygraphImageDesign.classList.remove('hidden');
+      bodygraphImagePersonality.classList.add('hidden');
+      bodygraphImageIncarnationCross.classList.add('hidden');
+      Array.from(document.getElementsByClassName('rave-mandala-design-activation')).forEach((el) => {
+        el.classList.remove('hidden');
+      });
+      Array.from(document.getElementsByClassName('rave-mandala-personality-activation')).forEach((el) => {
+        el.classList.add('hidden');
+      });
+      break;
+    case 'view-mode-personality':
+      planetsDesignWrapper.classList.add('hidden');
+      planetsPersonalityWrapper.classList.remove('hidden');
+      advancedDesign.classList.add('hidden');
+      advancedPersonality.classList.remove('hidden');
+      bodygraphImage.classList.add('hidden');
+      bodygraphImageDesign.classList.add('hidden');
+      bodygraphImagePersonality.classList.remove('hidden');
+      bodygraphImageIncarnationCross.classList.add('hidden');
+      Array.from(document.getElementsByClassName('rave-mandala-design-activation')).forEach((el) => {
+        el.classList.add('hidden');
+      });
+      Array.from(document.getElementsByClassName('rave-mandala-personality-activation')).forEach((el) => {
+        el.classList.remove('hidden');
+      });
+      break;
+    case 'view-mode-incarnation-cross':
+      planetsDesignWrapper.classList.remove('hidden');
+      planetsPersonalityWrapper.classList.remove('hidden');
+      advancedDesign.classList.remove('hidden');
+      advancedPersonality.classList.remove('hidden');
+      bodygraphImage.classList.add('hidden');
+      bodygraphImageDesign.classList.add('hidden');
+      bodygraphImagePersonality.classList.add('hidden');
+      bodygraphImageIncarnationCross.classList.remove('hidden');
+
+      selectChartMode('rave-mandala-mode');
+      break;
+    }
+  }
+
+
+    // Magic Square Color Resonance highlighting
+    const advancedDesignActivationElements = document.getElementsByClassName('advanced-design-activation');
+    const advancedPersonalityActivationElements = document.getElementsByClassName('advanced-personality-activation');
+    let designTimeout, personalityTimeout;
+
+    Array.from(advancedDesignActivationElements).forEach((el) => {
+      el.addEventListener('mouseenter', () => {
+        clearTimeout(designTimeout);
+        const color = parseInt(el.getElementsByClassName('activation-color')[0].innerHTML);
+        Array.from(advancedDesignActivationElements).forEach((otherEl) => {
+          const currentColor = parseInt(otherEl.getElementsByClassName('activation-color')[0].innerHTML);
+          if (color === currentColor || color === currentColor - 3 || color === currentColor + 3) {
+            otherEl.style.opacity = 1;
+          } else {
+            otherEl.style.opacity = 0.4;
+          }
+        });
+      });
+
+      el.addEventListener('mouseleave', () => {
+        clearTimeout(designTimeout);
+        designTimeout = setTimeout(() => {
+          Array.from(advancedDesignActivationElements).forEach((otherEl) => {
+            otherEl.style.opacity = 1;
+          });
+        }, 200);
+      });
+    });
+
+    Array.from(advancedPersonalityActivationElements).forEach((el) => {
+      el.addEventListener('mouseenter', () => {
+        clearTimeout(personalityTimeout);
+        const color = parseInt(el.getElementsByClassName('activation-color')[0].innerHTML);
+        Array.from(advancedPersonalityActivationElements).forEach((otherEl) => {
+          const currentColor = parseInt(otherEl.getElementsByClassName('activation-color')[0].innerHTML);
+          if (color === currentColor || color === currentColor - 3 || color === currentColor + 3) {
+            otherEl.style.opacity = 1;
+          } else {
+            otherEl.style.opacity = 0.4;
+          }
+        });
+      });
+
+      el.addEventListener('mouseleave', () => {
+        clearTimeout(personalityTimeout);
+        personalityTimeout = setTimeout(() => {
+          Array.from(advancedPersonalityActivationElements).forEach((otherEl) => {
+            otherEl.style.opacity = 1;
+          });
+        }, 200);
+      });
+    });
+  });
+</script>

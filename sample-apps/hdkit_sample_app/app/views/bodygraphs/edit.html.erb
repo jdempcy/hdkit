@@ -1,0 +1,12 @@
+<% content_for :title, "Editing bodygraph" %>
+
+<h1>Editing bodygraph</h1>
+
+<%= render "form", bodygraph: @bodygraph %>
+
+<br>
+
+<div>
+  <%= link_to "Show this bodygraph", @bodygraph %> |
+  <%= link_to "Back to bodygraphs", bodygraphs_path %>
+</div>

@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Bodygraphs" %>
+
+<h1>Bodygraphs</h1>
+
+<div id="bodygraphs">
+  <% @bodygraphs.each do |bodygraph| %>
+    <%= render bodygraph %>
+    <p>
+      <%= link_to "Show this bodygraph", bodygraph %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New bodygraph", new_bodygraph_path %>

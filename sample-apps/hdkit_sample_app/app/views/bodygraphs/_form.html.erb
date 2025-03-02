@@ -1,0 +1,374 @@
+<%= form_with(model: bodygraph, id: "bodygraph-form") do |form| %>
+  <% if bodygraph.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(bodygraph.errors.count, "error") %> prohibited this bodygraph from being saved:</h2>
+      <ul>
+        <% bodygraph.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="my-5">
+    <%= form.label :name, 'Chart Name', class: "block font-bold text-xs" %>
+    <%= form.text_field :name, placeholder: 'Enter Name', class: "font-bold text-2xl text-gray-700 block border-none outline-none px-0 py-2 mt-2 w-96 placeholder-gray-300", style: "box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;" %>
+  </div>
+  <div class="my-5">
+    <%= form.label 'birth_date', 'Birth Date', class: "block font-bold text-xs" %>
+    <%= form.text_field :birth_date, placeholder: "dd / mm / yyyy", class: "font-bold text-2xl text-gray-700 block border-none outline-none px-0 py-2 mt-2 w-96 placeholder-gray-300", style: "box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;" %>
+    <p id="entered_date" class="mt-2 text-gray-500"></p>
+  </div>
+  <div class="my-5">
+    <%= form.label 'birth_time', 'Birth Time', class: "block font-bold text-xs" %>
+    <%= form.text_field :birth_time, placeholder: "hh : mm", class: "font-bold text-2xl text-gray-700 block border-none outline-none px-0 py-2 mt-2 w-96 placeholder-gray-300", style: "box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;" %>
+    <p id="entered_time" class="mt-2 text-gray-500"></p>
+  </div>
+  <%= form.datetime_field :birth_date_local, class: "hidden" %>
+  <div class="my-5">
+    <%= form.label :birth_country, 'Birth Country', class: "block font-bold text-xs" %>
+    <%= form.text_field :birth_country, placeholder: 'Enter Country of Birth', class: "font-bold text-2xl text-gray-700 block border-none outline-none px-0 py-2 mt-2 w-96 placeholder-gray-300", style: "box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;" %>
+  </div>
+  <div class="my-5">
+    <%= form.label :birth_city, 'Birth City', class: "block font-bold text-xs" %>
+    <%= form.text_field :birth_city, placeholder: 'Enter City of Birth', class: "font-bold text-2xl text-gray-700 block border-none outline-none px-0 py-2 mt-2 placeholder-gray-300", style: "width: 500px; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;" %>
+  </div>
+  <div class="inline">
+    <%= form.submit form.object.new_record? ? 'Create Chart' : 'Save Chart', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // For testing purposes only -- delete this to use your own data
+    document.querySelector('input[name="bodygraph[name]"]').value = "Jonah Dempcy";
+    document.querySelector('input[name="bodygraph[birth_date]"]').value = "25/09/1983";
+    document.querySelector('input[name="bodygraph[birth_time]"]').value = "20:48";
+    document.querySelector('input[name="bodygraph[birth_country]"]').value = "United States (USA)";
+    document.querySelector('input[name="bodygraph[birth_city]"]').value = "Malden, Massachusetts, United States";
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+
+    let prefix = '';
+    if (typeof isPublicBodygraph !== 'undefined' && isPublicBodygraph) {
+      prefix = 'public_';
+    }
+
+    // Birth Date and Time
+    const birthDateInput = document.getElementById(prefix + 'bodygraph_birth_date');
+    const enteredDate = document.getElementById('entered_date');
+    const birthTimeInput = document.getElementById(prefix + 'bodygraph_birth_time');
+    const enteredTime = document.getElementById('entered_time');
+    const birthDateLocal = document.getElementById(prefix + 'bodygraph_birth_date_local');
+    const birthCityInput = document.getElementById(prefix + 'bodygraph_birth_city');
+    const birthCountryInput = document.getElementById(prefix + 'bodygraph_birth_country');
+
+    // If editing an existing bodygraph, make sure the hidden form field inputs are populated
+    enteredDate.textContent = formatDate(parseDateString(birthDateInput.value));
+    updateEnteredTime(birthTimeInput.value);
+    updateBirthDateLocal();
+
+    birthDateInput.addEventListener('input', function(e) {
+      let input = e.target.value;
+      if (input[1] == '/' || input[0] > 3) {
+        input = '0' + input;
+      } else if (input[6] == '/' || input[5] > 1) {
+        inputArray = input.split('/');
+        input = inputArray[0] + '/0' + inputArray[1];
+      } else if (parseInt(input.substring(0, 2)) > 31) {
+        input = 31 + input.substring(2, input.length);
+      } else if (parseInt(input.substring(5, 7)) > 12) {
+        input = input.substring(0, 5) + 12 + input.substring(7, input.length);
+      } else if (parseInt(input.substring(10, 14)) > 2050) {
+        input = input.substring(0, 10) + 2050;
+      } else if (parseInt(input.substring(10, 14)) > 999 && parseInt(input.substring(10, 14)) < 1781) {
+        input = input.substring(0, 10) + 1781;
+      }
+
+      input = input.replace(/\D/g, ''); // Remove non-digit characters
+      let formattedDate = '';
+
+      if (input.length > 8) {
+        input = input.slice(0, 8); // Ensure input doesn't exceed 8 digits
+      }
+
+      if (input.length === 1) {
+        formattedDate = input;
+      }
+      if (input.length >= 2) {
+        formattedDate += input.substring(0, 2) + ' / ';
+      }
+
+      if (input.length >= 4) {
+        formattedDate += input.substring(2, 4) + ' / ' + input.substring(4, 8);
+      } else if (input.length >= 2) {
+        formattedDate += input.substring(2, 4);
+      }
+
+      birthDateInput.value = formattedDate;
+      if (formattedDate.length < 14) {
+        enteredDate.textContent = '';
+        return;
+      }
+      const date = parseDateString(formattedDate);
+      enteredDate.textContent = formatDate(date);
+      updateBirthDateLocal();
+    });
+
+    function formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      return date.toLocaleDateString('en-US', options);
+    }
+
+    function parseDateString(birthDate) {
+      const [day, month, year] = birthDate.split('/');
+      return new Date(`${month}/${day}/${year}`);
+    }
+
+    birthTimeInput.addEventListener('input', function(e) {
+      let input = birthTimeInput.value.replace(/\D/g, ''); // Remove non-digit characters
+      let formattedTime = '';
+
+      if (input.length <= 2) {
+        formattedTime = input;
+      } else {
+        formattedTime += input.substring(0, 2) + ':' + input.substring(2, 4);
+      }
+
+      birthTimeInput.value = formattedTime;
+      updateBirthDateLocal();
+      updateEnteredTime(formattedTime);
+    });
+
+    function updateEnteredTime(timeString) {
+      if (timeString.length < 5) {
+        enteredTime.textContent = '';
+        return;
+      }
+      const timeArray = timeString.split(':');
+      let hours = parseInt(timeArray[0]);
+      let minutes = parseInt(timeArray[1]);
+      const ampm = hours < 12 ? 'AM' : 'PM';
+      if (hours > 12) {
+        hours -= 12;
+      } else if (hours === 0) {
+        hours += 12;
+      }
+      if (minutes == 0) {
+        minutes = '00';
+      }
+      let formattedTime = `${hours}:${minutes} ${ampm}`;
+      enteredTime.textContent = formattedTime;
+    }
+
+    function updateBirthDateLocal() {
+      const birthDate = birthDateInput.value.replace(/\s/g, ''); // Remove spaces
+      const birthTime = birthTimeInput.value;
+      const parsedDate = parseDateString(birthDate);
+      const year = parsedDate.getFullYear();
+      const month = ('0' + (parsedDate.getMonth() + 1)).slice(-2); // Month is zero-based
+      const day = ('0' + parsedDate.getDate()).slice(-2);
+      const hours = birthTime.split(':')[0];
+      const minutes = birthTime.split(':')[1];
+      const formattedDate = `${year}-${month}-${day}T${hours}:${minutes}`;
+      if (!isNaN(year) && minutes && minutes.length == 2) {
+        birthDateLocal.value = formattedDate;
+      }
+    }
+
+    birthDateInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Backspace') {
+        const input = birthDateInput.value;
+        if (input.endsWith('/ ')) {
+          birthDateInput.value = input.slice(0, input.length - 3); // Remove both digit and slash
+        }
+      }
+    });
+
+    birthTimeInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Backspace') {
+        const inputValue = birthTimeInput.value;
+        const regex = /:\d$/;
+        if (regex.test(inputValue)) {
+          birthTimeInput.value = inputValue.slice(0, -1);
+        }
+      }
+    });
+
+    // Birth Country
+    let countryCode = ''; // Initialize countryCode variable
+
+    const awesompleteBirthCountry = new Awesomplete(birthCountryInput, {
+      minChars: 1,
+      autoFirst: true,
+      filter: function(text, input) {
+        return Awesomplete.FILTER_STARTSWITH(text, input.match(/[^,]*$/)[0]);
+      },
+      list: ['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cabo Verde', 'Cambodia', 'Cameroon', 'Canada', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo (Congo-Brazzaville)', 'Costa Rica', 'Croatia', 'Cuba', 'Cyprus', 'Czechia (Czech Republic)', 'Democratic Republic of the Congo', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic', 'East Timor (Timor-Leste)', 'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini (fmr. "Swaziland")', 'Ethiopia', 'Fiji', 'Finland', 'France', 'Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Honduras', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Ireland', 'Israel', 'Italy', 'Ivory Coast', 'Jamaica', 'Japan', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Kosovo', 'Kuwait', 'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius', 'Mexico', 'Micronesia', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar (formerly Burma)', 'Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Korea', 'North Macedonia (formerly Macedonia)', 'Norway', 'Oman', 'Pakistan', 'Palau', 'Palestine State', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal', 'Qatar', 'Romania', 'Russia', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'San Marino', 'Sao Tome and Principe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia', 'South Africa', 'South Korea', 'South Sudan', 'Spain', 'Sri Lanka', 'Sudan', 'Suriname', 'Sweden', 'Switzerland', 'Syria', 'Tajikistan', 'Tanzania', 'Thailand', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan', 'Tuvalu', 'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States (USA)', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Vatican City (Holy See)', 'Venezuela', 'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe']
+    });
+
+    birthCountryInput.addEventListener('awesomplete-selectcomplete', function() {
+      const selectedCountry = awesompleteBirthCountry.selected;
+      if (selectedCountry) {
+        countryCode = getCountryCode(selectedCountry.textContent || selectedCountry.innerText);
+        // Clear city input when changing country
+        birthCityInput.value = '';
+      }
+    });
+
+    birthCountryInput.addEventListener('keydown', function(event) {
+      if (event.keyCode === 13) { // Check if Enter key is pressed
+        event.preventDefault(); // Prevent form submission if needed
+        const selected = awesompleteBirthCountry.selected;
+        if (selected) {
+          input.value = selected.textContent || selected.innerText;
+          awesompletBirthCountry.close();
+        }
+      }
+    });
+
+    function getCountryCode(countryName) {
+      const countryCodesMap = {
+        'Afghanistan': 'AF', 'Albania': 'AL', 'Algeria': 'DZ', 'Andorra': 'AD', 'Angola': 'AO',
+        'Antigua and Barbuda': 'AG', 'Argentina': 'AR', 'Armenia': 'AM', 'Australia': 'AU', 'Austria': 'AT',
+        'Azerbaijan': 'AZ', 'Bahamas': 'BS', 'Bahrain': 'BH', 'Bangladesh': 'BD', 'Barbados': 'BB',
+        'Belarus': 'BY', 'Belgium': 'BE', 'Belize': 'BZ', 'Benin': 'BJ', 'Bhutan': 'BT', 'Bolivia': 'BO',
+        'Bosnia and Herzegovina': 'BA', 'Botswana': 'BW', 'Brazil': 'BR', 'Brunei': 'BN', 'Bulgaria': 'BG',
+        'Burkina Faso': 'BF', 'Burundi': 'BI', 'Cabo Verde': 'CV', 'Cambodia': 'KH', 'Cameroon': 'CM',
+        'Canada': 'CA', 'Central African Republic': 'CF', 'Chad': 'TD', 'Chile': 'CL', 'China': 'CN',
+        'Colombia': 'CO', 'Comoros': 'KM', 'Congo (Congo-Brazzaville)': 'CG', 'Costa Rica': 'CR',
+        'Croatia': 'HR', 'Cuba': 'CU', 'Cyprus': 'CY', 'Czechia (Czech Republic)': 'CZ',
+        'Democratic Republic of the Congo': 'CD', 'Denmark': 'DK', 'Djibouti': 'DJ', 'Dominica': 'DM',
+        'Dominican Republic': 'DO', 'East Timor (Timor-Leste)': 'TL', 'Ecuador': 'EC', 'Egypt': 'EG',
+        'El Salvador': 'SV', 'Equatorial Guinea': 'GQ', 'Eritrea': 'ER', 'Estonia': 'EE',
+        'Eswatini (fmr. "Swaziland")': 'SZ', 'Ethiopia': 'ET', 'Fiji': 'FJ', 'Finland': 'FI', 'France': 'FR',
+        'Gabon': 'GA', 'Gambia': 'GM', 'Georgia': 'GE', 'Germany': 'DE', 'Ghana': 'GH', 'Greece': 'GR',
+        'Grenada': 'GD', 'Guatemala': 'GT', 'Guinea': 'GN', 'Guinea-Bissau': 'GW', 'Guyana': 'GY',
+        'Haiti': 'HT', 'Honduras': 'HN', 'Hungary': 'HU', 'Iceland': 'IS', 'India': 'IN', 'Indonesia': 'ID',
+        'Iran': 'IR', 'Iraq': 'IQ', 'Ireland': 'IE', 'Israel': 'IL', 'Italy': 'IT', 'Ivory Coast': 'CI',
+        'Jamaica': 'JM', 'Japan': 'JP', 'Jordan': 'JO', 'Kazakhstan': 'KZ', 'Kenya': 'KE', 'Kiribati': 'KI',
+        'Kosovo': 'XK', 'Kuwait': 'KW', 'Kyrgyzstan': 'KG', 'Laos': 'LA', 'Latvia': 'LV', 'Lebanon': 'LB',
+        'Lesotho': 'LS', 'Liberia': 'LR', 'Libya': 'LY', 'Liechtenstein': 'LI', 'Lithuania': 'LT',
+        'Luxembourg': 'LU', 'Madagascar': 'MG', 'Malawi': 'MW', 'Malaysia': 'MY', 'Maldives': 'MV',
+        'Mali': 'ML', 'Malta': 'MT', 'Marshall Islands': 'MH', 'Mauritania': 'MR', 'Mauritius': 'MU',
+        'Mexico': 'MX', 'Micronesia': 'FM', 'Moldova': 'MD', 'Monaco': 'MC', 'Mongolia': 'MN',
+        'Montenegro': 'ME', 'Morocco': 'MA', 'Mozambique': 'MZ', 'Myanmar (formerly Burma)': 'MM',
+        'Namibia': 'NA', 'Nauru': 'NR', 'Nepal': 'NP', 'Netherlands': 'NL', 'New Zealand': 'NZ',
+        'Nicaragua': 'NI', 'Niger': 'NE', 'Nigeria': 'NG', 'North Korea': 'KP',
+        'North Macedonia (formerly Macedonia)': 'MK', 'Norway': 'NO', 'Oman': 'OM', 'Pakistan': 'PK',
+        'Palau': 'PW', 'Palestine State': 'PS', 'Panama': 'PA', 'Papua New Guinea': 'PG', 'Paraguay': 'PY',
+        'Peru': 'PE', 'Philippines': 'PH', 'Poland': 'PL', 'Portugal': 'PT', 'Qatar': 'QA', 'Romania': 'RO',
+        'Russia': 'RU', 'Rwanda': 'RW', 'Saint Kitts and Nevis': 'KN', 'Saint Lucia': 'LC',
+        'Saint Vincent and the Grenadines': 'VC', 'Samoa': 'WS', 'San Marino': 'SM',
+        'Sao Tome and Principe': 'ST', 'Saudi Arabia': 'SA', 'Senegal': 'SN', 'Serbia': 'RS',
+        'Seychelles': 'SC', 'Sierra Leone': 'SL', 'Singapore': 'SG', 'Slovakia': 'SK', 'Slovenia': 'SI',
+        'Solomon Islands': 'SB', 'Somalia': 'SO', 'South Africa': 'ZA', 'South Korea': 'KR',
+        'South Sudan': 'SS', 'Spain': 'ES', 'Sri Lanka': 'LK', 'Sudan': 'SD', 'Suriname': 'SR',
+        'Sweden': 'SE', 'Switzerland': 'CH', 'Syria': 'SY', 'Tajikistan': 'TJ', 'Tanzania': 'TZ',
+        'Thailand': 'TH', 'Togo': 'TG', 'Tonga': 'TO', 'Trinidad and Tobago': 'TT', 'Tunisia': 'TN',
+        'Turkey': 'TR', 'Turkmenistan': 'TM', 'Tuvalu': 'TV', 'Uganda': 'UG', 'Ukraine': 'UA',
+        'United Arab Emirates': 'AE', 'United Kingdom': 'GB', 'United States (USA)': 'US',
+        'Uruguay': 'UY', 'Uzbekistan': 'UZ', 'Vanuatu': 'VU', 'Vatican City (Holy See)': 'VA',
+        'Venezuela': 'VE', 'Vietnam': 'VN', 'Yemen': 'YE', 'Zambia': 'ZM', 'Zimbabwe': 'ZW'
+      };
+      return countryCodesMap[countryName] || '';
+    }
+
+    // Birth City
+    const username = 'signpost'; // Sign up on GeoNames to get a username
+    const endpointBase = 'https://secure.geonames.org/searchJSON';
+
+    const awesompleteBirthCity = new Awesomplete(birthCityInput, {
+      minChars: 2,
+      maxItems: 10,
+      autoFirst: true
+    });
+
+    // Throttle function for calling a function after a delay
+  function throttle(func, delay) {
+    let timeoutId;
+    return function() {
+      const context = this;
+      const args = arguments;
+      if (!timeoutId) {
+        timeoutId = setTimeout(() => {
+          func.apply(context, args);
+          timeoutId = null;
+        }, delay);
+      }
+    };
+  }
+
+
+    birthCityInput.addEventListener('input', throttle(function() {
+      const searchTerm = this.value.trim();
+      if (searchTerm.length >= 2) {
+        const searchParams = new URLSearchParams({
+          name_startsWith: searchTerm,
+          country: getCountryCode(birthCountryInput.value.trim()),
+          maxRows: 10,
+          username: username
+        });
+
+        const endpoint = `${endpointBase}?${searchParams.toString()}`;
+
+        fetch(endpoint)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok.', response);
+            }
+            return response.json();
+          })
+          .then(data => {
+            const citiesWithCounty = data.geonames.map(city => `${city.name}, ${city.adminName1}, ${city.countryName}`);
+            awesompleteBirthCity.list = citiesWithCounty; // Update the list of suggestions
+          })
+          .catch(error => {
+            console.error('Error fetching city suggestions:', error);
+            awesompleteBirthCity.list = []; // Clear suggestions on error
+          });
+      } else {
+        awesompleteBirthCity.list = []; // Clear suggestions if input length < 2
+      }
+    }, 500)); // Throttle 500 ms
+
+    birthCityInput.addEventListener('awesomplete-selectcomplete', function() {
+      // Handle selection if needed
+      console.log('Selected city:', this.value);
+    });
+
+    birthCityInput.addEventListener('keydown', function(event) {
+      if (event.keyCode === 13) { // Check if Enter key is pressed
+        event.preventDefault(); // Prevent form submission if needed
+        const selected = awesompleteBirthCity.selected;
+        if (selected) {
+          input.value = selected.textContent || selected.innerText;
+          awesompleteBirthCity.close();
+        }
+      }
+    });
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.2/awesomplete.min.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.2/awesomplete.min.css">
+<style>
+  /* Adjust the animation speed for the Awesomplete dropdown */
+  .awesomplete {
+    transition: opacity 0.15s ease-in-out; /* Modify the transition duration */
+  }
+  .awesomplete ul {
+    transition: opacity 0.15s ease-in-out; /* Modify the transition duration */
+  }
+
+  .awesomplete > ul > li > mark {
+        background-color:transparent !important;
+
+  }
+
+  div.awesomplete li:hover,
+  div.awesomplete li[aria-selected="true"]:hover,
+  div.awesomplete li[aria-selected="true"]  {
+    background-color: #EEE;
+    color: #000;
+  }
+</style>

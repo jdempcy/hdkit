@@ -1,0 +1,79 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  birth_date_local: 2025-03-02 14:08:28
+  birth_date_utc: 2025-03-02 14:08:28
+  design_date_utc: 2025-03-02 14:08:28
+  birth_country: MyString
+  birth_city: MyString
+  aura_type: MyString
+  inner_authority: MyString
+  definition: MyString
+  profile: MyString
+  incarnation_cross: MyString
+  determination: MyString
+  environment: MyString
+  view: MyString
+  motivation: MyString
+  cognition: MyString
+  sense: MyString
+  variable: MyString
+  personality_activations: MyString
+  design_activations: MyString
+  head_defined: false
+  ajna_defined: false
+  throat_defined: false
+  spleen_defined: false
+  solar_plexus_defined: false
+  g_center_defined: false
+  sacral_defined: false
+  root_defined: false
+  ego_defined: false
+  personality_nodes_tone: 1
+  design_nodes_tone: 1
+  timezone: MyString
+  latitude: 1.5
+  longitude: 1.5
+  birth_date: MyString
+  birth_time: MyString
+  all_activated_gates: MyString
+
+two:
+  name: MyString
+  birth_date_local: 2025-03-02 14:08:28
+  birth_date_utc: 2025-03-02 14:08:28
+  design_date_utc: 2025-03-02 14:08:28
+  birth_country: MyString
+  birth_city: MyString
+  aura_type: MyString
+  inner_authority: MyString
+  definition: MyString
+  profile: MyString
+  incarnation_cross: MyString
+  determination: MyString
+  environment: MyString
+  view: MyString
+  motivation: MyString
+  cognition: MyString
+  sense: MyString
+  variable: MyString
+  personality_activations: MyString
+  design_activations: MyString
+  head_defined: false
+  ajna_defined: false
+  throat_defined: false
+  spleen_defined: false
+  solar_plexus_defined: false
+  g_center_defined: false
+  sacral_defined: false
+  root_defined: false
+  ego_defined: false
+  personality_nodes_tone: 1
+  design_nodes_tone: 1
+  timezone: MyString
+  latitude: 1.5
+  longitude: 1.5
+  birth_date: MyString
+  birth_time: MyString
+  all_activated_gates: MyString
