@@ -6,7 +6,9 @@ This is a sample application for **HDKit**, a toolkit for generating Human Desig
 
 Make sure your computer set up for Ruby on Rails development (i.e. installing Ruby and Ruby version manager of your choice, Rails, Bundler) as well as PostgreSQL.
 
-Clone the repo and navigate to the root of the project: ``git clone https://github.com/jdempcy/hdkit.git`` and ``cd hdkit/sample-apps/hdkit_sample_app``
+Clone the repo using the `--recursive` flag to clone submodules: ``git clone --recursive https://github.com/jdempcy/hdkit.git`` and ``cd hdkit/sample-apps/hdkit_sample_app``
+
+Note: It is important to use the `--recursive` flag to clone submodules.
 
 Install all gems: ``bundle install``
 

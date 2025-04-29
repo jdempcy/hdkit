@@ -6,11 +6,15 @@ Based on `https://github.com/hfpp2012/railstart-niceadmin`. (Now defunct.)
 
 ### Quickstart
 ```
+git clone --recursive https://github.com/jdempcy/hdkit.git
+cd hdkit/sample-apps/sfhdl
 rvm use 3.1.2
 bundle install
 rails db:migrate
 rails db:seed
 ```
+
+Note: It is important to use the `--recursive` flag to clone submodules.
 
 ### To run the app:
 
