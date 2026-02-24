@@ -8,6 +8,8 @@ First, clone the repo:
 
 `git clone --recursive git@github.com:jdempcy/hdkit.git`
 
+Note: It is important to use the `--recursive` flag to clone submodules.
+
 Next, navigate to sample-apps and check out the apps. More to be added soon.
 
 `cd sample-apps`

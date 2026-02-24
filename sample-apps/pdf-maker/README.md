@@ -42,12 +42,14 @@ Make sure you have python installed with `brew install python`. The `swisseph` m
 
 ## Initial setup
 
-1. Clone repository: `git clone --recursive git@github.com:jdempcy/hdkit.git`
+1. Clone repository using the `--recursive` flag to clone submodules: `git clone --recursive git@github.com:jdempcy/hdkit.git`
 2. `cd hdkit/sample-apps/pdf-maker` and `npm i --legacy-peer-deps`
 3. `cd client` and `npm i --legacy-peer-deps`
 4. [Download 2.9 GB DE431 ephemeris](ftp://www.astro.com/pub/jplfiles) and place in ./server/src/ephemeris folder. It is set in the code with `swisseph.swe_set_ephe_path ('./ephemeris');` since it is relative to ./server/src where the files are located.
 5. Back in the root, make sure your `.env` file has the `GOOGLE_CLOUD_API_KEY`
 6. That's it! All ready to go.
+
+Note: It is important to use the `--recursive` flag to clone submodules.
 
 ## Quickstart and overview    
 1. Run `npm run start:server` and `npm run start:client`
